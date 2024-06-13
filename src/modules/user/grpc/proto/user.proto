@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package user;
+
+service UserService {
+    rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse);
+    rpc VerifyOtp (verifyOtpRequest) returns (VerifyOtpResponse);
+    rpc LoginUser(LoginUserRequest) returns (LoginUserResponse);
+}
+
+message RegisterUserRequest {
+    string name = 1;
+    string email = 2;
+    string phone = 3;
+    string password = 4;
+}
+
+message UserData {
+    string name = 1;
+    string email = 2;
+    string phone = 3;
+    string password = 4;
+}
+
+message RegisterUserResponse {
+    string message = 1;
+    bool success = 2;
+    string otp = 3;
+    UserData user_data = 4;
+}
+
+message verifyOtpRequest{
+    UserData user_data = 1;
+}
+
+message VerifyOtpResponse{
+    string message = 1;
+    bool success = 2;
+}
+
+message LoginUserRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message LoginUserResponse {
+    string message = 1;
+    string token = 2;
+}
