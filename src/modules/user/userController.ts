@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express'
 import { Userclient } from './grpc/client/userClient'
+import { genenrateToken } from '../../jwt/jwtCreate'
 
 export const userController = {
     register:(req: Request, res: Response)=>{
@@ -10,8 +11,6 @@ export const userController = {
                 if(err){
                     return res.status(500).json({error:"Internal server error"});
                 }
-               
-                
                 const isRecruiter = false;
                 res.cookie("isRecruiter", isRecruiter);
                 res.cookie("otp", result.otp, {httpOnly:true});
@@ -32,14 +31,16 @@ export const userController = {
           
             if(cookieOtp=== enteredOtp){
                 const userData = JSON.parse(req.cookies.user);
+             console.log("This is cookies iuser dataaaaaaaa",userData);
              
             Userclient.VerifyOtp({user_data: userData},(err:Error | null, result: any)=>{
                 
                 if(err){
                     return res.status(500).json({error: "Internal server error"});
-                }
-                console.log("result from verify otp",result);
-                
+                } 
+                const token = genenrateToken({id:result.user_data._id,email:result.user_data.email});
+                res.cookie('token', token,{httpOnly:true, maxAge: 3600000})
+                res.clearCookie('otp');
                 return res.json(result)
             })
             }else{

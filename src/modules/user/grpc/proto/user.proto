@@ -36,6 +36,8 @@ message verifyOtpRequest{
 message VerifyOtpResponse{
     string message = 1;
     bool success = 2;
+    bool isRecruiter = 3;
+    UserData user_data = 4;
 }
 
 message LoginUserRequest {
