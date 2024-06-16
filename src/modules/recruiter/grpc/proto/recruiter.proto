@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package recruiter;
+
+service RecruiterService {
+    rpc RegisterRecruiter(RegisterRecruiterRequest) returns (RegisterRecruiterResponse);
+}
+
+message RegisterRecruiterRequest {
+    string name = 1;
+    string email = 2;
+    string phone = 3;
+    string password = 4;
+    string companyName = 5;
+    string companyEmail = 6;
+}
+
+message RecruiterData {
+    string name = 1;
+    string email = 2;
+    string phone = 3;
+    string password = 4;
+    string companyName = 5;
+    string companyEmail = 6;
+}
+
+message RegisterRecruiterResponse {
+    string message = 1;
+    bool success = 2;
+    string otp = 3;
+    RecruiterData recruiter_data = 4;
+}

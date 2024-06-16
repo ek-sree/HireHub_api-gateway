@@ -4,8 +4,8 @@ package user;
 
 service UserService {
     rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse);
-    rpc VerifyOtp (verifyOtpRequest) returns (VerifyOtpResponse);
-    rpc ResendOtp (ResendOtpRequest) returns (ResendOtpResponse);
+    rpc VerifyOtp(VerifyOtpRequest) returns (VerifyOtpResponse);
+    rpc ResendOtp(ResendOtpRequest) returns (ResendOtpResponse);
     rpc Login(LoginUserRequest) returns (LoginUserResponse);
 }
 
@@ -30,22 +30,22 @@ message RegisterUserResponse {
     UserData user_data = 4;
 }
 
-message verifyOtpRequest{
+message VerifyOtpRequest {
     UserData user_data = 1;
 }
 
-message VerifyOtpResponse{
+message VerifyOtpResponse {
     string message = 1;
     bool success = 2;
     bool isRecruiter = 3;
     UserData user_data = 4;
 }
 
-message ResendOtpRequest{
+message ResendOtpRequest {
     string email = 1;
 }
 
-message ResendOtpResponse{
+message ResendOtpResponse {
     string message = 1;
     bool success = 2;
     string newOtp = 3;
@@ -60,4 +60,6 @@ message LoginUserResponse {
     string message = 1;
     bool success = 2;
     UserData user_data = 3;
+    bool isRecruiter = 4;
+    
 }

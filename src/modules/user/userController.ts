@@ -43,6 +43,8 @@ export const userController = {
                 res.cookie('role',role, {maxAge: 3600000})
                 res.cookie('token', token,{httpOnly:true, maxAge: 3600000})
                 res.clearCookie('otp');
+                console.log("This is otpp result", result);
+                
                 return res.json(result)
             })
             }else{
@@ -83,6 +85,8 @@ export const userController = {
 
     login:(req:Request, res:Response)=>{
         try {
+            console.log("Reached logginf");
+            
             Userclient.Login(req.body, (err: Error | null, result: any)=>{
                 if(err){
                     console.log("error while loging user", err);
@@ -90,6 +94,8 @@ export const userController = {
                 }
                 const isRecruiter =false;
                 res.cookie('isRecruiter', isRecruiter);
+                console.log("result in userControllerrr for loginnnn", result);
+                
                 return res.json(result)
             })
         } catch (error) {
