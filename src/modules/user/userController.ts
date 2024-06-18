@@ -44,7 +44,7 @@ export const userController = {
                 res.cookie('token', token,{httpOnly:true, maxAge: 3600000})
                 res.clearCookie('otp');
                 console.log("This is otpp result", result);
-                
+                result.isRecruiter=false
                 return res.json(result)
             })
             }else{
@@ -92,15 +92,51 @@ export const userController = {
                     console.log("error while loging user", err);
                     return res.status(500).json({error:"Internal server error"});
                 }
+                console.log(result,"sdsd");
+                if(!result.success){
+                    return res.json(result);
+                }
+                const token = genenrateToken({id:result.user_data._id,email:result.user_data.email});
+                let role ='user'
+                res.cookie('role',role, {maxAge: 3600000})
+                res.cookie('token', token,{httpOnly:true, maxAge: 3600000})
                 const isRecruiter =false;
                 res.cookie('isRecruiter', isRecruiter);
                 console.log("result in userControllerrr for loginnnn", result);
-                
+                result.isRecruiter = false;
                 return res.json(result)
             })
         } catch (error) {
             console.log("Error loging in", error);
             return res.status(500).json({error: "Internal server error"});
+        }
+    },
+
+    loginWithGoogle: (req: Request, res: Response) => {
+        try {
+            console.log("google auth");
+
+            Userclient.LoginWithGoogle(req.body, (err: Error | null, result: any) => {
+                if (err) {
+                    res.status(500).json({ error: "Internal server error" });
+                }
+                if (!result || !result.user_data) {
+                    return res.status(500).json({ error: "Invalid response from Google login service" });
+                }
+                const token = genenrateToken({ id: result.user_data._id, email: result.user_data.email });
+                let role = 'user'
+                res.cookie('role', role, { maxAge: 3600000 })
+                res.cookie('token', token, { httpOnly: true, maxAge: 3600000 })
+                const isRecruiter = false;
+                res.cookie('isRecruiter', isRecruiter);
+                console.log("result in userControllerrr for loginnnn", result);
+                console.log(result);
+                result.isRecruiter = false;
+                return res.json(result)
+            })
+        } catch (error) {
+            console.log("Error during login with google auth", error);
+            return res.status(500).json({ error: "Internal server error" });
         }
     }
 }

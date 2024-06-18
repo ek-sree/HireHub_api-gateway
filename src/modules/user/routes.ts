@@ -9,5 +9,6 @@ userRouter.post("/register",userController.register )
 userRouter.post('/otp', userController.otp)
 userRouter.post('/resend-otp', userController.resendOtp);
 userRouter.post('/login', userController.login);
+userRouter.post('/google-login', userController.loginWithGoogle)
 
 export { userRouter }

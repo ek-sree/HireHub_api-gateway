@@ -7,6 +7,7 @@ service UserService {
     rpc VerifyOtp(VerifyOtpRequest) returns (VerifyOtpResponse);
     rpc ResendOtp(ResendOtpRequest) returns (ResendOtpResponse);
     rpc Login(LoginUserRequest) returns (LoginUserResponse);
+    rpc LoginWithGoogle(LoginWithGoogleRequest) returns (LoginWithGoogleResponse);
 }
 
 message RegisterUserRequest {
@@ -21,6 +22,7 @@ message UserData {
     string email = 2;
     string phone = 3;
     string password = 4;
+    string _id = 5;
 }
 
 message RegisterUserResponse {
@@ -62,4 +64,13 @@ message LoginUserResponse {
     UserData user_data = 3;
     bool isRecruiter = 4;
     
+}
+
+message LoginWithGoogleRequest {
+    string credential = 1;
+}
+
+message LoginWithGoogleResponse {
+    bool success = 1;
+    UserData user_data = 2;
 }
