@@ -138,5 +138,24 @@ export const userController = {
             console.log("Error during login with google auth", error);
             return res.status(500).json({ error: "Internal server error" });
         }
+    },
+
+    getUser: (req: Request, res: Response) => {
+        console.log("userr gettt");
+        
+       try {
+        console.log("gettin here");
+        
+        Userclient.GetAllUsers(req.body, (err: Error | null, result: any) => {
+            if(err){
+                res.status(500).json({ error: "Internal server error" });
+            }
+            console.log("user datas",result);
+            return res.json(result);
+        })
+       } catch (error) {
+        console.log("Error fetching users", error);
+            return res.status(500).json({ error: "Internal server error" });
+        }
     }
 }

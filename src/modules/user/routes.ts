@@ -11,4 +11,7 @@ userRouter.post('/resend-otp', userController.resendOtp);
 userRouter.post('/login', userController.login);
 userRouter.post('/google-login', userController.loginWithGoogle)
 
+
+userRouter.get('/getalluser', userController.getUser)
+
 export { userRouter }
