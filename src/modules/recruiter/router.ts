@@ -9,5 +9,7 @@ recruiterRouter.post('/otp', recruiterController.otp);
 recruiterRouter.post('/resend-otp', recruiterController.resendOtp);
 recruiterRouter.post('/login', recruiterController.login);
 
+recruiterRouter.get('/getrecruiters', recruiterController.getrecruiters)
+
 
 export { recruiterRouter }

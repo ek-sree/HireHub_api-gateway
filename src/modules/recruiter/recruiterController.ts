@@ -104,5 +104,22 @@ export const recruiterController = {
             console.log("Error loging in", error);
             return res.status(500).json({error: "Internal server error"});
         }
+    },
+
+    getrecruiters: (req :Request, res: Response) => {
+        try {
+            RecruiterClient.GetRecruiters(req.body, (err: Error | null, result: any) => {
+                if(err){
+                    console.log("error whilefetching recruiter datas", err);
+                    return res.status(500).json({error:"Internal server error while fetching recruiter data"});
+                }
+                console.log("res fetching recruiter here", result);
+                
+                return res.json(result);
+            })
+        } catch (error) {
+            console.log("Error communicating recruiter service", error);
+            return res.status(500).json({error: "Internal server error"});
+        }
     }
 }
