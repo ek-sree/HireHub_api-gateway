@@ -106,6 +106,20 @@ export const recruiterController = {
         }
     },
 
+    logout: (req: Request, res: Response) => {
+        try {
+            console.log("Recruiter logout reaching here");
+            res.clearCookie('role');
+            res.clearCookie('isRecruiter');
+            res.clearCookie('token');
+            
+            return res.json({success: true})
+        } catch (error) {
+            console.log("Error during logout", error);
+            return res.status(500).json({success: false, error: "Internal server error" });
+        }
+    },
+
     getrecruiters: (req :Request, res: Response) => {
         try {
             RecruiterClient.GetRecruiters(req.body, (err: Error | null, result: any) => {

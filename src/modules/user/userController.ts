@@ -24,6 +24,8 @@ export const userController = {
     },
 
     otp:(req: Request, res: Response)=>{
+        console.log("Is otp comming");
+        
         try {
             const cookieOtp = req.cookies.otp
            
@@ -137,6 +139,21 @@ export const userController = {
         } catch (error) {
             console.log("Error during login with google auth", error);
             return res.status(500).json({ error: "Internal server error" });
+        }
+    },
+
+    logout: (req: Request, res: Response) => {
+        try {
+            console.log("User logout reaching here");
+            res.clearCookie('role');
+            res.clearCookie('isRecruiter');
+            res.clearCookie('token');
+            res.clearCookie('user')
+            
+            return res.json({success: true})
+        } catch (error) {
+            console.log("Error during login with google auth", error);
+            return res.status(500).json({success: false, error: "Internal server error" });
         }
     },
 
