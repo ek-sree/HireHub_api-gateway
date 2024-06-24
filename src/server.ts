@@ -4,7 +4,7 @@ import { userRouter } from './modules/user/routes';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import { recruiterRouter } from './modules/recruiter/router';
-import { adminRouter } from './modules/admin/routes';
+import { adminRouter } from './modules/user/adminRoutes';
 
 const app = express();
 

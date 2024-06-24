@@ -1,10 +1,23 @@
-import config from "./index";
+import config from './index';
 
-export default {
-    rabbitMQ:{
+interface RabbitMqConfig {
+    rabbitMQ: {
+        url: string;
+        queues: {
+            userQueue: string;
+            recruiterQueue: string;
+        };
+    };
+}
+
+const rabbitMqConfig: RabbitMqConfig = {
+    rabbitMQ: {
         url: config.rabbitMq_url,
         queues: {
-            adminQueue: "admin_queue"
-        }
-    }
-}
+            userQueue: 'user_queue',
+            recruiterQueue: 'recruiter_queue',
+        },
+    },
+};
+
+export default rabbitMqConfig;

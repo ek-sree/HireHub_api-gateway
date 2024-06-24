@@ -13,6 +13,6 @@ userRouter.post('/google-login', userController.loginWithGoogle);
 userRouter.post('/logout', userController.logout);
 
 
-userRouter.get('/getalluser', userController.getUser)
+
 
 export { userRouter }

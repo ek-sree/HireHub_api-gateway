@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package admin;
+
+service AdminService {
+    rpc Login(LoginAdminRequest) returns (LoginAdminResponse);
+    rpc GetAllUsers(GetAllUsersRequest) returns (GetAllUsersResponse);
+}
+
+message LoginAdminRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message AdminData {
+    string email = 1;
+    string _id = 2;
+    bool status = 3;
+}
+
+message UserData {
+    string name = 1;
+    string email = 2;
+    string phone = 3;
+    string _id = 5;
+    bool status = 6; 
+}
+
+message LoginAdminResponse {
+    string message = 1;
+    bool success = 2;
+    string token = 3;
+    AdminData admin_data = 4;
+}
+
+message GetAllUsersRequest {}
+
+message GetAllUsersResponse { 
+    repeated UserData user_data = 1;
+    bool success = 2;
+    string message = 3;
+}
