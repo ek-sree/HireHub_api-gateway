@@ -72,9 +72,25 @@ export const adminController = {
             
             const response = await userRabbitMqClient.produce({userId},operation);
             console.log("response for block user", response);
-            return res.json({success:true})
+            
+            return res.json(response)
         } catch (error) {
             console.error("Error blocking/unblocking user", error);
+            res.status(500).json({ success: false, message: "Internal server error" });
+        }
+    },
+
+    blockRecruiter: async(req: Request, res: Response) => {
+        console.log("recruiter block reached here for to send rabbitmq");
+        try {
+            const operation = 'block-recruiter'
+            const { recruiterId } = req.params;
+            console.log("id for block recruiter", recruiterId);
+            const response = await recruiterRabbitMqClient.produce({recruiterId},operation);
+            console.log("response blocked recruiter", response);
+            return res.json(response);
+        } catch (error) {
+            console.error("Error blocking/unblocking recruiter", error);
             res.status(500).json({ success: false, message: "Internal server error" });
         }
     }

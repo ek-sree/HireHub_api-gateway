@@ -47,6 +47,7 @@ export const userController = {
                 res.clearCookie('otp');
                 console.log("This is otpp result", result);
                 result.isRecruiter=false
+                result.token = token;
                 return res.json(result)
             })
             }else{
@@ -106,6 +107,7 @@ export const userController = {
                 res.cookie('isRecruiter', isRecruiter);
                 console.log("result in userControllerrr for loginnnn", result);
                 result.isRecruiter = false;
+                result.token = token;
                 return res.json(result)
             })
         } catch (error) {
@@ -134,6 +136,7 @@ export const userController = {
                 console.log("result in userControllerrr for loginnnn", result);
                 console.log(result);
                 result.isRecruiter = false;
+                result.token = token;
                 return res.json(result)
             })
         } catch (error) {
