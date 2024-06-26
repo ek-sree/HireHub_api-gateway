@@ -34,19 +34,40 @@ export const adminController = {
         }
     },
 
-    getUser: async (req: Request, res: Response) => {
-        console.log("userr gettt");
-        
-       try {
-        console.log("gettin here");
-        
+getUser: async (req: Request, res: Response) => {
+    try {
+        const { page = 1, limit = 2 } = req.query;
         const operation = 'get-all-users';
-        const response = await userRabbitMqClient.produce({}, operation);
-        console.log("response userget rabbitmq", response);
+        const response = await userRabbitMqClient.produce({ page: Number(page), limit: Number(limit) }, operation);
         return res.json(response);
-       } catch (error) {
+    } catch (error) {
         console.log("Error fetching users", error);
+        return res.status(500).json({ error: "Internal server error" });
+    }
+}
+,
+
+    getVerifiedRecruiter: async(req: Request, res: Response) => {
+        console.log("reach here for verify recruiter");
+        try {
+            const operation = 'unVerify-recruiter';
+            const response = await recruiterRabbitMqClient.produce({}, operation);
+            console.log("response of verify recruiter",response);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error fetching unVerified Recruiter", error);
             return res.status(500).json({ error: "Internal server error" });
+        }  
+    },
+
+    verifyRecruiter: async(req:Request, res:Response) => {
+        try {
+            const {recruiterId} = req.params
+            const operation = 'verify-recruiter';
+            const response = await recruiterRabbitMqClient.produce({recruiterId}, operation);
+            return res.json(response);
+        } catch (error) {
+            
         }
     },
 

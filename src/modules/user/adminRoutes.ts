@@ -6,6 +6,8 @@ const adminRouter = express.Router();
 
 adminRouter.post('/login', adminController.loging);
 adminRouter.get('/getalluser', authencticateToken, adminController.getUser);
+adminRouter.get('/getVerifiedRecruiter', authencticateToken, adminController.getVerifiedRecruiter);
+adminRouter.put('/verifyRecruiter/:recruiterId', authencticateToken, adminController.verifyRecruiter)
 adminRouter.get('/getrecruiters', authencticateToken, adminController.getRecruiter);
 adminRouter.put('/blockuser/:userId', authencticateToken, adminController.blockUser);
 adminRouter.put('/blockRecruiter/:recruiterId', authencticateToken, adminController.blockRecruiter)
