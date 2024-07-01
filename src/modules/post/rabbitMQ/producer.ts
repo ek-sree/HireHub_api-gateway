@@ -9,7 +9,7 @@ export default class Producer {
     async produceMessage(data: any={}, operation: string) {
         
         const correlationId = randomUUID();
-        console.log("data gonna sent");
+        console.log("data gonna sent",data);
         this.channel.sendToQueue(rabbitMqConfig.rabbitMQ.queues.postQueue, Buffer.from(JSON.stringify(data)), {
             replyTo: this.replyQueueName,
             correlationId,

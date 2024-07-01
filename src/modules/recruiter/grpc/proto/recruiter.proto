@@ -20,13 +20,14 @@ message RegisterRecruiterRequest {
 }
 
 message RecruiterData {
-    string name = 1;
-    string email = 2;
-    string phone = 3;
-    string password = 4;
-    string companyName = 5;
-    string companyEmail = 6;
-    bool isVerified = 7;
+    string _id = 1;
+    string name = 2;
+    string email = 3;
+    string phone = 4;
+    string password = 5;
+    string companyName = 6;
+    string companyEmail = 7;
+    bool isVerified = 8;
 }
 
 message RegisterRecruiterResponse {
@@ -67,7 +68,6 @@ message LoginUserResponse {
     bool success = 2;
     RecruiterData recruiter_data = 3;
     bool isRecruiter = 4;
-    string _id = 5;
 }
 
 message GetRecruitersRequest {}

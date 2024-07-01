@@ -5,7 +5,7 @@ import { Request, Response } from "express";
 export const recruiterController = {
     register: (req: Request, res: Response) => {
         try {
-            console.log("data getting here?");
+            console.log("data getting here?",req.body);
             
             RecruiterClient.RegisterRecruiter(req.body, (err: Error | null, result: any) => {
                 if(err) {
@@ -43,8 +43,9 @@ export const recruiterController = {
                     res.cookie('role', role, { maxAge: 3600000 });
                     res.cookie('token', token, { httpOnly: true, maxAge: 3600000 })
                     res.clearCookie('otp');
-                    console.log("res", result);
                     result.isRecruiter=true
+                    console.log("data recruiter after verify otp",result);
+                    
                     return res.json(result);
                 })
             }else{
@@ -61,8 +62,7 @@ export const recruiterController = {
             console.log("here reached resendotp");
             
             const RecruiterData = JSON.parse(req.cookies.recruiter);
-            const email = RecruiterData.email;
-
+            const email = RecruiterData.companyEmail;
             res.clearCookie('otp');
 
             RecruiterClient.ResendOtp({email:email}, (err: Error | null, result: any) => {
@@ -91,7 +91,8 @@ export const recruiterController = {
                 if(!result.success){
                     return res.json(result);
                 }
-                const token = genenrateToken({id: result.recruiter_data.id, email:result.recruiter_data.email});
+                console.log("ID..........", result.recruiter_data._id);
+                const token = genenrateToken({ id: result.recruiter_data._id, email: result.recruiter_data.email });
                 let role = 'recruiter';
                 res.cookie('role', role, { maxAge: 3600000 });
                 res.cookie('token', token, { httpOnly: true, maxAge: 3600000 })
