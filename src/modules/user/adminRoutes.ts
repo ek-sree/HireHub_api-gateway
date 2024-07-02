@@ -10,6 +10,8 @@ adminRouter.get('/getVerifiedRecruiter', authencticateToken, adminController.get
 adminRouter.put('/verifyRecruiter/:recruiterId', authencticateToken, adminController.verifyRecruiter)
 adminRouter.get('/getrecruiters', authencticateToken, adminController.getRecruiter);
 adminRouter.put('/blockuser/:userId', authencticateToken, adminController.blockUser);
-adminRouter.put('/blockRecruiter/:recruiterId', authencticateToken, adminController.blockRecruiter)
+adminRouter.put('/blockRecruiter/:recruiterId', authencticateToken, adminController.blockRecruiter);
+adminRouter.get('/searchUser', authencticateToken, adminController.getSearchedUser);
+adminRouter.get('/searchRecruiter', authencticateToken, adminController.getSearchRecruiter);
 
 export { adminRouter };

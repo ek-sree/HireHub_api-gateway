@@ -74,9 +74,10 @@ getUser: async (req: Request, res: Response) => {
     getRecruiter: async(req: Request, res: Response) => {
         console.log("recruiter data getting");
         try {
+            const { page=1 , limit=2 } = req.query;
             console.log("recruiter getting here");
             const operation = 'get-all-recruiter';
-            const response = await recruiterRabbitMqClient.produce({}, operation);
+            const response = await recruiterRabbitMqClient.produce({page: Number(page), limit: Number(limit)}, operation);
             console.log("response recruiter get rabbitMq", response);
             return res.json(response);
         } catch (error) {
@@ -113,6 +114,32 @@ getUser: async (req: Request, res: Response) => {
         } catch (error) {
             console.error("Error blocking/unblocking recruiter", error);
             res.status(500).json({ success: false, message: "Internal server error" });
+        }
+    },
+
+    getSearchedUser: async(req: Request, res: Response) => {
+        try {
+            const operation = 'search-user'
+            const searchValue = req.query.search;
+            console.log("searchValue", searchValue);
+            const response = await userRabbitMqClient.produce({searchValue}, operation);
+            console.log(response);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error searching user list",error);
+            res.status(500).json({success: false, message: "Internal server error"});
+        }
+    },
+
+    getSearchRecruiter: async(req: Request, res: Response) => {
+        try {
+            const operation = 'search-recruiter';
+            const searchValue = req.query.search;
+            const response = await recruiterRabbitMqClient.produce({searchValue}, operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error seaching recruiter list", error);
+            res.status(500).json({success: false, message: "Internal server error"})
         }
     }
 }
