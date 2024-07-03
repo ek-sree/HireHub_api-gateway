@@ -1,6 +1,8 @@
 import express, { Request, Response } from 'express'
 import { Userclient } from './grpc/client/grpcClient'
 import { genenrateToken } from '../../jwt/jwtCreate'
+import userRabbitMqClient from './rabbitMQ/client';
+
 
 export const userController = {
     register:(req: Request, res: Response)=>{
@@ -157,6 +159,28 @@ export const userController = {
         } catch (error) {
             console.log("Error during login with google auth", error);
             return res.status(500).json({success: false, error: "Internal server error" });
+        }
+    },
+
+    addTitleProfile: async(req: Request, res: Response) =>{
+        console.log("reached here", req.body);
+        console.log("reached here query", req.query.email);
+        
+        try {
+            const email = req.query.email;
+            const title = req.body;
+            if(!email || ! title){
+                throw new Error("email or title are missing!")
+            }
+            const data = {email, title}
+            console.log("daa of email and title",data);
+            
+            const operation = 'profile-title-add'
+            const result = await userRabbitMqClient.produce({data}, operation);
+            return res.json(result);
+        } catch (error) {
+            console.log("Error while adding title to user profile");
+            return res.status(500).json("Error occured in gateway during title saving");
         }
     }
 }
