@@ -182,5 +182,78 @@ export const userController = {
             console.log("Error while adding title to user profile");
             return res.status(500).json("Error occured in gateway during title saving");
         }
+    },
+
+    editDetails: async(req: Request, res: Response) => {
+        console.log("got here", req.body);
+        console.log("got here query", req.query.email);
+        
+        try {
+            const operation = 'edit-details';
+            const{name, title} = req.body.data;
+            console.log("body data", name, title);
+            
+            const email = req.query.email;
+            if(!name || !email){
+                throw new Error("Email, name or title are missing !!");
+            }
+            const data = {name, email, title}
+            const response = await userRabbitMqClient.produce({data}, operation)
+            console.log("response editdetails", response);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured while editing user details",error);
+            return res.status(500).json("Error occured in gateway while editing user details");
+        }
+    },
+
+    viewDetails: async(req: Request, res: Response)=>{
+        try {
+            const operation = 'view-details';
+            const email = req.query.email
+            const response = await userRabbitMqClient.produce({email}, operation)
+            console.log("ressss",response);
+            
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured while fetching details",error);
+            return res.status(500).json("Error occured in gateway while fetching user details");
+        }
+    },
+
+    userInfo: async(req: Request, res: Response)=> {
+        try {
+            console.log("info apigateway",req.query.email);
+            
+            const email = req.query.email;
+            const operation = 'user-info';
+            const response = await userRabbitMqClient.produce({email}, operation);
+            res.json(response);
+        } catch (error) {
+            console.log("Error occured while fetching user infos",error);
+            return res.status(500).json("Error occured in gateway while fetching user info");
+        }
+    },
+
+    userEditInfo: async(req:Request, res: Response)=>{
+        try {
+            console.log("sfsdfsdfsdfs......");
+            console.log("dadad", req.body);
+            
+            const {email, phone, Education, Place} = req.body.data;
+            console.log("data reached", email, phone,Education, Place);
+            if(!phone || !email){
+                throw new Error("Email or phone missing")
+            }
+            const education = Education;
+            const place = Place;
+            const operation = 'user-info-edit'
+            const data = {email, phone, education, place};
+            const response = await userRabbitMqClient.produce({data}, operation);
+            return res.json(response)
+        } catch (error) {
+            console.log("Error occured while editing user infos",error);
+            return res.status(500).json("Error occured in gateway while editing user info");
+        }
     }
 }
