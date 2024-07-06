@@ -17,5 +17,7 @@ userRouter.post('/editdetails', authencticateToken, userController.editDetails);
 userRouter.get('/viewDetails', authencticateToken, userController.viewDetails);
 userRouter.get('/userInfo', authencticateToken, userController.userInfo);
 userRouter.post('/userInfoEdit', authencticateToken, userController.userEditInfo);
+userRouter.post('/addUserSkills', authencticateToken, userController.userSkillsAdd);
+userRouter.get('/userskills', authencticateToken, userController.usersSkills);
 
 export { userRouter }
