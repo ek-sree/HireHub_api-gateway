@@ -284,6 +284,25 @@ export const userController = {
             console.log("Error occurred while fetching user skills", error);
             return res.status(500).json("Error occurred in gateway while fetching user skills");
         }
+    },
+
+    userSkillsEdit: async(req:Request, res:Response) =>{
+        try {
+            console.log("iussinf.....//");
+            
+            const email = req.query.email;
+            if(!email){
+                throw new Error("Email not found");
+            }
+            const skills = req.body;
+            const operation = 'user-skills-edit';
+            console.log("edit skills",skills);
+            const response = await userRabbitMqClient.produce({email,skills}, operation)
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occurred while editing user skills", error);
+            return res.status(500).json("Error occurred in gateway while editing user skills");
+        }
     }
     
 }

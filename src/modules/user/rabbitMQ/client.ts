@@ -1,4 +1,3 @@
-// grpcClient.ts (Assuming this is the client part)
 import { Channel, connect, Connection } from 'amqplib';
 import rabbitmqConfig from '../../../config/rabbitMqConfig';
 import Producer from './producer';
@@ -23,20 +22,19 @@ class RabbitMQClient {
         }
         return this.instance;
     }
-
+ 
     async initialize() {
         if (this.isInitialized) {
             return;
         }
         try {
             this.connection = await connect(rabbitmqConfig.rabbitMQ.url);
-            [this.producerChannel, this.consumerChannel] = await Promise.all([
-                this.connection.createChannel(),
-                this.connection.createChannel(),
-            ]);
+            this.producerChannel = await this.connection.createChannel();
+            this.consumerChannel = await this.connection.createChannel();
 
             const { queue: replyQueueName } = await this.consumerChannel.assertQueue('', { exclusive: true });
 
+            this.eventEmitter = new EventEmitter();
             this.producer = new Producer(this.producerChannel, replyQueueName, this.eventEmitter);
             this.consumer = new Consumer(this.consumerChannel, replyQueueName, this.eventEmitter);
             await this.consumer.consumeMessages();
