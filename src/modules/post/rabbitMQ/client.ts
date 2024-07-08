@@ -52,7 +52,6 @@ class RabbitMQClient {
         if(!this.isInitialized) {
             await this.initialize();
         }
-        console.log("ready to send the data to post producer",data);
         return this.producer?.produceMessage(data, operation);
     }
 }

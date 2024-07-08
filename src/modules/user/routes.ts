@@ -1,6 +1,7 @@
 import express from 'express';
 import { userController } from './userController';
 import authencticateToken from '../../middleware/authMiddleware';
+import upload from '../../multer/multer';
 
 
 const userRouter = express.Router();
@@ -20,5 +21,6 @@ userRouter.post('/userInfoEdit', authencticateToken, userController.userEditInfo
 userRouter.post('/addUserSkills', authencticateToken, userController.userSkillsAdd);
 userRouter.get('/userskills', authencticateToken, userController.usersSkills);
 userRouter.post('/editSkills', authencticateToken, userController.userSkillsEdit);
+userRouter.post('/addCv', authencticateToken, upload.single('cv'), userController.addCv)
 
 export { userRouter }

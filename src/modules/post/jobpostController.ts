@@ -54,9 +54,14 @@ console.log("................");
 
     getAllJobs: async(req: Request, res: Response) => {
         try {
+            const employmentType = req.query.employment as string[] | undefined;
+            const jobType = req.query.job as string[] | undefined;
+            const searchPlace = req.query.search as string | undefined;
+    
+            console.log("query data get job", searchPlace);
+            
             const operation = 'get-all-jobs';
-            const response = await jobpostRabbitMqClient.produce({},operation);
-            console.log("got response",response);
+            const response = await jobpostRabbitMqClient.produce({employmentType,jobType,searchPlace},operation);
             res.status(200).json(response);
         } catch (error) {
             console.error("Error in getting all jobs data", error)

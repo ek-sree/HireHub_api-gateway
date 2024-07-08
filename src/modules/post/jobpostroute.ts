@@ -10,4 +10,5 @@ jobpostRoutet.get('/getjob', authencticateToken, jobpostController.getRecruiterJ
 jobpostRoutet.get('/getalljobs', authencticateToken, jobpostController.getAllJobs);
 jobpostRoutet.post('/editjobs', authencticateToken, jobpostController.editJob);
 
+
 export { jobpostRoutet }

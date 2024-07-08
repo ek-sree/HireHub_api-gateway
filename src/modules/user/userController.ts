@@ -303,6 +303,24 @@ export const userController = {
             console.log("Error occurred while editing user skills", error);
             return res.status(500).json("Error occurred in gateway while editing user skills");
         }
+    },
+
+    addCv: async(req:Request, res:Response)=>{
+        try {
+            const email = req.query.email as string;
+            const cvFile = req.file;
+    
+            if (!cvFile) {
+                return res.status(400).json({ success: false, message: 'No CV file provided' });
+            }
+            console.log("cv file is heree",cvFile);
+            const operation = 'cv-upload';
+            const response = await userRabbitMqClient.produce({email,cvFile}, operation)
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occurred while adding cv", error);
+            return res.status(500).json("Error occurred in gateway while adding cv");
+        }
     }
     
 }

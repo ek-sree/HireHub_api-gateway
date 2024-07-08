@@ -12,9 +12,14 @@ interface DecodedToken {
 const authencticateToken = (req: Request, res: Response, next: NextFunction) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
+    const cookeToken = req.cookies.token;
 
-    if(!token) {
+    if(!token || !cookeToken) {
         return res.status(401).json({error: "Access denied . Token not found"});
+    }
+
+    if(token !== cookeToken){
+        return res.status(403).json({error:"Token missmatch"});
     }
 
     jwt.verify(token, config.jwt_key as string, (err, decoded) => {
