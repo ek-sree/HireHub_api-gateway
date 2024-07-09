@@ -47,7 +47,6 @@ class RabbitMQClient {
     }
 
     async produce(data: any={}, operation: string) {
-        console.log("Post producer client ?");
         
         if(!this.isInitialized) {
             await this.initialize();

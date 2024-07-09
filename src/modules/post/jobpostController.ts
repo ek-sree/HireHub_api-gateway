@@ -95,5 +95,41 @@ console.log("................");
             console.error("Error editing jobs data", error)
             res.status(500).json({error: "error occured fetching all jobs"});
         }
+    },
+
+    applyJob: async(req: Request, res: Response)=>{
+        try {
+            const jobId = req.query.jobId;
+            console.log(".....",req.body);
+            
+            const { name,email,phone,resumes } = req.body;
+            if(!jobId || !name || !email || !phone || !resumes){
+                return res.status(400).json({ error: "Please fill in all fields" });
+            }
+            
+            const operation = 'apply-job';
+            const response = await jobpostRabbitMqClient.produce({jobId,name,email,phone,resumes},operation);
+            return res.json(response);
+        } catch (error) {
+            console.error("Error applying job", error)
+            res.status(500).json({error: "error occured applying job"});
+        }
+    },
+
+    viewApplication: async(req: Request, res: Response)=>{
+        try {
+            const jobId = req.query.jobId;
+            console.log("job id for view hob application", jobId);
+            
+            const operation = 'view-application';
+            if(!jobId){
+                return res.status(400).json({ error: "jobid is missing" });
+            }
+            const response = await jobpostRabbitMqClient.produce({jobId},operation)
+            return res.json(response);
+        } catch (error) {
+            console.error("Error fetching job application", error)
+            res.status(500).json({error: "error occured fetching job application"});
+        }
     }
 }

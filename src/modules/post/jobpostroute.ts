@@ -9,6 +9,8 @@ jobpostRoutet.post('/addjob',authencticateToken, jobpostController.addJob);
 jobpostRoutet.get('/getjob', authencticateToken, jobpostController.getRecruiterJobs);
 jobpostRoutet.get('/getalljobs', authencticateToken, jobpostController.getAllJobs);
 jobpostRoutet.post('/editjobs', authencticateToken, jobpostController.editJob);
+jobpostRoutet.post('/applyjob', authencticateToken, jobpostController.applyJob);
+jobpostRoutet.get('/viewApplications', authencticateToken, jobpostController.viewApplication);
 
 
 export { jobpostRoutet }

@@ -46,13 +46,10 @@ class RabbitMQClient {
     }
 
     async produce(data: any={}, operation: string) {
-        console.log("Is it getting producer?");
         
         if (!this.isInitialized) {
             await this.initialize();
         }
-        console.log("ready to send this");
-        
         return this.producer?.produceMessage(data, operation);
     }
 }

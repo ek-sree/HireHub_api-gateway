@@ -22,5 +22,7 @@ userRouter.post('/addUserSkills', authencticateToken, userController.userSkillsA
 userRouter.get('/userskills', authencticateToken, userController.usersSkills);
 userRouter.post('/editSkills', authencticateToken, userController.userSkillsEdit);
 userRouter.post('/addCv', authencticateToken, upload.single('cv'), userController.addCv)
+userRouter.get('/getCv', authencticateToken, userController.fetchCv);
+userRouter.delete('/deleteCv', authencticateToken, userController.deleteCv);
 
 export { userRouter }

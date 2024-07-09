@@ -212,7 +212,6 @@ export const userController = {
             const operation = 'view-details';
             const email = req.query.email
             const response = await userRabbitMqClient.produce({email}, operation)
-            console.log("ressss",response);
             
             return res.json(response);
         } catch (error) {
@@ -321,6 +320,34 @@ export const userController = {
             console.log("Error occurred while adding cv", error);
             return res.status(500).json("Error occurred in gateway while adding cv");
         }
-    }
+    },
+
+    fetchCv: async(req:Request, res: Response)=>{
+        try {
+            const email = req.query.email;
+            const operation = 'fetch-cvs'
+            const response = await userRabbitMqClient.produce({email}, operation)
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured fetching user cv");
+            return res.status(500).json("Error occured in gateway while fetching cv");
+        }
+    },
     
+    deleteCv: async(req: Request, res: Response)=>{
+        console.log("reached remove");
+        
+        try {
+            const url = req.query.url;
+            const email = req.query.email;
+            const operation = 'remove-cv';
+            console.log("remove data",url);
+            
+            const response = await userRabbitMqClient.produce({url,email},operation)
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured removing user cv");
+            return res.status(500).json("Error occured in gateway while removing cv");
+        }
+    }
 }
