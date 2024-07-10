@@ -11,6 +11,9 @@ jobpostRoutet.get('/getalljobs', authencticateToken, jobpostController.getAllJob
 jobpostRoutet.post('/editjobs', authencticateToken, jobpostController.editJob);
 jobpostRoutet.post('/applyjob', authencticateToken, jobpostController.applyJob);
 jobpostRoutet.get('/viewApplications', authencticateToken, jobpostController.viewApplication);
+jobpostRoutet.post('/acceptApplication', authencticateToken, jobpostController.acceptApplication);
+jobpostRoutet.post('/rejectApplication', authencticateToken, jobpostController.rejectApplication);
+jobpostRoutet.get('/acceptedApplications', authencticateToken, jobpostController.selectedCandidtes);
 
 
 export { jobpostRoutet }

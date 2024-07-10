@@ -44,7 +44,6 @@ console.log("................");
             }
             const operation = 'get-recruiter-jobs';
             const response = await jobpostRabbitMqClient.produce({recruiterId}, operation);
-            console.log("response from get all jobs", response);
             res.status(200).json(response);
         } catch (error) {
             console.error("Error in getting all jobs data", error)
@@ -130,6 +129,52 @@ console.log("................");
         } catch (error) {
             console.error("Error fetching job application", error)
             res.status(500).json({error: "error occured fetching job application"});
+        }
+    },
+
+    acceptApplication: async(req: Request, res: Response)=>{
+        try {
+            const {jobId, applicationId} = req.query;
+            if(!jobId || !applicationId){
+                return res.status(400).json({error:"Job id or application id missing"})
+            }
+            const operation = 'accept-application'
+            const response = await jobpostRabbitMqClient.produce({jobId,applicationId},operation);
+            return res.json(response);
+        } catch (error) {
+            console.error("Error accepting application", error)
+            res.status(500).json({error: "error occured accepting application"});
+        }
+    },
+
+    rejectApplication: async(req: Request, res: Response)=>{
+        try {
+            const {jobId, applicationId} = req.query;
+            if(!jobId || !applicationId){
+                return res.status(400).json({error:"Job id or application id missing"})
+            }
+            const operation = 'reject-application';
+            const response = await jobpostRabbitMqClient.produce({jobId,applicationId},operation)
+            return res.json(response);
+        } catch (error) {
+            console.error("Error rejecting application", error)
+            res.status(500).json({error: "error occured rejecting application"});
+        }
+    },
+
+    selectedCandidtes: async(req:Request, res:Response)=>{
+        try {
+            const {recruiterId} = req.query;
+            console.log("recrrrrrrr",recruiterId);
+            
+            if(!recruiterId){
+                return res.status(400).json({error:"reruiterId is missing"})
+            }
+            const operation = 'shortlist-application'
+            const response = await jobpostRabbitMqClient.produce({recruiterId},operation)
+            return res.json(response);
+        } catch (error) {
+            
         }
     }
 }

@@ -107,7 +107,6 @@ export const userController = {
                 res.cookie('token', token,{httpOnly:true, maxAge: 3600000})
                 const isRecruiter =false;
                 res.cookie('isRecruiter', isRecruiter);
-                console.log("result in userControllerrr for loginnnn", result);
                 result.isRecruiter = false;
                 result.token = token;
                 return res.json(result)
@@ -135,7 +134,6 @@ export const userController = {
                 res.cookie('token', token, { httpOnly: true, maxAge: 3600000 })
                 const isRecruiter = false;
                 res.cookie('isRecruiter', isRecruiter);
-                console.log("result in userControllerrr for loginnnn", result);
                 console.log(result);
                 result.isRecruiter = false;
                 result.token = token;
