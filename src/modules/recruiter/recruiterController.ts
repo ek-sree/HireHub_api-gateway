@@ -99,7 +99,6 @@ export const recruiterController = {
                 const isRecruiter = true;
                 res.cookie('isRecruiter', isRecruiter)
                 result.isRecruiter = true;
-                console.log("result..login....reccruiter....",result);
                 result.token = token;
                 return res.json(result);
             })

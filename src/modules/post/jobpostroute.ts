@@ -14,6 +14,8 @@ jobpostRoutet.get('/viewApplications', authencticateToken, jobpostController.vie
 jobpostRoutet.post('/acceptApplication', authencticateToken, jobpostController.acceptApplication);
 jobpostRoutet.post('/rejectApplication', authencticateToken, jobpostController.rejectApplication);
 jobpostRoutet.get('/acceptedApplications', authencticateToken, jobpostController.selectedCandidtes);
+jobpostRoutet.get('/shortlistedApplication', authencticateToken, jobpostController.shortListedApplication);
+jobpostRoutet.delete('/deleteJob/:id', authencticateToken, jobpostController.deleteJob);
 
 
 export { jobpostRoutet }
