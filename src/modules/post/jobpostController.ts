@@ -120,13 +120,15 @@ console.log("................");
     viewApplication: async(req: Request, res: Response)=>{
         try {
             const jobId = req.query.jobId;
-            console.log("job id for view hob application", jobId);
+            const page = req.query.page;
+            const limit = req.query.limit;
+            console.log("job id for view hob application", jobId,page,limit);
             
             const operation = 'view-application';
             if(!jobId){
                 return res.status(400).json({ error: "jobid is missing" });
             }
-            const response = await jobpostRabbitMqClient.produce({jobId},operation)
+            const response = await jobpostRabbitMqClient.produce({jobId,page, limit},operation)
             return res.json(response);
         } catch (error) {
             console.error("Error fetching job application", error)
@@ -198,13 +200,14 @@ console.log("................");
         }
     },
 
-    deleteJob: async(req: Request, res: Response)=>{
+    softDeleteJob: async(req: Request, res: Response)=>{
         try {
             const jobId = req.params.id;
+            console.log("paramss",jobId);
             if(!jobId){
                 return res.status(400).json({error:"Job id is not reached"})
             }
-            const operation = 'delete-job'
+            const operation = 'update-job-status'
             const response = await jobpostRabbitMqClient.produce({jobId}, operation);
             return res.json(response);
         } catch (error) {

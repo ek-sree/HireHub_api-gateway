@@ -15,7 +15,7 @@ jobpostRoutet.post('/acceptApplication', authencticateToken, jobpostController.a
 jobpostRoutet.post('/rejectApplication', authencticateToken, jobpostController.rejectApplication);
 jobpostRoutet.get('/acceptedApplications', authencticateToken, jobpostController.selectedCandidtes);
 jobpostRoutet.get('/shortlistedApplication', authencticateToken, jobpostController.shortListedApplication);
-jobpostRoutet.delete('/deleteJob/:id', authencticateToken, jobpostController.deleteJob);
+jobpostRoutet.put('/softdeleteJob/:id', authencticateToken, jobpostController.softDeleteJob);
 
 
 export { jobpostRoutet }

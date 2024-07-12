@@ -5,7 +5,6 @@ export default class Consumer {
     constructor(private channel: Channel, private replyQueueName: string, private eventEmitter: EventEmitter) {}
 
     async consumeMessage() {
-        console.log("Ready to consume message from post service");
         this.channel.consume(this.replyQueueName, (message: ConsumeMessage | null) => {
             if(message) {
                 this.eventEmitter.emit(message.properties.correlationId.toString(), message);
