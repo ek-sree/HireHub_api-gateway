@@ -90,7 +90,6 @@ export const userController = {
 
     login:(req:Request, res:Response)=>{
         try {
-            console.log("Reached logginf");
             
             Userclient.Login(req.body, (err: Error | null, result: any)=>{
                 if(err){
@@ -346,6 +345,39 @@ export const userController = {
         } catch (error) {
             console.log("Error occured removing user cv");
             return res.status(500).json("Error occured in gateway while removing cv");
+        }
+    },
+
+    addProfile: async(req:Request, res:Response)=>{
+        try {
+            const image = req.file;
+            const email = req.query.email;
+            if(!email || !image){
+                return res.status(400).json({ success: false, message: 'No image or email found' });
+            }
+            console.log("data got from client to api gateway", email, image);
+            
+            const operation = 'profile-add'
+            const response = await userRabbitMqClient.produce({email,image},operation)
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured adding user profile");
+            return res.status(500).json("Error occured in gateway while adding user profile");
+        }
+    },
+
+    getProfileImages: async(req:Request, res:Response)=>{
+        try {
+            const email = req.query.email;
+            if(!email){
+                return res.status(400).json({ success: false, message: 'No email found' });
+            }
+            const operation = 'fetch-profile-image';
+            const response = await userRabbitMqClient.produce({email}, operation)
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured fetching user profile");
+            return res.status(500).json("Error occured in gateway while fetching user profile");
         }
     }
 }

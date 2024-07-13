@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser';
 import { recruiterRouter } from './modules/recruiter/router';
 import { adminRouter } from './modules/user/adminRoutes';
 import { jobpostRoutet } from './modules/post/jobpostroute';
+import { postRouter } from './modules/post/postRouter';
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use('/', userRouter);
 app.use('/recruiter', recruiterRouter);
 app.use('/admin', adminRouter);
 app.use('/recruiter/jobpost',jobpostRoutet);
+app.use('/post', postRouter);
 
 
 const serverStart = async()=>{
