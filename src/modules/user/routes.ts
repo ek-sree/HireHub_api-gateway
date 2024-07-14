@@ -26,5 +26,7 @@ userRouter.get('/getCv', authencticateToken, userController.fetchCv);
 userRouter.delete('/deleteCv', authencticateToken, userController.deleteCv);
 userRouter.post('/addProfileImg', authencticateToken,upload.single('image'), userController.addProfile);
 userRouter.get('/getProfileImages', authencticateToken, userController.getProfileImages);
+userRouter.post('/addCoverPhoto', authencticateToken, upload.single('image'), userController.addCoverImg);
+userRouter.get('/getCoverImage', authencticateToken, userController.getCoverImg);
 
 export { userRouter }

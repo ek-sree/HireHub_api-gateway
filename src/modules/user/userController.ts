@@ -146,12 +146,12 @@ export const userController = {
 
     logout: (req: Request, res: Response) => {
         try {
-            console.log("User logout reaching here");
             res.clearCookie('role');
             res.clearCookie('isRecruiter');
             res.clearCookie('token');
             res.clearCookie('user')
             
+            console.log("User logout reaching here");
             return res.json({success: true})
         } catch (error) {
             console.log("Error during login with google auth", error);
@@ -378,6 +378,40 @@ export const userController = {
         } catch (error) {
             console.log("Error occured fetching user profile");
             return res.status(500).json("Error occured in gateway while fetching user profile");
+        }
+    },
+
+    addCoverImg: async(req: Request, res:Response)=>{
+        console.log("dadadadada",req.file,req.query.email);
+        
+        try {
+            const email = req.query.email;
+            const image = req.file;
+
+            if(!email || !image){
+                return res.status(400).json({ success: false, message: 'No image or email found' });
+            }
+            const operation = 'add-cover-img';
+            const response = await userRabbitMqClient.produce({email,image},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured adding user cover img");
+            return res.status(500).json("Error occured in gateway while adding user cover img");
+        }
+    },
+
+    getCoverImg: async(req: Request, res:Response)=>{
+        try {
+            const email = req.query.email;
+            if(!email){
+                return res.status(400).json({ success: false, message: 'No email found' });
+            }
+            const operation = 'get-cover-image';
+            const response = await userRabbitMqClient.produce({email},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured fetching user cover img");
+            return res.status(500).json("Error occured in gateway while fetching user cover img");
         }
     }
 }
