@@ -207,8 +207,10 @@ export const userController = {
     viewDetails: async(req: Request, res: Response)=>{
         try {
             const operation = 'view-details';
-            const email = req.query.email
-            const response = await userRabbitMqClient.produce({email}, operation)
+            const userId = req.query.userId
+            console.log("view details id", userId);
+            
+            const response = await userRabbitMqClient.produce({userId}, operation)
             
             return res.json(response);
         } catch (error) {
@@ -219,11 +221,11 @@ export const userController = {
 
     userInfo: async(req: Request, res: Response)=> {
         try {
-            console.log("info apigateway",req.query.email);
+            console.log("info apigateway",req.query.userId);
             
-            const email = req.query.email;
+            const userId = req.query.userId;
             const operation = 'user-info';
-            const response = await userRabbitMqClient.produce({email}, operation);
+            const response = await userRabbitMqClient.produce({userId}, operation);
             res.json(response);
         } catch (error) {
             console.log("Error occured while fetching user infos",error);
@@ -271,10 +273,10 @@ export const userController = {
 
     usersSkills: async (req: Request, res: Response) => {
         try {
-            const email = req.query.email as string; 
+            const userId = req.query.userId as string; 
             const operation = 'fetch-skills';
             
-            const response = await userRabbitMqClient.produce({ email }, operation);
+            const response = await userRabbitMqClient.produce({ userId }, operation);
             return res.json(response);
         } catch (error) {
             console.log("Error occurred while fetching user skills", error);
@@ -368,12 +370,12 @@ export const userController = {
 
     getProfileImages: async(req:Request, res:Response)=>{
         try {
-            const email = req.query.email;
-            if(!email){
+            const userId = req.query.userId;
+            if(!userId){
                 return res.status(400).json({ success: false, message: 'No email found' });
             }
             const operation = 'fetch-profile-image';
-            const response = await userRabbitMqClient.produce({email}, operation)
+            const response = await userRabbitMqClient.produce({userId}, operation)
             return res.json(response);
         } catch (error) {
             console.log("Error occured fetching user profile");
@@ -402,12 +404,14 @@ export const userController = {
 
     getCoverImg: async(req: Request, res:Response)=>{
         try {
-            const email = req.query.email;
-            if(!email){
+            const userId = req.query.userId;
+            console.log("Cover imggg",userId);
+            
+            if(!userId){
                 return res.status(400).json({ success: false, message: 'No email found' });
             }
             const operation = 'get-cover-image';
-            const response = await userRabbitMqClient.produce({email},operation);
+            const response = await userRabbitMqClient.produce({userId},operation);
             return res.json(response);
         } catch (error) {
             console.log("Error occured fetching user cover img");
