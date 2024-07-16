@@ -28,5 +28,8 @@ userRouter.post('/addProfileImg', authencticateToken,upload.single('image'), use
 userRouter.get('/getProfileImages', authencticateToken, userController.getProfileImages);
 userRouter.post('/addCoverPhoto', authencticateToken, upload.single('image'), userController.addCoverImg);
 userRouter.get('/getCoverImage', authencticateToken, userController.getCoverImg);
+userRouter.post('/follow', authencticateToken, userController.follow);
+userRouter.post('/unfollow', authencticateToken, userController.unfollow);
+userRouter.get('/seachUsers', authencticateToken, userController.searchUsers);
 
 export { userRouter }

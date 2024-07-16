@@ -208,9 +208,8 @@ export const userController = {
         try {
             const operation = 'view-details';
             const userId = req.query.userId
-            console.log("view details id", userId);
-            
-            const response = await userRabbitMqClient.produce({userId}, operation)
+            const followerId = req.query.followerId;            
+            const response = await userRabbitMqClient.produce({userId, followerId}, operation)
             
             return res.json(response);
         } catch (error) {
@@ -405,7 +404,6 @@ export const userController = {
     getCoverImg: async(req: Request, res:Response)=>{
         try {
             const userId = req.query.userId;
-            console.log("Cover imggg",userId);
             
             if(!userId){
                 return res.status(400).json({ success: false, message: 'No email found' });
@@ -416,6 +414,52 @@ export const userController = {
         } catch (error) {
             console.log("Error occured fetching user cover img");
             return res.status(500).json("Error occured in gateway while fetching user cover img");
+        }
+    },
+
+    follow: async(req:Request, res:Response)=>{
+        try {
+            const userId = req.query.userId;
+            const followerId = req.body;
+            if(!userId || !followerId){
+                return res.status(400).json({ success: false, message: 'No Id found' });
+            }
+            const operation = 'follow';
+            const response = await userRabbitMqClient.produce({userId, followerId},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured following ");
+            return res.status(500).json("Error occured in gateway while following ");
+        }
+    },
+
+    unfollow: async(req:Request, res:Response)=>{
+        try {
+            const userId = req.query.userId;
+            const followerId = req.query.id;
+            if(!userId || !followerId){
+                return res.status(400).json({ success: false, message: 'No Id found' });
+            }
+            const operation = 'unfollow';
+            const response = await userRabbitMqClient.produce({userId, followerId},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured unfollowing ");
+            return res.status(500).json("Error occured in gateway while unfollowing ");
+        }
+    },
+
+    searchUsers: async(req:Request, res:Response)=>{
+        try {
+            const searchQuery = req.query.searchQuery
+            console.log("seach res",searchQuery);
+            
+            const operation = 'search-users';
+            const response = await userRabbitMqClient.produce({searchQuery},operation)
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured searchQuery");
+            return res.status(500).json("Error occured in gateway while search users");
         }
     }
 }
