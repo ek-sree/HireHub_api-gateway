@@ -43,8 +43,9 @@ export const postController = {
   getAllPosts: async (req: Request, res: Response) => {
     try {
       const operation = "get-all-posts";
+      const page = req.query.page;
       const result = (await postRabbitMqClient.produce(
-        {},
+        {page},
         operation
       )) as RabbitMQResponse<Post[]>;
 
@@ -104,6 +105,38 @@ export const postController = {
     } catch (error) {
       console.error("Error occurred while fetching users posts", error);
       res.status(500).json({ error: "Error occurred while fetching users posts" });
+    }
+  },
+
+  likePost: async(req:Request, res: Response)=>{
+    try {
+      const postId = req.query.postId;
+      const userId = req.query.userId;
+      if(!postId || !userId){
+        return res.status(400).json({ error: "UserId or PostId missing" });
+      }
+      const operation = 'like-post';
+      const response = await postRabbitMqClient.produce({postId,userId},operation);
+      return res.json(response);
+    } catch (error) {
+      console.error("Error occurred while liking posts", error);
+      res.status(500).json({ error: "Error occurred while liking users posts" });
+    }
+  },
+
+  unlikePost: async(req:Request, res:Response)=>{
+    try {
+      const postId = req.query.postId;
+      const userId = req.query.userId;
+      if(!postId || !userId){
+        return res.status(400).json({ error: "UserId or PostId missing" });
+      }
+      const operation = 'unlike-post';
+      const response = await postRabbitMqClient.produce({postId,userId},operation);
+      return res.json(response);
+    } catch (error) {
+      console.error("Error occurred while unliking posts", error);
+      res.status(500).json({ error: "Error occurred while unliking users posts" });
     }
   }
 };
