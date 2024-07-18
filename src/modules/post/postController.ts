@@ -12,6 +12,18 @@ interface User {
   _id: string;
 }
 
+interface CommentData {
+  UserId: string;
+  content: string;
+  createdAt: Date;
+}
+
+interface PostWithComments {
+  _id: string;
+  UserId: string;
+  comments: CommentData[];
+}
+
 interface RabbitMQResponse<T> {
   success: boolean;
   message: string;
@@ -44,19 +56,13 @@ export const postController = {
     try {
       const operation = "get-all-posts";
       const page = req.query.page;
-      const result = (await postRabbitMqClient.produce(
-        {page},
-        operation
-      )) as RabbitMQResponse<Post[]>;
+      const result = (await postRabbitMqClient.produce({page},operation)) as RabbitMQResponse<Post[]>;
 
       if (result.success && Array.isArray(result.data)) {
         const userIds = [...new Set(result.data.map((post) => post.UserId))];
 
         const userOperation = "get-user-details-for-post";
-        const userResponse = (await userRabbitMqClient.produce(
-          { userIds },
-          userOperation
-        )) as RabbitMQResponse<User[]>;
+        const userResponse = (await userRabbitMqClient.produce({ userIds },userOperation)) as RabbitMQResponse<User[]>;
 
         if (userResponse.success && Array.isArray(userResponse.data)) {
           const userMap = new Map(
@@ -111,12 +117,14 @@ export const postController = {
   likePost: async(req:Request, res: Response)=>{
     try {
       const postId = req.query.postId;
-      const userId = req.query.userId;
-      if(!postId || !userId){
+      const UserId = req.query.UserId;
+      console.log("userId likeeee",UserId);
+      
+      if(!postId || !UserId){
         return res.status(400).json({ error: "UserId or PostId missing" });
       }
       const operation = 'like-post';
-      const response = await postRabbitMqClient.produce({postId,userId},operation);
+      const response = await postRabbitMqClient.produce({postId,UserId},operation);
       return res.json(response);
     } catch (error) {
       console.error("Error occurred while liking posts", error);
@@ -138,5 +146,144 @@ export const postController = {
       console.error("Error occurred while unliking posts", error);
       res.status(500).json({ error: "Error occurred while unliking users posts" });
     }
-  }
+  },
+
+  addComment: async (req: Request, res: Response) => {
+    try {
+      const postId = req.query.postId as string;
+      const UserId = req.query.userId as string;
+      const { newComment } = req.body;
+      console.log("datass comment", postId, UserId, newComment);
+      
+      if (!postId || !newComment || !UserId) {
+        return res.status(400).json({ error: "PostId, userId, or comment is missing" });
+      }
+  
+      const operation = 'add-comments';
+      const result = await postRabbitMqClient.produce({ postId, UserId, comments: newComment }, operation) as RabbitMQResponse<PostWithComments[]>;
+  
+      if (result.success && Array.isArray(result.data)) {
+        const userIds = [...new Set(result.data.map((post) => post.UserId))];
+  
+        const userOperation = "get-user-details-for-post";
+        const userResponse = await userRabbitMqClient.produce({ userIds }, userOperation) as RabbitMQResponse<User[]>;
+  
+        if (userResponse.success && Array.isArray(userResponse.data)) {
+          const userMap = new Map(
+            userResponse.data.map((user) => [user.id, user])
+          );
+  
+          const combinedData = result.data.map((post) => {
+            const user = userMap.get(post.UserId);
+            return { ...post, user: user || null };
+          });
+  
+          res.status(200).json({ success: true, data: combinedData });
+        } else {
+          const combinedData = result.data.map((post) => ({
+            ...post,
+            user: null,
+          }));
+          res.status(200).json({
+            success: true,
+            data: combinedData,
+            message: "Posts fetched, but user data not available",
+          });
+        }
+      } else {
+        res.status(404).json({ success: false, message: "No posts found" });
+      }
+    } catch (error) {
+      console.error("Error occurred while adding comment", error);
+      res.status(500).json({ error: "Error occurred while adding comment" });
+    }
+  },
+  
+
+  fetchComment: async(req:Request, res:Response)=>{
+    try {
+      const postId = req.query.postId;
+      console.log("fetch comment userId",postId);
+      
+      if(!postId){
+        return res.status(400).json({ error: "UserId or PostId missing" });
+      }
+      const operation = 'fetch-comment';
+      const result = await postRabbitMqClient.produce({postId},operation)as RabbitMQResponse<PostWithComments[]>;;
+      if (result.success && Array.isArray(result.data)) {
+        const userIds = [...new Set(result.data.map((post) => post.UserId))];
+  
+        const userOperation = "get-user-details-for-post";
+        const userResponse = await userRabbitMqClient.produce({ userIds }, userOperation) as RabbitMQResponse<User[]>;
+  
+        if (userResponse.success && Array.isArray(userResponse.data)) {
+          const userMap = new Map(
+            userResponse.data.map((user) => [user.id, user])
+          );
+  
+          const combinedData = result.data.map((post) => {
+            const user = userMap.get(post.UserId);
+            return { ...post, user: user || null };
+          });
+  
+          res.status(200).json({ success: true, data: combinedData });
+        } else {
+          const combinedData = result.data.map((post) => ({
+            ...post,
+            user: null,
+          }));
+          res.status(200).json({
+            success: true,
+            data: combinedData,
+            message: "Posts fetched, but user data not available",
+          });
+        }
+      } else {
+        res.status(404).json({ success: false, message: "No posts found" });
+      }
+    } catch (error) {
+      console.error("Error occurred while commenting posts", error);
+      res.status(500).json({ error: "Error occurred while commenting users posts" });
+    }
+  },
+
+  deleteComment: async(req: Request, res:Response)=>{
+    try {
+      const id = req.query.commentId;
+      const postId = req.query.postId;
+      console.log("delete comment ids",id, postId);
+      
+      if(!id || !postId){
+        return res.status(400).json({ error: "commentId or postId were missing" });
+      }
+      const operation = 'delete-comment';
+      console.log("is heree ");
+      
+      const response = await postRabbitMqClient.produce({id,postId},operation);
+      return res.json(response);
+    } catch (error) {
+      console.error("Error occurred while deleting comment", error);
+      res.status(500).json({ error: "Error occurred while deleting comment" });
+    }
+  },
+
+  deletePost: async (req: Request, res: Response) => {
+    try {
+        const postId = req.query.postId;
+        const imageUrl = req.query.imageUrl;
+        console.log("ids post delete", postId, imageUrl);
+
+        if (!postId || !imageUrl) {
+            return res.status(400).json({ error: "PostId or imageUrl were missing" });
+        }
+
+        const operation = 'delete-post';
+        const response = await postRabbitMqClient.produce({ postId, imageUrl }, operation);
+        return res.json(response);
+    } catch (error) {
+        console.error("Error occurred while deleting post", error);
+        res.status(500).json({ error: "Error occurred while deleting post" });
+    }
+}
+
 };

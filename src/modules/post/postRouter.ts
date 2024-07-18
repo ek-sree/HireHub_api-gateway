@@ -10,5 +10,9 @@ postRouter.get('/getPosts', authencticateToken, postController.getAllPosts);
 postRouter.get('/userPosts', authencticateToken, postController.getUserPosts);
 postRouter.post('/likePost', authencticateToken, postController.likePost);
 postRouter.post('/unlikePost', authencticateToken, postController.unlikePost);
+postRouter.post('/addComment', authencticateToken, postController.addComment);
+postRouter.get('/viewComments', authencticateToken, postController.fetchComment);
+postRouter.delete('/deleteComment', authencticateToken, postController.deleteComment);
+postRouter.delete('/deletePost', authencticateToken, postController.deletePost);
 
 export {postRouter}
