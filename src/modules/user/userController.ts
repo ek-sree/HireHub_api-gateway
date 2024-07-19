@@ -406,7 +406,7 @@ export const userController = {
             const userId = req.query.userId;
             
             if(!userId){
-                return res.status(400).json({ success: false, message: 'No email found' });
+                return res.status(400).json({ success: false, message: 'No id found' });
             }
             const operation = 'get-cover-image';
             const response = await userRabbitMqClient.produce({userId},operation);
