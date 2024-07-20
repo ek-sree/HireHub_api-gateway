@@ -284,6 +284,25 @@ export const postController = {
         console.error("Error occurred while deleting post", error);
         res.status(500).json({ error: "Error occurred while deleting post" });
     }
+},
+
+reportPost: async(req:Request, res: Response)=>{
+  try {
+    const UserId = req.query.UserId;
+    const postId = req.query.postId;
+    const reason = req.body.reason;
+    console.log("found any??", UserId,postId,reason);
+    
+    if(!UserId || !postId || !reason){
+      return res.status(400).json({ error: "PostId, UserId or reason were missing" });
+    }
+    const operation = 'report-post'
+    const response = await postRabbitMqClient.produce({UserId, postId, reason}, operation);
+    return res.json(response);
+  } catch (error) {
+    console.error("Error occurred while reporting post", error);
+        res.status(500).json({ error: "Error occurred while reporting post" });
+    }
 }
 
 };

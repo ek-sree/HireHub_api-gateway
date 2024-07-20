@@ -3,6 +3,8 @@ import { Adminclient } from "./grpc/client/grpcClient";
 import { genenrateToken } from "../../jwt/jwtCreate";
 import userRabbitMqClient from './rabbitMQ/client';
 import recruiterRabbitMqClient from '../recruiter/rabbitMQ/client';
+import postRabbitMqClient from "../post/rabbitMQ/client";
+
 
 export const adminController = {
     
@@ -139,6 +141,18 @@ getUser: async (req: Request, res: Response) => {
             return res.json(response);
         } catch (error) {
             console.log("Error seaching recruiter list", error);
+            res.status(500).json({success: false, message: "Internal server error"})
+        }
+    },
+
+    getReportPost: async(req: Request, res:Response)=>{
+        try {
+            const { page = 1, limit = 2, sortOrder  } = req.query;
+            const operation = 'get-reported-post';
+            const response = await postRabbitMqClient.produce({page,limit,sortOrder},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error fetching report post list", error);
             res.status(500).json({success: false, message: "Internal server error"})
         }
     }
