@@ -39,7 +39,6 @@ export const postController = {
       if (!userId) {
         return res.status(400).json({ error: "UserId is missing" });
       }
-      console.log("Is anything here??", userId, text, images);
       const operation = "create-post";
       const response = await postRabbitMqClient.produce(
         { userId, text, images },
@@ -100,7 +99,6 @@ export const postController = {
   getUserPosts: async(req:Request, res:Response)=>{
     try {
       const userId = req.query.userId;
-      console.log("userIDdddd",userId);
       
       if(!userId){
         return res.status(400).json({ error: "UserId is missing" });
@@ -118,7 +116,6 @@ export const postController = {
     try {
       const postId = req.query.postId;
       const UserId = req.query.UserId;
-      console.log("userId likeeee",UserId);
       
       if(!postId || !UserId){
         return res.status(400).json({ error: "UserId or PostId missing" });
@@ -153,7 +150,6 @@ export const postController = {
       const postId = req.query.postId as string;
       const UserId = req.query.userId as string;
       const { newComment } = req.body;
-      console.log("datass comment", postId, UserId, newComment);
       
       if (!postId || !newComment || !UserId) {
         return res.status(400).json({ error: "PostId, userId, or comment is missing" });
@@ -203,7 +199,6 @@ export const postController = {
   fetchComment: async(req:Request, res:Response)=>{
     try {
       const postId = req.query.postId;
-      console.log("fetch comment userId",postId);
       
       if(!postId){
         return res.status(400).json({ error: "UserId or PostId missing" });
@@ -251,13 +246,11 @@ export const postController = {
     try {
       const id = req.query.commentId;
       const postId = req.query.postId;
-      console.log("delete comment ids",id, postId);
       
       if(!id || !postId){
         return res.status(400).json({ error: "commentId or postId were missing" });
       }
       const operation = 'delete-comment';
-      console.log("is heree ");
       
       const response = await postRabbitMqClient.produce({id,postId},operation);
       return res.json(response);
@@ -271,7 +264,6 @@ export const postController = {
     try {
         const postId = req.query.postId;
         const imageUrl = req.query.imageUrl;
-        console.log("ids post delete", postId, imageUrl);
 
         if (!postId || !imageUrl) {
             return res.status(400).json({ error: "PostId or imageUrl were missing" });
@@ -291,7 +283,6 @@ reportPost: async(req:Request, res: Response)=>{
     const UserId = req.query.UserId;
     const postId = req.query.postId;
     const reason = req.body.reason;
-    console.log("found any??", UserId,postId,reason);
     
     if(!UserId || !postId || !reason){
       return res.status(400).json({ error: "PostId, UserId or reason were missing" });
@@ -303,6 +294,24 @@ reportPost: async(req:Request, res: Response)=>{
     console.error("Error occurred while reporting post", error);
         res.status(500).json({ error: "Error occurred while reporting post" });
     }
+},
+
+updatePost: async(req:Request, res:Response)=>{
+  try {
+      const postId = req.params;
+      const description = req.body.description;
+      console.log("update post id", postId,description);
+      
+      if(!postId || !description){
+        return res.status(400).json({ error: "PostId is missing" });
+      }
+      const operation = 'update-post';
+      const response = await postRabbitMqClient.produce({postId,description}, operation);
+      return res.json(response);
+  } catch (error) {
+      console.log("Error editing user posts", error);
+      res.status(500).json({success: false, message: "Internal server error"})
+  }
 }
 
 };
