@@ -7,6 +7,7 @@ interface RabbitMqConfig {
             userQueue: string;
             recruiterQueue: string;
             postQueue: string;
+            messageQueue:string;
         };
     };
 }
@@ -17,7 +18,8 @@ const rabbitMqConfig: RabbitMqConfig = {
         queues: {
             userQueue: 'user_queue',
             recruiterQueue: 'recruiter_queue',
-            postQueue:'post_queue'
+            postQueue:'post_queue',
+            messageQueue:'message_queue'
         },
     },
 };
