@@ -4,6 +4,7 @@ import userRabbitMqClient from '../user/rabbitMQ/client';
 import logger from "../../utils/logger";
 
 interface Chat {
+    participants: any;
     _id: string;
     UserId: string;
 }
@@ -26,33 +27,38 @@ export const messageController = {
             if (!userId) {
                 return res.status(400).json({ error: "UserId is missing" });
             }
+            
             const operation = 'convo-users';
             const result = await messageRabbitMqClient.produce({ userId }, operation) as RabbitMQResponse<Chat[]>;
+            
             if (result.success && Array.isArray(result.data)) {
-                const userIds = [...new Set(result.data.map((post) => post.UserId))];
+                const allParticipants = result.data.flatMap(chat => chat.participants);
+                const uniqueParticipantIds = [...new Set(allParticipants)];
+                
                 const userOperation = "get-user-details-for-post";
-                const userResponse = await userRabbitMqClient.produce({ userIds }, userOperation) as RabbitMQResponse<User[]>;
-
+                const userResponse = await userRabbitMqClient.produce({ userIds: uniqueParticipantIds }, userOperation) as RabbitMQResponse<User[]>;
+    
                 if (userResponse.success && Array.isArray(userResponse.data)) {
                     const userMap = new Map(userResponse.data.map((user) => [user.id, user]));
-                    const combinedData = result.data.map((post) => {
-                        const user = userMap.get(post.UserId);
-                        return { ...post, user: user || null };
+                    
+                    const combinedData = result.data.map((chat) => {
+                        const chatUsers = chat.participants.map((participantId: string) => userMap.get(participantId) || null);
+                        return { 
+                            ...chat, 
+                            users: chatUsers
+                        };
                     });
+                    
                     res.status(200).json({ success: true, data: combinedData });
                 } else {
-                    const combinedData = result.data.map((post) => ({
-                        ...post,
-                        user: null,
-                    }));
                     res.status(200).json({
                         success: true,
-                        data: combinedData,
-                        message: "Posts fetched, but user data not available",
+                        data: result.data,
+                        message: "Chats fetched, but user data not available",
                     });
                 }
             } else {
-                res.status(404).json({ success: false, message: "No posts found" });
+                res.status(404).json({ success: false, message: "No chats found" });
             }
         } catch (error) {
             logger.error("Error occurred while fetching conversation users", { error });
@@ -69,7 +75,6 @@ export const messageController = {
             }
             const operation = 'get-chatId';
             const response = await messageRabbitMqClient.produce({ userId, recievedId }, operation);
-            logger.info("Chat ID fetched", { response });
             return res.json(response);
         } catch (error) {
             logger.error("Error occurred while fetching chat ID", { error });
@@ -80,7 +85,9 @@ export const messageController = {
     getMessage: async (req: Request, res: Response) => {
         try {
             const userId = req.query.userId as string;
-            const recievedId = req.query.recieverId as string;
+            const recievedId = req.query.receiverId as string;
+            console.log("both ids",userId,recievedId);
+            
             if (!userId || !recievedId) {
                 return res.status(400).json({ error: "UserId or receiver id is missing" });
             }
@@ -99,8 +106,6 @@ export const messageController = {
             if (userResponse.success && Array.isArray(userResponse.data) && userResponse.data.length > 0) {
                 responseData.user = userResponse.data[0];
             }
-
-            logger.info("Messages fetched", { responseData });
             res.status(200).json({ success: true, data: responseData });
         } catch (error) {
             logger.error("Error occurred while fetching messages", { error });
