@@ -86,7 +86,6 @@ export const messageController = {
         try {
             const userId = req.query.userId as string;
             const recievedId = req.query.receiverId as string;
-            console.log("both ids",userId,recievedId);
             
             if (!userId || !recievedId) {
                 return res.status(400).json({ error: "UserId or receiver id is missing" });
@@ -107,6 +106,26 @@ export const messageController = {
                 responseData.user = userResponse.data[0];
             }
             res.status(200).json({ success: true, data: responseData });
+        } catch (error) {
+            logger.error("Error occurred while fetching messages", { error });
+            res.status(500).json({ error: "Error occurred while fetching messages" });
+        }
+    },
+
+    saveImages: async(req:Request, res:Response)=>{
+        try {
+            const images = req.files;
+            const chatId = req.query.chatId;
+            const senderId = req.query.senderId;
+            const receiverId = req.query.receiverId;
+            console.log("bbbae2324",images,chatId,senderId,receiverId);
+            
+            if(!senderId || !chatId || !images || !receiverId){
+                return res.status(400).json({ error: "UserId , receiverId, or imgUrl is missing" });
+            }
+            const operation = 'save-image'
+            const response = await messageRabbitMqClient.produce({images, senderId, chatId, receiverId}, operation)
+            return res.json(response);
         } catch (error) {
             logger.error("Error occurred while fetching messages", { error });
             res.status(500).json({ error: "Error occurred while fetching messages" });

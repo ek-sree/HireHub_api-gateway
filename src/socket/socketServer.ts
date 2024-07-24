@@ -21,11 +21,12 @@ export const initializeSocket = (server: HttpServer) => {
     });
 
     socket.on('sendMessage', async (message) => {
-      const { chatId, content, senderId, receiverId } = message;
+      console.log("socket messages for upload111111",message);
+      
+      const { chatId, content,images, senderId, receiverId } = message;
       try {
         const operation = 'save-message';
-        const response = await messageRabbitMqClient.produce({ chatId, content, senderId, receiverId }, operation);
-        logger.info("Message sent", { chatId, response });
+        const response = await messageRabbitMqClient.produce({ chatId, content,images, senderId, receiverId }, operation);
         if (response && typeof response === 'object') {
           io.to(chatId).emit('newMessage', { ...message, ...response });
         } else {

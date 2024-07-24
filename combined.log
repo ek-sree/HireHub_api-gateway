@@ -1624,3 +1624,613 @@
 {"level":"info","message":"User connected","socketId":"_vr8vg9Kf7z2ahFLAAC5","timestamp":"2024-07-23T16:49:50.964Z"}
 {"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"_vr8vg9Kf7z2ahFLAAC5","timestamp":"2024-07-23T16:49:50.974Z"}
 {"level":"info","message":"User disconnected","socketId":"_vr8vg9Kf7z2ahFLAAC5","timestamp":"2024-07-23T16:53:10.715Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T04:10:35.240Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T04:10:35.243Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T04:10:35.244Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T04:10:35.244Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T04:10:35.247Z"}
+{"level":"info","message":"User connected","socketId":"PwnoSnbjmNZ5PeqrAAAB","timestamp":"2024-07-24T04:12:07.347Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"PwnoSnbjmNZ5PeqrAAAB","timestamp":"2024-07-24T04:12:23.227Z"}
+{"level":"info","message":"User disconnected","socketId":"PwnoSnbjmNZ5PeqrAAAB","timestamp":"2024-07-24T04:19:32.349Z"}
+{"level":"info","message":"User connected","socketId":"niy-sWYQa2InJ-pcAAAD","timestamp":"2024-07-24T04:19:32.371Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"niy-sWYQa2InJ-pcAAAD","timestamp":"2024-07-24T04:19:32.387Z"}
+{"level":"info","message":"User disconnected","socketId":"niy-sWYQa2InJ-pcAAAD","timestamp":"2024-07-24T04:21:12.352Z"}
+{"level":"info","message":"User connected","socketId":"hHJ9DPNa3-Ng5EafAAAF","timestamp":"2024-07-24T04:21:12.374Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"hHJ9DPNa3-Ng5EafAAAF","timestamp":"2024-07-24T04:21:12.389Z"}
+{"level":"info","message":"User disconnected","socketId":"hHJ9DPNa3-Ng5EafAAAF","timestamp":"2024-07-24T04:21:14.341Z"}
+{"level":"info","message":"User connected","socketId":"SSJQKaCEZcAs2e2eAAAH","timestamp":"2024-07-24T04:21:14.365Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"SSJQKaCEZcAs2e2eAAAH","timestamp":"2024-07-24T04:21:14.371Z"}
+{"level":"info","message":"User disconnected","socketId":"SSJQKaCEZcAs2e2eAAAH","timestamp":"2024-07-24T04:21:16.332Z"}
+{"level":"info","message":"User connected","socketId":"45TOXzmCaears73jAAAJ","timestamp":"2024-07-24T04:21:16.358Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"45TOXzmCaears73jAAAJ","timestamp":"2024-07-24T04:21:16.371Z"}
+{"level":"info","message":"User disconnected","socketId":"45TOXzmCaears73jAAAJ","timestamp":"2024-07-24T04:21:49.343Z"}
+{"level":"info","message":"User connected","socketId":"RcXNWx_AETGMcWUWAAAL","timestamp":"2024-07-24T04:21:49.359Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"RcXNWx_AETGMcWUWAAAL","timestamp":"2024-07-24T04:21:49.401Z"}
+{"level":"info","message":"User disconnected","socketId":"RcXNWx_AETGMcWUWAAAL","timestamp":"2024-07-24T04:21:51.167Z"}
+{"level":"info","message":"User connected","socketId":"7EKFU8QxGe2msxlkAAAN","timestamp":"2024-07-24T04:21:55.315Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"7EKFU8QxGe2msxlkAAAN","timestamp":"2024-07-24T04:21:55.324Z"}
+{"level":"info","message":"User disconnected","socketId":"7EKFU8QxGe2msxlkAAAN","timestamp":"2024-07-24T04:30:29.378Z"}
+{"level":"info","message":"User connected","socketId":"rOXmqZd7R5BQJFf-AAAP","timestamp":"2024-07-24T04:30:29.400Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"rOXmqZd7R5BQJFf-AAAP","timestamp":"2024-07-24T04:30:29.413Z"}
+{"level":"info","message":"User disconnected","socketId":"rOXmqZd7R5BQJFf-AAAP","timestamp":"2024-07-24T04:30:36.362Z"}
+{"level":"info","message":"User connected","socketId":"GbDs7KRm2M8-_HVXAAAR","timestamp":"2024-07-24T04:38:24.102Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"GbDs7KRm2M8-_HVXAAAR","timestamp":"2024-07-24T04:38:24.113Z"}
+{"level":"info","message":"User disconnected","socketId":"GbDs7KRm2M8-_HVXAAAR","timestamp":"2024-07-24T04:38:58.831Z"}
+{"level":"info","message":"User connected","socketId":"wVb4Gndj8huK6JANAAAT","timestamp":"2024-07-24T04:38:58.875Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"wVb4Gndj8huK6JANAAAT","timestamp":"2024-07-24T04:38:58.886Z"}
+{"level":"info","message":"User disconnected","socketId":"wVb4Gndj8huK6JANAAAT","timestamp":"2024-07-24T04:39:06.535Z"}
+{"level":"info","message":"User connected","socketId":"JdH5CSyfMQPUvBSdAAAV","timestamp":"2024-07-24T04:39:10.155Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"JdH5CSyfMQPUvBSdAAAV","timestamp":"2024-07-24T04:39:10.163Z"}
+{"level":"info","message":"User disconnected","socketId":"JdH5CSyfMQPUvBSdAAAV","timestamp":"2024-07-24T04:40:40.625Z"}
+{"level":"info","message":"User connected","socketId":"cllGTvmDv599bQkMAAAX","timestamp":"2024-07-24T04:40:41.550Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"cllGTvmDv599bQkMAAAX","timestamp":"2024-07-24T04:40:43.028Z"}
+{"level":"info","message":"User disconnected","socketId":"cllGTvmDv599bQkMAAAX","timestamp":"2024-07-24T04:46:29.336Z"}
+{"level":"info","message":"User connected","socketId":"_X4qJzBjU1Uq5X0ZAAAZ","timestamp":"2024-07-24T04:46:29.373Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"_X4qJzBjU1Uq5X0ZAAAZ","timestamp":"2024-07-24T04:46:29.380Z"}
+{"level":"info","message":"User disconnected","socketId":"_X4qJzBjU1Uq5X0ZAAAZ","timestamp":"2024-07-24T04:46:55.654Z"}
+{"level":"info","message":"User connected","socketId":"nfbHGxH-wWPcrFzhAAAb","timestamp":"2024-07-24T04:47:02.043Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"nfbHGxH-wWPcrFzhAAAb","timestamp":"2024-07-24T04:47:17.003Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"Message sent","response":{"data":{"__v":0,"_id":"66a087706a7f08c1401e50ac","chatId":"669f7e95e4122c72b1309517","content":"👨🏿‍🦲nigga","createdAt":"2024-07-24T04:47:44.830Z","recieverId":"6676849d8d08f34de01c5593","senderId":"66768bee8d08f34de01c5597","updatedAt":"2024-07-24T04:47:44.830Z"},"message":"Message created successfully","success":true},"timestamp":"2024-07-24T04:47:45.009Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"Message sent","response":{"data":{"__v":0,"_id":"66a087b46a7f08c1401e50af","chatId":"669f7e95e4122c72b1309517","content":"heeey","createdAt":"2024-07-24T04:48:52.298Z","recieverId":"6676849d8d08f34de01c5593","senderId":"66768bee8d08f34de01c5597","updatedAt":"2024-07-24T04:48:52.298Z"},"message":"Message created successfully","success":true},"timestamp":"2024-07-24T04:48:52.591Z"}
+{"level":"info","message":"User disconnected","socketId":"nfbHGxH-wWPcrFzhAAAb","timestamp":"2024-07-24T04:49:25.349Z"}
+{"level":"info","message":"User connected","socketId":"BRUzBdv5vvTYePvAAAAd","timestamp":"2024-07-24T04:49:25.375Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"BRUzBdv5vvTYePvAAAAd","timestamp":"2024-07-24T04:49:25.382Z"}
+{"level":"info","message":"User disconnected","socketId":"BRUzBdv5vvTYePvAAAAd","timestamp":"2024-07-24T04:49:43.332Z"}
+{"level":"info","message":"User connected","socketId":"9JR16AL3TVrGlPryAAAf","timestamp":"2024-07-24T04:49:43.349Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"9JR16AL3TVrGlPryAAAf","timestamp":"2024-07-24T04:49:43.358Z"}
+{"level":"info","message":"User disconnected","socketId":"9JR16AL3TVrGlPryAAAf","timestamp":"2024-07-24T04:50:39.365Z"}
+{"level":"info","message":"User connected","socketId":"OO5wgQHLawgcPhpJAAAh","timestamp":"2024-07-24T04:50:55.057Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"OO5wgQHLawgcPhpJAAAh","timestamp":"2024-07-24T04:50:55.066Z"}
+{"level":"info","message":"User disconnected","socketId":"OO5wgQHLawgcPhpJAAAh","timestamp":"2024-07-24T04:51:22.335Z"}
+{"level":"info","message":"User connected","socketId":"6uGcLXmCrPXwixtiAAAj","timestamp":"2024-07-24T04:51:22.353Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"6uGcLXmCrPXwixtiAAAj","timestamp":"2024-07-24T04:51:22.364Z"}
+{"level":"info","message":"User disconnected","socketId":"6uGcLXmCrPXwixtiAAAj","timestamp":"2024-07-24T04:51:57.333Z"}
+{"level":"info","message":"User connected","socketId":"thARxhXyw-f1cBCAAAAl","timestamp":"2024-07-24T04:51:57.354Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"thARxhXyw-f1cBCAAAAl","timestamp":"2024-07-24T04:51:57.360Z"}
+{"level":"info","message":"User disconnected","socketId":"thARxhXyw-f1cBCAAAAl","timestamp":"2024-07-24T04:52:20.183Z"}
+{"level":"info","message":"User connected","socketId":"VrDwUvQnZlOioV5-AAAn","timestamp":"2024-07-24T04:52:32.355Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"VrDwUvQnZlOioV5-AAAn","timestamp":"2024-07-24T04:52:32.366Z"}
+{"level":"info","message":"User connected","socketId":"b3WfFUmuPpdnE86aAAAp","timestamp":"2024-07-24T04:53:23.854Z"}
+{"level":"info","message":"User disconnected","socketId":"VrDwUvQnZlOioV5-AAAn","timestamp":"2024-07-24T04:53:24.340Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"b3WfFUmuPpdnE86aAAAp","timestamp":"2024-07-24T04:53:24.342Z"}
+{"level":"info","message":"User connected","socketId":"t2awVvefQbz3d-E5AAAr","timestamp":"2024-07-24T04:53:26.119Z"}
+{"level":"info","message":"User disconnected","socketId":"b3WfFUmuPpdnE86aAAAp","timestamp":"2024-07-24T04:53:26.339Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"t2awVvefQbz3d-E5AAAr","timestamp":"2024-07-24T04:53:26.340Z"}
+{"level":"info","message":"User connected","socketId":"tFy8eKjg86tirKAFAAAt","timestamp":"2024-07-24T04:53:27.956Z"}
+{"level":"info","message":"User disconnected","socketId":"t2awVvefQbz3d-E5AAAr","timestamp":"2024-07-24T04:53:28.336Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"tFy8eKjg86tirKAFAAAt","timestamp":"2024-07-24T04:53:28.339Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T04:54:05.950Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T04:54:05.957Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T04:54:05.958Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T04:54:05.959Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T04:54:05.970Z"}
+{"level":"info","message":"User connected","socketId":"zVQDFUQpogk0OcDYAAAB","timestamp":"2024-07-24T04:54:10.366Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T04:55:36.720Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T04:55:36.725Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T04:55:36.726Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T04:55:36.727Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T04:55:36.733Z"}
+{"level":"info","message":"User connected","socketId":"FhFZEq7A0DZ3PFSgAAAB","timestamp":"2024-07-24T04:55:39.364Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T05:15:02.186Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T05:15:02.194Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T05:15:02.196Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T05:15:02.196Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T05:15:02.208Z"}
+{"level":"info","message":"User connected","socketId":"g-En34UDyQDnGs7wAAAB","timestamp":"2024-07-24T05:15:07.381Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T05:15:48.637Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T05:15:48.643Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T05:15:48.648Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T05:15:48.649Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T05:15:48.655Z"}
+{"level":"info","message":"User connected","socketId":"co2KIuFv7nmXX-v8AAAB","timestamp":"2024-07-24T05:15:51.372Z"}
+{"level":"info","message":"User disconnected","socketId":"co2KIuFv7nmXX-v8AAAB","timestamp":"2024-07-24T05:15:56.843Z"}
+{"level":"info","message":"User connected","socketId":"ilDF0WUiz1EtmftkAAAD","timestamp":"2024-07-24T05:16:41.636Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"ilDF0WUiz1EtmftkAAAD","timestamp":"2024-07-24T05:16:41.644Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T05:18:24.897Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T05:18:24.904Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T05:18:24.905Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T05:18:24.906Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T05:18:24.915Z"}
+{"level":"info","message":"User connected","socketId":"VrfpGxiajKwRpUegAAAB","timestamp":"2024-07-24T05:18:39.547Z"}
+{"level":"info","message":"User disconnected","socketId":"VrfpGxiajKwRpUegAAAB","timestamp":"2024-07-24T05:19:13.317Z"}
+{"level":"info","message":"User connected","socketId":"_cTcXw9J5UH8wnjaAAAD","timestamp":"2024-07-24T05:19:14.168Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"_cTcXw9J5UH8wnjaAAAD","timestamp":"2024-07-24T06:21:11.959Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:27:33.991Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:27:33.993Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:27:33.994Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:27:33.994Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:27:33.997Z"}
+{"level":"info","message":"User connected","socketId":"g8TRPCbKiLwg_jsOAAAB","timestamp":"2024-07-24T06:27:34.121Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:27:45.554Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:27:45.556Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:27:45.556Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:27:45.556Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:27:45.559Z"}
+{"level":"info","message":"User connected","socketId":"gvCyBZ3f9ZV_PHY7AAAB","timestamp":"2024-07-24T06:27:45.607Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:27:57.368Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:27:57.371Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:27:57.371Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:27:57.372Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:27:57.375Z"}
+{"level":"info","message":"User connected","socketId":"mWokrb_c4rTIvPYMAAAB","timestamp":"2024-07-24T06:27:57.443Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:30:30.250Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:30:30.252Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:30:30.253Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:30:30.253Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:30:30.256Z"}
+{"level":"info","message":"User connected","socketId":"uK3U_18KLXjIztjOAAAB","timestamp":"2024-07-24T06:30:34.358Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:30:47.019Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:30:47.021Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:30:47.022Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:30:47.022Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:30:47.025Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:33:13.945Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:33:13.948Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:33:13.949Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:33:13.949Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:33:13.952Z"}
+{"level":"info","message":"User connected","socketId":"c1jN54nZJmnHPbouAAAB","timestamp":"2024-07-24T06:33:14.113Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:35:34.770Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:35:34.773Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:35:34.774Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:35:34.775Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:35:34.779Z"}
+{"level":"info","message":"User connected","socketId":"KT9oVAS8pMtLNOETAAAB","timestamp":"2024-07-24T06:35:34.860Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:36:42.294Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:36:42.297Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:36:42.298Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:36:42.298Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:36:42.301Z"}
+{"level":"info","message":"User connected","socketId":"flvsV6HwwPyE_0QWAAAB","timestamp":"2024-07-24T06:36:42.374Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:36:56.156Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:36:56.158Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:36:56.159Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:36:56.159Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:36:56.162Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:37:03.393Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:37:03.396Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:37:03.396Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:37:03.396Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:37:03.399Z"}
+{"level":"info","message":"User connected","socketId":"9bp2y8_zLrrrmz68AAAB","timestamp":"2024-07-24T06:37:05.352Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:37:16.244Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:37:16.247Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:37:16.247Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:37:16.249Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:37:16.252Z"}
+{"level":"info","message":"User connected","socketId":"UVwd8ACdm8AwzUC0AAAB","timestamp":"2024-07-24T06:37:17.347Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:37:33.602Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:37:33.604Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:37:33.604Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:37:33.605Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:37:33.607Z"}
+{"level":"info","message":"User connected","socketId":"W4iqLYJaELVKrdoLAAAB","timestamp":"2024-07-24T06:37:33.666Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:37:37.207Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:37:37.209Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:37:37.209Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:37:37.210Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:37:37.213Z"}
+{"level":"info","message":"User connected","socketId":"J0_970FjCqzzCgZXAAAB","timestamp":"2024-07-24T06:37:37.368Z"}
+{"level":"info","message":"User disconnected","socketId":"J0_970FjCqzzCgZXAAAB","timestamp":"2024-07-24T06:37:54.343Z"}
+{"level":"info","message":"User connected","socketId":"f1dnuWtSeRUqlNgXAAAD","timestamp":"2024-07-24T06:37:54.360Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"f1dnuWtSeRUqlNgXAAAD","timestamp":"2024-07-24T06:37:54.366Z"}
+{"level":"info","message":"User disconnected","socketId":"f1dnuWtSeRUqlNgXAAAD","timestamp":"2024-07-24T06:39:08.336Z"}
+{"level":"info","message":"User connected","socketId":"gwW1OEBgOoD0cBYSAAAF","timestamp":"2024-07-24T06:39:08.350Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"gwW1OEBgOoD0cBYSAAAF","timestamp":"2024-07-24T06:39:08.360Z"}
+{"level":"info","message":"User disconnected","socketId":"gwW1OEBgOoD0cBYSAAAF","timestamp":"2024-07-24T06:39:10.337Z"}
+{"level":"info","message":"User connected","socketId":"rCe2dVJLuktArZgnAAAH","timestamp":"2024-07-24T06:39:10.345Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"rCe2dVJLuktArZgnAAAH","timestamp":"2024-07-24T06:39:10.348Z"}
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:40:40.718Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:40:40.721Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:40:40.721Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:40:40.721Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:40:40.724Z"}
+{"level":"info","message":"User connected","socketId":"h37vRAtmANHI4MaTAAAB","timestamp":"2024-07-24T06:40:40.868Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:42:48.842Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:42:48.846Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:42:48.846Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:42:48.847Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:42:48.851Z"}
+{"level":"info","message":"User connected","socketId":"XKtLWoXakFIKX9SyAAAB","timestamp":"2024-07-24T06:42:53.349Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:43:30.779Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:43:30.783Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:43:30.783Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:43:30.784Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:43:30.788Z"}
+{"level":"info","message":"User connected","socketId":"VAF9N2T68FB2GV6CAAAB","timestamp":"2024-07-24T06:43:35.341Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:44:17.238Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:44:17.242Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:44:17.243Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:44:17.243Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:44:17.248Z"}
+{"level":"info","message":"User connected","socketId":"eqwk1rjoSYFqVrmRAAAB","timestamp":"2024-07-24T06:44:17.355Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T06:45:17.679Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T06:45:17.681Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T06:45:17.682Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T06:45:17.682Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T06:45:17.684Z"}
+{"level":"info","message":"User connected","socketId":"uMucVYSaN4jIT5_vAAAB","timestamp":"2024-07-24T06:45:19.346Z"}
+{"level":"info","message":"User disconnected","socketId":"uMucVYSaN4jIT5_vAAAB","timestamp":"2024-07-24T07:44:47.412Z"}
+{"level":"info","message":"User connected","socketId":"Yy2d_pGq-Cy-c9ClAAAD","timestamp":"2024-07-24T07:44:47.550Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Yy2d_pGq-Cy-c9ClAAAD","timestamp":"2024-07-24T07:44:47.574Z"}
+{"level":"info","message":"User disconnected","socketId":"Yy2d_pGq-Cy-c9ClAAAD","timestamp":"2024-07-24T07:45:29.982Z"}
+{"level":"info","message":"User connected","socketId":"djHIbYKLuHRh7SQfAAAF","timestamp":"2024-07-24T07:45:42.341Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"djHIbYKLuHRh7SQfAAAF","timestamp":"2024-07-24T07:45:42.344Z"}
+{"level":"info","message":"User disconnected","socketId":"djHIbYKLuHRh7SQfAAAF","timestamp":"2024-07-24T07:46:42.328Z"}
+{"level":"info","message":"User connected","socketId":"5EmEO2yRsuVymvSkAAAH","timestamp":"2024-07-24T07:46:42.345Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"5EmEO2yRsuVymvSkAAAH","timestamp":"2024-07-24T07:46:42.357Z"}
+{"level":"info","message":"User disconnected","socketId":"5EmEO2yRsuVymvSkAAAH","timestamp":"2024-07-24T07:46:45.338Z"}
+{"level":"info","message":"User connected","socketId":"euSHnfxYMVKoX_3UAAAJ","timestamp":"2024-07-24T07:46:45.346Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"euSHnfxYMVKoX_3UAAAJ","timestamp":"2024-07-24T07:46:45.352Z"}
+{"level":"info","message":"User disconnected","socketId":"euSHnfxYMVKoX_3UAAAJ","timestamp":"2024-07-24T07:46:54.326Z"}
+{"level":"info","message":"User connected","socketId":"2BqUEDRep-S7FVTnAAAL","timestamp":"2024-07-24T07:46:54.351Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"2BqUEDRep-S7FVTnAAAL","timestamp":"2024-07-24T07:46:54.353Z"}
+{"level":"info","message":"User disconnected","socketId":"2BqUEDRep-S7FVTnAAAL","timestamp":"2024-07-24T07:46:56.334Z"}
+{"level":"info","message":"User connected","socketId":"q5r1m_vIAMPtdatGAAAN","timestamp":"2024-07-24T07:46:56.343Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"q5r1m_vIAMPtdatGAAAN","timestamp":"2024-07-24T07:46:56.358Z"}
+{"level":"info","message":"User disconnected","socketId":"q5r1m_vIAMPtdatGAAAN","timestamp":"2024-07-24T07:47:07.337Z"}
+{"level":"info","message":"User connected","socketId":"_5LEo1j_OqSKG1FmAAAP","timestamp":"2024-07-24T07:47:07.345Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"_5LEo1j_OqSKG1FmAAAP","timestamp":"2024-07-24T07:47:07.352Z"}
+{"level":"info","message":"User disconnected","socketId":"_5LEo1j_OqSKG1FmAAAP","timestamp":"2024-07-24T07:47:12.331Z"}
+{"level":"info","message":"User connected","socketId":"_l-gvrhyLTmi5E0VAAAR","timestamp":"2024-07-24T07:47:12.351Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"_l-gvrhyLTmi5E0VAAAR","timestamp":"2024-07-24T07:47:12.359Z"}
+{"level":"info","message":"User disconnected","socketId":"_l-gvrhyLTmi5E0VAAAR","timestamp":"2024-07-24T07:47:42.336Z"}
+{"level":"info","message":"User connected","socketId":"ftvHuhrkC5-3xNlaAAAT","timestamp":"2024-07-24T07:47:42.345Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"ftvHuhrkC5-3xNlaAAAT","timestamp":"2024-07-24T07:47:42.362Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T07:48:25.695Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T07:48:25.697Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T07:48:25.698Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T07:48:25.698Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T07:48:25.702Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T07:48:32.391Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T07:48:32.394Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T07:48:32.394Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T07:48:32.394Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T07:48:32.397Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T07:48:37.058Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T07:48:37.061Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T07:48:37.061Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T07:48:37.062Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T07:48:37.065Z"}
+{"level":"info","message":"User connected","socketId":"-gFy8qvQ0rosBB2cAAAB","timestamp":"2024-07-24T07:48:37.136Z"}
+{"level":"info","message":"User disconnected","socketId":"-gFy8qvQ0rosBB2cAAAB","timestamp":"2024-07-24T07:50:59.593Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T07:51:07.128Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T07:51:07.130Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T07:51:07.131Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T07:51:07.131Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T07:51:07.134Z"}
+{"level":"info","message":"User connected","socketId":"p1-_s8rPtAoR2s66AAAB","timestamp":"2024-07-24T07:51:21.345Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"p1-_s8rPtAoR2s66AAAB","timestamp":"2024-07-24T07:51:21.351Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T07:52:08.434Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T07:52:08.436Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T07:52:08.437Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T07:52:08.437Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T07:52:08.440Z"}
+{"level":"info","message":"User connected","socketId":"2oZv3XkBVoKYQ_qiAAAB","timestamp":"2024-07-24T07:52:08.646Z"}
+{"level":"info","message":"User disconnected","socketId":"2oZv3XkBVoKYQ_qiAAAB","timestamp":"2024-07-24T07:57:29.275Z"}
+{"level":"info","message":"User connected","socketId":"A_VkGWaxCDJFAFoKAAAD","timestamp":"2024-07-24T09:03:14.648Z"}
+{"level":"info","message":"User disconnected","socketId":"A_VkGWaxCDJFAFoKAAAD","timestamp":"2024-07-24T09:05:02.249Z"}
+{"level":"info","message":"User connected","socketId":"nlSX0Li5MXpFb0yhAAAF","timestamp":"2024-07-24T09:05:02.646Z"}
+{"level":"info","message":"User disconnected","socketId":"nlSX0Li5MXpFb0yhAAAF","timestamp":"2024-07-24T09:05:24.975Z"}
+{"level":"info","message":"User connected","socketId":"hZWc1XstBEME370rAAAH","timestamp":"2024-07-24T09:05:25.187Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"hZWc1XstBEME370rAAAH","timestamp":"2024-07-24T09:07:01.611Z"}
+{"level":"info","message":"User disconnected","socketId":"hZWc1XstBEME370rAAAH","timestamp":"2024-07-24T09:07:01.714Z"}
+{"level":"info","message":"User connected","socketId":"Q77LKHyTqVAeu3axAAAJ","timestamp":"2024-07-24T09:07:11.034Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Q77LKHyTqVAeu3axAAAJ","timestamp":"2024-07-24T09:07:36.195Z"}
+{"level":"info","message":"User disconnected","socketId":"Q77LKHyTqVAeu3axAAAJ","timestamp":"2024-07-24T09:07:36.317Z"}
+{"level":"info","message":"User connected","socketId":"qKO9oEwebRfmt1WOAAAL","timestamp":"2024-07-24T09:08:03.358Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"qKO9oEwebRfmt1WOAAAL","timestamp":"2024-07-24T09:08:03.362Z"}
+{"level":"info","message":"User disconnected","socketId":"qKO9oEwebRfmt1WOAAAL","timestamp":"2024-07-24T09:10:30.582Z"}
+{"level":"info","message":"User connected","socketId":"D7fN8DVqXgFZaa_9AAAN","timestamp":"2024-07-24T09:10:31.022Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"D7fN8DVqXgFZaa_9AAAN","timestamp":"2024-07-24T09:10:32.871Z"}
+{"level":"info","message":"User disconnected","socketId":"D7fN8DVqXgFZaa_9AAAN","timestamp":"2024-07-24T09:16:13.668Z"}
+{"level":"info","message":"User connected","socketId":"vwZSsos0-sBaBRnVAAAP","timestamp":"2024-07-24T09:16:19.716Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"vwZSsos0-sBaBRnVAAAP","timestamp":"2024-07-24T09:16:19.725Z"}
+{"level":"info","message":"User disconnected","socketId":"vwZSsos0-sBaBRnVAAAP","timestamp":"2024-07-24T09:19:55.873Z"}
+{"level":"info","message":"User connected","socketId":"lgEa-IPpXEHWjFlcAAAR","timestamp":"2024-07-24T09:19:56.283Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"lgEa-IPpXEHWjFlcAAAR","timestamp":"2024-07-24T09:19:58.630Z"}
+{"level":"info","message":"User disconnected","socketId":"lgEa-IPpXEHWjFlcAAAR","timestamp":"2024-07-24T09:20:30.471Z"}
+{"level":"info","message":"User connected","socketId":"VRLkdSSCzmMJPvnbAAAT","timestamp":"2024-07-24T09:20:31.073Z"}
+{"level":"info","message":"User disconnected","socketId":"VRLkdSSCzmMJPvnbAAAT","timestamp":"2024-07-24T09:21:05.730Z"}
+{"level":"info","message":"User connected","socketId":"7mHgNhcUNTNB9oIGAAAV","timestamp":"2024-07-24T09:21:06.042Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"7mHgNhcUNTNB9oIGAAAV","timestamp":"2024-07-24T09:21:07.819Z"}
+{"level":"info","message":"User connected","socketId":"9XzDs03tUBqAckU7AAAX","timestamp":"2024-07-24T09:21:22.071Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"9XzDs03tUBqAckU7AAAX","timestamp":"2024-07-24T09:21:28.977Z"}
+{"level":"info","message":"User disconnected","socketId":"7mHgNhcUNTNB9oIGAAAV","timestamp":"2024-07-24T09:25:24.664Z"}
+{"level":"info","message":"User connected","socketId":"pAL_j8d83wnW9GNSAAAZ","timestamp":"2024-07-24T09:25:25.133Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"pAL_j8d83wnW9GNSAAAZ","timestamp":"2024-07-24T09:25:27.073Z"}
+{"level":"info","message":"User disconnected","socketId":"pAL_j8d83wnW9GNSAAAZ","timestamp":"2024-07-24T09:30:02.883Z"}
+{"level":"info","message":"User connected","socketId":"x6lbcgweO2zsy3LxAAAb","timestamp":"2024-07-24T09:30:07.132Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"x6lbcgweO2zsy3LxAAAb","timestamp":"2024-07-24T09:30:07.136Z"}
+{"level":"info","message":"User disconnected","socketId":"x6lbcgweO2zsy3LxAAAb","timestamp":"2024-07-24T09:31:34.251Z"}
+{"level":"info","message":"User connected","socketId":"mS3-BuTzX6ziXyQCAAAd","timestamp":"2024-07-24T09:31:34.717Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"mS3-BuTzX6ziXyQCAAAd","timestamp":"2024-07-24T09:31:37.000Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-24T09:33:13.581Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-24T09:33:13.583Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-24T09:33:13.584Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-24T09:33:13.584Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-24T09:33:13.587Z"}
+{"level":"info","message":"User connected","socketId":"VfiNQg6LkY3VLuUPAAAB","timestamp":"2024-07-24T09:33:13.641Z"}
+{"level":"info","message":"User connected","socketId":"PbAJ0hxtxgN8ekMHAAAD","timestamp":"2024-07-24T09:33:16.113Z"}
+{"level":"info","message":"User disconnected","socketId":"PbAJ0hxtxgN8ekMHAAAD","timestamp":"2024-07-24T09:33:27.328Z"}
+{"level":"info","message":"User connected","socketId":"kpo62Os8bRSIITMeAAAF","timestamp":"2024-07-24T09:33:27.714Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"kpo62Os8bRSIITMeAAAF","timestamp":"2024-07-24T09:33:30.965Z"}
+{"level":"info","message":"User disconnected","socketId":"kpo62Os8bRSIITMeAAAF","timestamp":"2024-07-24T09:36:37.803Z"}
+{"level":"info","message":"User connected","socketId":"fLmI4pzxOgvCGq0AAAAH","timestamp":"2024-07-24T09:36:38.173Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"fLmI4pzxOgvCGq0AAAAH","timestamp":"2024-07-24T09:36:40.032Z"}
+{"level":"info","message":"User disconnected","socketId":"fLmI4pzxOgvCGq0AAAAH","timestamp":"2024-07-24T09:44:39.409Z"}
+{"level":"info","message":"User connected","socketId":"Yt3NiOtWy18dSYC1AAAJ","timestamp":"2024-07-24T09:44:39.833Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Yt3NiOtWy18dSYC1AAAJ","timestamp":"2024-07-24T09:44:41.384Z"}
+{"level":"info","message":"User disconnected","socketId":"Yt3NiOtWy18dSYC1AAAJ","timestamp":"2024-07-24T09:46:38.210Z"}
+{"level":"info","message":"User connected","socketId":"GWLo0FhoO71mIZS9AAAL","timestamp":"2024-07-24T09:46:38.568Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"GWLo0FhoO71mIZS9AAAL","timestamp":"2024-07-24T09:46:40.959Z"}
+{"level":"info","message":"User disconnected","socketId":"GWLo0FhoO71mIZS9AAAL","timestamp":"2024-07-24T09:48:13.324Z"}
+{"level":"info","message":"User disconnected","socketId":"VfiNQg6LkY3VLuUPAAAB","timestamp":"2024-07-24T09:48:13.336Z"}
+{"level":"info","message":"User connected","socketId":"FZXypYnFHm88ZSMTAAAN","timestamp":"2024-07-24T09:48:13.346Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"FZXypYnFHm88ZSMTAAAN","timestamp":"2024-07-24T09:48:13.353Z"}
+{"level":"info","message":"User connected","socketId":"l1gpI0eQK6ayapZeAAAP","timestamp":"2024-07-24T09:48:13.358Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"l1gpI0eQK6ayapZeAAAP","timestamp":"2024-07-24T09:48:13.366Z"}
+{"level":"info","message":"User disconnected","socketId":"l1gpI0eQK6ayapZeAAAP","timestamp":"2024-07-24T09:48:19.313Z"}
+{"level":"info","message":"User disconnected","socketId":"FZXypYnFHm88ZSMTAAAN","timestamp":"2024-07-24T09:48:19.316Z"}
+{"level":"info","message":"User connected","socketId":"aDhNi5WsMjaT-8ObAAAS","timestamp":"2024-07-24T09:48:19.331Z"}
+{"level":"info","message":"User connected","socketId":"eLsw3qNfAbFe0sQWAAAT","timestamp":"2024-07-24T09:48:19.341Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"aDhNi5WsMjaT-8ObAAAS","timestamp":"2024-07-24T09:48:19.348Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"eLsw3qNfAbFe0sQWAAAT","timestamp":"2024-07-24T09:48:19.356Z"}
+{"level":"info","message":"User disconnected","socketId":"eLsw3qNfAbFe0sQWAAAT","timestamp":"2024-07-24T09:48:21.799Z"}
+{"level":"info","message":"User connected","socketId":"FZsYilQ4UjUt_PHZAAAV","timestamp":"2024-07-24T09:48:22.211Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"FZsYilQ4UjUt_PHZAAAV","timestamp":"2024-07-24T09:48:23.164Z"}
+{"level":"info","message":"User disconnected","socketId":"FZsYilQ4UjUt_PHZAAAV","timestamp":"2024-07-24T09:49:23.327Z"}
+{"level":"info","message":"User disconnected","socketId":"aDhNi5WsMjaT-8ObAAAS","timestamp":"2024-07-24T09:49:23.332Z"}
+{"level":"info","message":"User connected","socketId":"UK95TssoXKp4L0YuAAAY","timestamp":"2024-07-24T09:49:23.342Z"}
+{"level":"info","message":"User connected","socketId":"tq8tV2IJ53pnwSTAAAAZ","timestamp":"2024-07-24T09:49:23.346Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"UK95TssoXKp4L0YuAAAY","timestamp":"2024-07-24T09:49:23.352Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"tq8tV2IJ53pnwSTAAAAZ","timestamp":"2024-07-24T09:49:23.353Z"}
+{"level":"info","message":"User disconnected","socketId":"tq8tV2IJ53pnwSTAAAAZ","timestamp":"2024-07-24T09:49:26.311Z"}
+{"level":"info","message":"User disconnected","socketId":"UK95TssoXKp4L0YuAAAY","timestamp":"2024-07-24T09:49:26.312Z"}
+{"level":"info","message":"User connected","socketId":"KE0mAloR09TDsnHXAAAc","timestamp":"2024-07-24T09:49:26.324Z"}
+{"level":"info","message":"User connected","socketId":"RUp4H7ujrQpKAmAbAAAd","timestamp":"2024-07-24T09:49:26.329Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"KE0mAloR09TDsnHXAAAc","timestamp":"2024-07-24T09:49:26.333Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"RUp4H7ujrQpKAmAbAAAd","timestamp":"2024-07-24T09:49:26.340Z"}
+{"level":"info","message":"User disconnected","socketId":"KE0mAloR09TDsnHXAAAc","timestamp":"2024-07-24T09:49:29.308Z"}
+{"level":"info","message":"User disconnected","socketId":"RUp4H7ujrQpKAmAbAAAd","timestamp":"2024-07-24T09:49:29.315Z"}
+{"level":"info","message":"User connected","socketId":"bpOz580CykCvSjscAAAf","timestamp":"2024-07-24T09:49:29.316Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"bpOz580CykCvSjscAAAf","timestamp":"2024-07-24T09:49:29.324Z"}
+{"level":"info","message":"User connected","socketId":"Fo-yBMaKXuopAszEAAAh","timestamp":"2024-07-24T09:49:29.327Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Fo-yBMaKXuopAszEAAAh","timestamp":"2024-07-24T09:49:29.333Z"}
+{"level":"info","message":"User disconnected","socketId":"Fo-yBMaKXuopAszEAAAh","timestamp":"2024-07-24T09:49:37.258Z"}
+{"level":"info","message":"User connected","socketId":"odzndw1cQklmtBfOAAAj","timestamp":"2024-07-24T09:49:37.270Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"odzndw1cQklmtBfOAAAj","timestamp":"2024-07-24T09:49:37.278Z"}
+{"level":"info","message":"User disconnected","socketId":"odzndw1cQklmtBfOAAAj","timestamp":"2024-07-24T09:49:38.218Z"}
+{"level":"info","message":"User connected","socketId":"Z2od4y6F4sKpfr9oAAAl","timestamp":"2024-07-24T09:49:38.228Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Z2od4y6F4sKpfr9oAAAl","timestamp":"2024-07-24T09:49:38.234Z"}
+{"level":"info","message":"User disconnected","socketId":"Z2od4y6F4sKpfr9oAAAl","timestamp":"2024-07-24T09:50:20.377Z"}
+{"level":"info","message":"User connected","socketId":"mromqjXKx8RXSfiyAAAn","timestamp":"2024-07-24T09:50:20.723Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"mromqjXKx8RXSfiyAAAn","timestamp":"2024-07-24T09:50:22.860Z"}
+{"level":"info","message":"User disconnected","socketId":"bpOz580CykCvSjscAAAf","timestamp":"2024-07-24T09:54:04.319Z"}
+{"level":"info","message":"User disconnected","socketId":"mromqjXKx8RXSfiyAAAn","timestamp":"2024-07-24T09:54:04.321Z"}
+{"level":"info","message":"User connected","socketId":"3_kkOqNsjCufmAKvAAAq","timestamp":"2024-07-24T09:54:04.336Z"}
+{"level":"info","message":"User connected","socketId":"chw9rehgk6ISF1rpAAAr","timestamp":"2024-07-24T09:54:04.338Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"3_kkOqNsjCufmAKvAAAq","timestamp":"2024-07-24T09:54:04.343Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"chw9rehgk6ISF1rpAAAr","timestamp":"2024-07-24T09:54:04.345Z"}
+{"level":"info","message":"User disconnected","socketId":"chw9rehgk6ISF1rpAAAr","timestamp":"2024-07-24T09:54:17.354Z"}
+{"level":"info","message":"User connected","socketId":"YUPJUAmctw6t63YHAAAt","timestamp":"2024-07-24T09:54:17.701Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"YUPJUAmctw6t63YHAAAt","timestamp":"2024-07-24T09:54:19.199Z"}
+{"level":"info","message":"User disconnected","socketId":"3_kkOqNsjCufmAKvAAAq","timestamp":"2024-07-24T09:54:55.318Z"}
+{"level":"info","message":"User disconnected","socketId":"YUPJUAmctw6t63YHAAAt","timestamp":"2024-07-24T09:54:55.321Z"}
+{"level":"info","message":"User connected","socketId":"YNN6yvhH6XZy2b7UAAAv","timestamp":"2024-07-24T09:54:55.330Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"YNN6yvhH6XZy2b7UAAAv","timestamp":"2024-07-24T09:54:55.336Z"}
+{"level":"info","message":"User connected","socketId":"dPWPJdIBkcdYqVLHAAAx","timestamp":"2024-07-24T09:54:55.338Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"dPWPJdIBkcdYqVLHAAAx","timestamp":"2024-07-24T09:54:55.342Z"}
+{"level":"info","message":"User disconnected","socketId":"YNN6yvhH6XZy2b7UAAAv","timestamp":"2024-07-24T09:54:58.322Z"}
+{"level":"info","message":"User disconnected","socketId":"dPWPJdIBkcdYqVLHAAAx","timestamp":"2024-07-24T09:54:58.329Z"}
+{"level":"info","message":"User connected","socketId":"qAg7rBSP5AcJk4k8AAAz","timestamp":"2024-07-24T09:54:58.334Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"qAg7rBSP5AcJk4k8AAAz","timestamp":"2024-07-24T09:54:58.353Z"}
+{"level":"info","message":"User connected","socketId":"q__XZJlV_BlGdZKFAAA1","timestamp":"2024-07-24T09:54:58.371Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"q__XZJlV_BlGdZKFAAA1","timestamp":"2024-07-24T09:54:58.415Z"}
+{"level":"info","message":"User disconnected","socketId":"qAg7rBSP5AcJk4k8AAAz","timestamp":"2024-07-24T09:55:03.311Z"}
+{"level":"info","message":"User disconnected","socketId":"q__XZJlV_BlGdZKFAAA1","timestamp":"2024-07-24T09:55:03.316Z"}
+{"level":"info","message":"User connected","socketId":"ZUXfdpd9QAEjRNdyAAA3","timestamp":"2024-07-24T09:55:03.321Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"ZUXfdpd9QAEjRNdyAAA3","timestamp":"2024-07-24T09:55:03.328Z"}
+{"level":"info","message":"User connected","socketId":"Di9acw836_s2DXQpAAA5","timestamp":"2024-07-24T09:55:03.332Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Di9acw836_s2DXQpAAA5","timestamp":"2024-07-24T09:55:03.339Z"}
+{"level":"info","message":"User disconnected","socketId":"ZUXfdpd9QAEjRNdyAAA3","timestamp":"2024-07-24T09:55:04.309Z"}
+{"level":"info","message":"User disconnected","socketId":"Di9acw836_s2DXQpAAA5","timestamp":"2024-07-24T09:55:04.312Z"}
+{"level":"info","message":"User connected","socketId":"nAxDBUOWdgAiCxqtAAA8","timestamp":"2024-07-24T09:55:04.319Z"}
+{"level":"info","message":"User connected","socketId":"zK7hmRwHO-QspHiDAAA9","timestamp":"2024-07-24T09:55:04.323Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"nAxDBUOWdgAiCxqtAAA8","timestamp":"2024-07-24T09:55:04.324Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"zK7hmRwHO-QspHiDAAA9","timestamp":"2024-07-24T09:55:04.329Z"}
+{"level":"info","message":"User disconnected","socketId":"zK7hmRwHO-QspHiDAAA9","timestamp":"2024-07-24T09:58:48.064Z"}
+{"level":"info","message":"User connected","socketId":"BCKCjYbM900erK1JAAA_","timestamp":"2024-07-24T09:58:48.482Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"BCKCjYbM900erK1JAAA_","timestamp":"2024-07-24T09:58:50.067Z"}
+{"level":"info","message":"User disconnected","socketId":"BCKCjYbM900erK1JAAA_","timestamp":"2024-07-24T10:05:49.879Z"}
+{"level":"info","message":"User connected","socketId":"Yt7hjyUUg4hHTiJGAABB","timestamp":"2024-07-24T10:05:50.256Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Yt7hjyUUg4hHTiJGAABB","timestamp":"2024-07-24T10:06:06.428Z"}
+{"level":"info","message":"User disconnected","socketId":"Yt7hjyUUg4hHTiJGAABB","timestamp":"2024-07-24T10:15:12.334Z"}
+{"level":"info","message":"User disconnected","socketId":"nAxDBUOWdgAiCxqtAAA8","timestamp":"2024-07-24T10:15:12.341Z"}
+{"level":"info","message":"User connected","socketId":"hoqAEv3zI6EEN92GAABE","timestamp":"2024-07-24T10:15:12.369Z"}
+{"level":"info","message":"User connected","socketId":"zHHtEfBYLMAILY4PAABF","timestamp":"2024-07-24T10:15:12.370Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"hoqAEv3zI6EEN92GAABE","timestamp":"2024-07-24T10:15:12.374Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"zHHtEfBYLMAILY4PAABF","timestamp":"2024-07-24T10:15:12.376Z"}
+{"level":"info","message":"User disconnected","socketId":"hoqAEv3zI6EEN92GAABE","timestamp":"2024-07-24T10:21:11.696Z"}
+{"level":"info","message":"User connected","socketId":"7K2N0oIC-S7JACPhAABH","timestamp":"2024-07-24T10:21:17.057Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"7K2N0oIC-S7JACPhAABH","timestamp":"2024-07-24T10:21:17.067Z"}
+{"level":"info","message":"User disconnected","socketId":"7K2N0oIC-S7JACPhAABH","timestamp":"2024-07-24T10:21:59.331Z"}
+{"level":"info","message":"User connected","socketId":"TFuTude3UX8HqmNkAABJ","timestamp":"2024-07-24T10:21:59.728Z"}
+{"level":"info","message":"User disconnected","socketId":"zHHtEfBYLMAILY4PAABF","timestamp":"2024-07-24T10:22:10.013Z"}
+{"level":"info","message":"User connected","socketId":"k2m9aowc0zClbLFyAABL","timestamp":"2024-07-24T10:22:10.547Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"k2m9aowc0zClbLFyAABL","timestamp":"2024-07-24T10:22:12.076Z"}
+{"level":"info","message":"User disconnected","socketId":"k2m9aowc0zClbLFyAABL","timestamp":"2024-07-24T10:27:15.321Z"}
+{"level":"info","message":"User connected","socketId":"cQjMfOOqNTxy_e9qAABN","timestamp":"2024-07-24T10:27:15.340Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"cQjMfOOqNTxy_e9qAABN","timestamp":"2024-07-24T10:27:15.351Z"}
+{"level":"info","message":"User disconnected","socketId":"cQjMfOOqNTxy_e9qAABN","timestamp":"2024-07-24T10:27:31.320Z"}
+{"level":"info","message":"User connected","socketId":"2UF02IzIiIkuXh_ZAABP","timestamp":"2024-07-24T10:27:31.331Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"2UF02IzIiIkuXh_ZAABP","timestamp":"2024-07-24T10:27:31.336Z"}
+{"level":"info","message":"User disconnected","socketId":"2UF02IzIiIkuXh_ZAABP","timestamp":"2024-07-24T10:27:43.320Z"}
+{"level":"info","message":"User connected","socketId":"UAOBX8GNJBULrwdeAABR","timestamp":"2024-07-24T10:27:43.335Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"UAOBX8GNJBULrwdeAABR","timestamp":"2024-07-24T10:27:43.339Z"}
+{"level":"info","message":"User disconnected","socketId":"UAOBX8GNJBULrwdeAABR","timestamp":"2024-07-24T10:27:44.308Z"}
+{"level":"info","message":"User connected","socketId":"jC3xB_MgMYQsUUfXAABT","timestamp":"2024-07-24T10:27:44.325Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"jC3xB_MgMYQsUUfXAABT","timestamp":"2024-07-24T10:27:44.339Z"}
+{"level":"info","message":"User disconnected","socketId":"jC3xB_MgMYQsUUfXAABT","timestamp":"2024-07-24T10:28:03.318Z"}
+{"level":"info","message":"User connected","socketId":"xjhe41h0drQaQMcYAABV","timestamp":"2024-07-24T10:28:03.330Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"xjhe41h0drQaQMcYAABV","timestamp":"2024-07-24T10:28:03.335Z"}
+{"level":"info","message":"User disconnected","socketId":"xjhe41h0drQaQMcYAABV","timestamp":"2024-07-24T10:28:05.307Z"}
+{"level":"info","message":"User connected","socketId":"yEvL6k_Yfg7n3G-BAABX","timestamp":"2024-07-24T10:28:05.323Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"yEvL6k_Yfg7n3G-BAABX","timestamp":"2024-07-24T10:28:05.332Z"}
+{"level":"info","message":"User disconnected","socketId":"yEvL6k_Yfg7n3G-BAABX","timestamp":"2024-07-24T10:28:07.310Z"}
+{"level":"info","message":"User connected","socketId":"hOS3N-lb3BHUVV5_AABZ","timestamp":"2024-07-24T10:28:07.322Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"hOS3N-lb3BHUVV5_AABZ","timestamp":"2024-07-24T10:28:07.326Z"}
+{"level":"info","message":"User disconnected","socketId":"hOS3N-lb3BHUVV5_AABZ","timestamp":"2024-07-24T10:28:11.314Z"}
+{"level":"info","message":"User connected","socketId":"ksUEaVKn4WNnuDbnAABb","timestamp":"2024-07-24T10:28:11.325Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"ksUEaVKn4WNnuDbnAABb","timestamp":"2024-07-24T10:28:11.328Z"}
+{"level":"info","message":"User disconnected","socketId":"ksUEaVKn4WNnuDbnAABb","timestamp":"2024-07-24T10:30:58.316Z"}
+{"level":"info","message":"User connected","socketId":"uuOEcMboid62A47vAABd","timestamp":"2024-07-24T10:30:58.330Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"uuOEcMboid62A47vAABd","timestamp":"2024-07-24T10:30:58.337Z"}
+{"level":"info","message":"User disconnected","socketId":"uuOEcMboid62A47vAABd","timestamp":"2024-07-24T10:31:00.311Z"}
+{"level":"info","message":"User connected","socketId":"16qtZzTntMpuRcudAABf","timestamp":"2024-07-24T10:31:00.326Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"16qtZzTntMpuRcudAABf","timestamp":"2024-07-24T10:31:00.330Z"}
+{"level":"info","message":"User disconnected","socketId":"16qtZzTntMpuRcudAABf","timestamp":"2024-07-24T10:31:28.324Z"}
+{"level":"info","message":"User connected","socketId":"2JQJd9SGBSvin4q2AABh","timestamp":"2024-07-24T10:31:28.335Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"2JQJd9SGBSvin4q2AABh","timestamp":"2024-07-24T10:31:28.342Z"}
+{"level":"info","message":"User disconnected","socketId":"2JQJd9SGBSvin4q2AABh","timestamp":"2024-07-24T10:31:35.558Z"}
+{"level":"info","message":"User connected","socketId":"dhhlEnH7vgTu_UnpAABj","timestamp":"2024-07-24T10:31:36.085Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"dhhlEnH7vgTu_UnpAABj","timestamp":"2024-07-24T10:31:37.903Z"}
+{"level":"info","message":"User disconnected","socketId":"dhhlEnH7vgTu_UnpAABj","timestamp":"2024-07-24T10:33:44.570Z"}
+{"level":"info","message":"User connected","socketId":"kGJsv2t2EIaRztmMAABl","timestamp":"2024-07-24T10:33:47.075Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"kGJsv2t2EIaRztmMAABl","timestamp":"2024-07-24T10:33:47.082Z"}
+{"level":"info","message":"User disconnected","socketId":"kGJsv2t2EIaRztmMAABl","timestamp":"2024-07-24T10:34:30.032Z"}
+{"level":"info","message":"User connected","socketId":"mp_OHCF0lZHECX7yAABn","timestamp":"2024-07-24T10:34:32.812Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"mp_OHCF0lZHECX7yAABn","timestamp":"2024-07-24T10:34:32.817Z"}
+{"level":"info","message":"User disconnected","socketId":"mp_OHCF0lZHECX7yAABn","timestamp":"2024-07-24T10:35:36.319Z"}
+{"level":"info","message":"User connected","socketId":"u4-eMUbx1wNKcgTLAABp","timestamp":"2024-07-24T10:35:36.329Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"u4-eMUbx1wNKcgTLAABp","timestamp":"2024-07-24T10:35:36.335Z"}
+{"level":"info","message":"User disconnected","socketId":"u4-eMUbx1wNKcgTLAABp","timestamp":"2024-07-24T10:35:40.311Z"}
+{"level":"info","message":"User connected","socketId":"ODitQG-8IaHqPP-oAABr","timestamp":"2024-07-24T10:35:40.371Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"ODitQG-8IaHqPP-oAABr","timestamp":"2024-07-24T10:35:40.385Z"}
+{"level":"info","message":"User disconnected","socketId":"ODitQG-8IaHqPP-oAABr","timestamp":"2024-07-24T10:35:45.314Z"}
+{"level":"info","message":"User connected","socketId":"zpve_vmVEzWHy7ImAABt","timestamp":"2024-07-24T10:35:45.327Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"zpve_vmVEzWHy7ImAABt","timestamp":"2024-07-24T10:35:45.329Z"}
+{"level":"info","message":"User disconnected","socketId":"zpve_vmVEzWHy7ImAABt","timestamp":"2024-07-24T10:35:47.313Z"}
+{"level":"info","message":"User connected","socketId":"9lohVPnu00WFUhDGAABv","timestamp":"2024-07-24T10:35:47.326Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"9lohVPnu00WFUhDGAABv","timestamp":"2024-07-24T10:35:47.332Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"TFuTude3UX8HqmNkAABJ","timestamp":"2024-07-24T10:38:42.557Z"}
+{"level":"info","message":"User disconnected","socketId":"TFuTude3UX8HqmNkAABJ","timestamp":"2024-07-24T10:41:42.107Z"}
+{"level":"info","message":"User disconnected","socketId":"9lohVPnu00WFUhDGAABv","timestamp":"2024-07-24T10:41:42.126Z"}
+{"level":"info","message":"User connected","socketId":"UJq6TT2NaB-TgvfUAABy","timestamp":"2024-07-24T10:41:42.184Z"}
+{"level":"info","message":"User connected","socketId":"6Lp-lPyHkLDIXv9yAABz","timestamp":"2024-07-24T10:41:42.194Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"6Lp-lPyHkLDIXv9yAABz","timestamp":"2024-07-24T10:41:42.222Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"UJq6TT2NaB-TgvfUAABy","timestamp":"2024-07-24T10:41:42.225Z"}
+{"level":"info","message":"User disconnected","socketId":"UJq6TT2NaB-TgvfUAABy","timestamp":"2024-07-24T10:41:46.822Z"}
+{"level":"info","message":"User connected","socketId":"tgY2XRv07pSha9o3AAB1","timestamp":"2024-07-24T10:41:49.652Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"tgY2XRv07pSha9o3AAB1","timestamp":"2024-07-24T10:41:49.657Z"}
+{"level":"info","message":"User disconnected","socketId":"tgY2XRv07pSha9o3AAB1","timestamp":"2024-07-24T10:43:48.232Z"}
+{"level":"info","message":"User connected","socketId":"jKA-fqt4fRaa16jpAAB3","timestamp":"2024-07-24T10:43:51.227Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"jKA-fqt4fRaa16jpAAB3","timestamp":"2024-07-24T10:43:51.249Z"}
+{"level":"info","message":"User disconnected","socketId":"jKA-fqt4fRaa16jpAAB3","timestamp":"2024-07-24T10:46:50.319Z"}
+{"level":"info","message":"User disconnected","socketId":"6Lp-lPyHkLDIXv9yAABz","timestamp":"2024-07-24T10:46:50.328Z"}
+{"level":"info","message":"User connected","socketId":"_q7a5GjEczywNgZhAAB5","timestamp":"2024-07-24T10:46:50.330Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"_q7a5GjEczywNgZhAAB5","timestamp":"2024-07-24T10:46:50.336Z"}
+{"level":"info","message":"User disconnected","socketId":"_q7a5GjEczywNgZhAAB5","timestamp":"2024-07-24T10:46:52.315Z"}
+{"level":"info","message":"User connected","socketId":"7eM88wCuSD0qzkHcAAB7","timestamp":"2024-07-24T10:46:52.327Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"7eM88wCuSD0qzkHcAAB7","timestamp":"2024-07-24T10:46:52.334Z"}
+{"level":"info","message":"User disconnected","socketId":"7eM88wCuSD0qzkHcAAB7","timestamp":"2024-07-24T10:46:54.305Z"}
+{"level":"info","message":"User connected","socketId":"WjN6teIezNuUuEoVAAB9","timestamp":"2024-07-24T10:46:54.315Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"WjN6teIezNuUuEoVAAB9","timestamp":"2024-07-24T10:46:54.320Z"}
+{"level":"info","message":"User disconnected","socketId":"WjN6teIezNuUuEoVAAB9","timestamp":"2024-07-24T10:46:59.304Z"}
+{"level":"info","message":"User connected","socketId":"0ZBVbyeENOwsoKfQAAB_","timestamp":"2024-07-24T10:46:59.314Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"0ZBVbyeENOwsoKfQAAB_","timestamp":"2024-07-24T10:46:59.321Z"}
+{"level":"info","message":"User disconnected","socketId":"0ZBVbyeENOwsoKfQAAB_","timestamp":"2024-07-24T10:47:41.259Z"}
+{"level":"info","message":"User connected","socketId":"9YgwFq7d0E2SJtPNAACB","timestamp":"2024-07-24T10:47:44.261Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"9YgwFq7d0E2SJtPNAACB","timestamp":"2024-07-24T10:47:44.269Z"}
+{"level":"info","message":"User connected","socketId":"BbUva6mZVvY3yOOgAACD","timestamp":"2024-07-24T10:47:52.353Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"BbUva6mZVvY3yOOgAACD","timestamp":"2024-07-24T10:47:52.357Z"}
+{"level":"info","message":"User disconnected","socketId":"BbUva6mZVvY3yOOgAACD","timestamp":"2024-07-24T10:47:59.815Z"}
+{"level":"info","message":"User connected","socketId":"6DoHElExHrMhBCMaAACF","timestamp":"2024-07-24T10:48:02.802Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"6DoHElExHrMhBCMaAACF","timestamp":"2024-07-24T10:48:02.806Z"}
+{"level":"info","message":"User disconnected","socketId":"9YgwFq7d0E2SJtPNAACB","timestamp":"2024-07-24T10:49:33.318Z"}
+{"level":"info","message":"User disconnected","socketId":"6DoHElExHrMhBCMaAACF","timestamp":"2024-07-24T10:49:33.320Z"}
+{"level":"info","message":"User connected","socketId":"s43agC5vj_oKtvnfAACI","timestamp":"2024-07-24T10:49:33.341Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"s43agC5vj_oKtvnfAACI","timestamp":"2024-07-24T10:49:33.347Z"}
+{"level":"info","message":"User connected","socketId":"3Fvc3WVB1-y_k5GJAACJ","timestamp":"2024-07-24T10:49:33.357Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"3Fvc3WVB1-y_k5GJAACJ","timestamp":"2024-07-24T10:49:33.377Z"}
+{"level":"info","message":"User disconnected","socketId":"3Fvc3WVB1-y_k5GJAACJ","timestamp":"2024-07-24T10:53:02.321Z"}
+{"level":"info","message":"User disconnected","socketId":"s43agC5vj_oKtvnfAACI","timestamp":"2024-07-24T10:53:02.330Z"}
+{"level":"info","message":"User connected","socketId":"pGlqmElh1dSAeyJjAACM","timestamp":"2024-07-24T10:53:02.359Z"}
+{"level":"info","message":"User connected","socketId":"thTm-9lyWe6a0vHFAACN","timestamp":"2024-07-24T10:53:02.389Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"pGlqmElh1dSAeyJjAACM","timestamp":"2024-07-24T10:53:02.401Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"thTm-9lyWe6a0vHFAACN","timestamp":"2024-07-24T10:53:02.412Z"}
+{"level":"info","message":"User disconnected","socketId":"pGlqmElh1dSAeyJjAACM","timestamp":"2024-07-24T10:53:16.322Z"}
+{"level":"info","message":"User disconnected","socketId":"thTm-9lyWe6a0vHFAACN","timestamp":"2024-07-24T10:53:16.322Z"}
+{"level":"info","message":"User connected","socketId":"goS8BURrmPwxjXjXAACQ","timestamp":"2024-07-24T10:53:16.335Z"}
+{"level":"info","message":"User connected","socketId":"-VghFpmNaKqnHVEfAACR","timestamp":"2024-07-24T10:53:16.340Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"goS8BURrmPwxjXjXAACQ","timestamp":"2024-07-24T10:53:16.342Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"-VghFpmNaKqnHVEfAACR","timestamp":"2024-07-24T10:53:16.344Z"}
+{"level":"info","message":"User disconnected","socketId":"-VghFpmNaKqnHVEfAACR","timestamp":"2024-07-24T10:53:29.313Z"}
+{"level":"info","message":"User disconnected","socketId":"goS8BURrmPwxjXjXAACQ","timestamp":"2024-07-24T10:53:29.314Z"}
+{"level":"info","message":"User connected","socketId":"AnZrv-XXuhDgM4PfAACU","timestamp":"2024-07-24T10:53:29.327Z"}
+{"level":"info","message":"User connected","socketId":"MWLpC4jGNKpfXL6KAACV","timestamp":"2024-07-24T10:53:29.333Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"AnZrv-XXuhDgM4PfAACU","timestamp":"2024-07-24T10:53:29.342Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"MWLpC4jGNKpfXL6KAACV","timestamp":"2024-07-24T10:53:29.343Z"}
+{"level":"info","message":"User disconnected","socketId":"AnZrv-XXuhDgM4PfAACU","timestamp":"2024-07-24T10:54:48.443Z"}
+{"level":"info","message":"User connected","socketId":"OeUVXZSDDna9SxhgAACX","timestamp":"2024-07-24T10:54:49.058Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"OeUVXZSDDna9SxhgAACX","timestamp":"2024-07-24T10:54:50.910Z"}
+{"level":"info","message":"User disconnected","socketId":"MWLpC4jGNKpfXL6KAACV","timestamp":"2024-07-24T10:54:59.629Z"}
+{"level":"info","message":"User connected","socketId":"sE5tcIOsEi3iEcOuAACZ","timestamp":"2024-07-24T10:55:00.445Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"sE5tcIOsEi3iEcOuAACZ","timestamp":"2024-07-24T10:55:02.544Z"}
+{"level":"info","message":"User disconnected","socketId":"sE5tcIOsEi3iEcOuAACZ","timestamp":"2024-07-24T10:58:45.974Z"}
+{"level":"info","message":"User connected","socketId":"nIfBf3zHAfZ2iWn9AACb","timestamp":"2024-07-24T10:58:56.482Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"nIfBf3zHAfZ2iWn9AACb","timestamp":"2024-07-24T10:58:56.487Z"}
+{"level":"info","message":"User disconnected","socketId":"nIfBf3zHAfZ2iWn9AACb","timestamp":"2024-07-24T11:04:33.101Z"}
+{"level":"info","message":"User connected","socketId":"DQcIRefsWZP5rJ6rAACd","timestamp":"2024-07-24T11:04:36.167Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"DQcIRefsWZP5rJ6rAACd","timestamp":"2024-07-24T11:04:36.173Z"}
+{"level":"info","message":"User disconnected","socketId":"DQcIRefsWZP5rJ6rAACd","timestamp":"2024-07-24T11:05:13.908Z"}
+{"level":"info","message":"User connected","socketId":"U2TBiPV5UlNtVMKwAACf","timestamp":"2024-07-24T11:05:13.976Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"U2TBiPV5UlNtVMKwAACf","timestamp":"2024-07-24T11:05:13.989Z"}
+{"level":"info","message":"User disconnected","socketId":"OeUVXZSDDna9SxhgAACX","timestamp":"2024-07-24T11:05:14.428Z"}
+{"level":"info","message":"User connected","socketId":"iv9BVve0f3qVRBLmAACh","timestamp":"2024-07-24T11:05:14.561Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"iv9BVve0f3qVRBLmAACh","timestamp":"2024-07-24T11:05:14.604Z"}
+{"level":"info","message":"User disconnected","socketId":"U2TBiPV5UlNtVMKwAACf","timestamp":"2024-07-24T11:05:45.505Z"}
+{"level":"info","message":"User connected","socketId":"m25MjqlDB27l1ThWAACj","timestamp":"2024-07-24T11:06:16.225Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"m25MjqlDB27l1ThWAACj","timestamp":"2024-07-24T11:06:30.150Z"}
+{"level":"info","message":"User disconnected","socketId":"m25MjqlDB27l1ThWAACj","timestamp":"2024-07-24T11:06:58.320Z"}
+{"level":"info","message":"User disconnected","socketId":"iv9BVve0f3qVRBLmAACh","timestamp":"2024-07-24T11:06:58.339Z"}
+{"level":"info","message":"User connected","socketId":"2OemjPMaU8AozBfJAACl","timestamp":"2024-07-24T11:07:01.916Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"2OemjPMaU8AozBfJAACl","timestamp":"2024-07-24T11:07:01.922Z"}
+{"level":"info","message":"User disconnected","socketId":"2OemjPMaU8AozBfJAACl","timestamp":"2024-07-24T11:07:02.029Z"}
+{"level":"info","message":"User connected","socketId":"csDslTdT1NHAIQEIAACn","timestamp":"2024-07-24T11:07:06.226Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"csDslTdT1NHAIQEIAACn","timestamp":"2024-07-24T11:07:27.133Z"}
+{"level":"info","message":"User disconnected","socketId":"csDslTdT1NHAIQEIAACn","timestamp":"2024-07-24T11:07:35.316Z"}
+{"level":"info","message":"User connected","socketId":"xEyrNYGGvxJetsrxAACp","timestamp":"2024-07-24T11:07:39.604Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"xEyrNYGGvxJetsrxAACp","timestamp":"2024-07-24T11:07:39.608Z"}
+{"level":"info","message":"User disconnected","socketId":"xEyrNYGGvxJetsrxAACp","timestamp":"2024-07-24T11:08:09.319Z"}
+{"level":"info","message":"User connected","socketId":"EOmQ5FpeMC4m4RAsAACr","timestamp":"2024-07-24T11:08:09.324Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"EOmQ5FpeMC4m4RAsAACr","timestamp":"2024-07-24T11:08:09.329Z"}
+{"level":"info","message":"User disconnected","socketId":"EOmQ5FpeMC4m4RAsAACr","timestamp":"2024-07-24T11:08:14.310Z"}
+{"level":"info","message":"User connected","socketId":"Pz_QQ8wfFLy7tMmpAACt","timestamp":"2024-07-24T11:08:14.322Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Pz_QQ8wfFLy7tMmpAACt","timestamp":"2024-07-24T11:08:14.327Z"}
+{"level":"info","message":"User connected","socketId":"feqZpLEaGNgH5-6yAACv","timestamp":"2024-07-24T11:08:29.359Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"feqZpLEaGNgH5-6yAACv","timestamp":"2024-07-24T11:08:29.363Z"}
+{"level":"info","message":"User disconnected","socketId":"Pz_QQ8wfFLy7tMmpAACt","timestamp":"2024-07-24T11:09:17.873Z"}
+{"level":"info","message":"User connected","socketId":"JGKkqNCAKGI5Fe9rAACx","timestamp":"2024-07-24T11:09:18.547Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"JGKkqNCAKGI5Fe9rAACx","timestamp":"2024-07-24T11:09:20.011Z"}
+{"level":"info","message":"User disconnected","socketId":"feqZpLEaGNgH5-6yAACv","timestamp":"2024-07-24T11:09:26.687Z"}
+{"level":"info","message":"User connected","socketId":"YXvnVZKvzUnHFMAAAACz","timestamp":"2024-07-24T11:09:26.951Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"YXvnVZKvzUnHFMAAAACz","timestamp":"2024-07-24T11:09:28.360Z"}
+{"level":"info","message":"User disconnected","socketId":"YXvnVZKvzUnHFMAAAACz","timestamp":"2024-07-24T12:40:32.054Z"}
+{"level":"info","message":"User disconnected","socketId":"JGKkqNCAKGI5Fe9rAACx","timestamp":"2024-07-24T12:40:32.150Z"}
+{"level":"info","message":"User connected","socketId":"2I3Mhgwk-d67uXKoAAC2","timestamp":"2024-07-24T13:04:16.714Z"}
+{"level":"info","message":"User connected","socketId":"G5f-8umgL_wvZ8N_AAC3","timestamp":"2024-07-24T13:04:16.718Z"}
+{"level":"info","message":"User disconnected","socketId":"2I3Mhgwk-d67uXKoAAC2","timestamp":"2024-07-24T13:24:35.546Z"}
+{"level":"info","message":"User disconnected","socketId":"G5f-8umgL_wvZ8N_AAC3","timestamp":"2024-07-24T13:24:35.552Z"}
+{"level":"info","message":"User connected","socketId":"VHvpqgmhdLGrjlGQAAC6","timestamp":"2024-07-24T15:40:07.120Z"}
+{"level":"info","message":"User connected","socketId":"a6z3rk9bqWwe_QVOAAC7","timestamp":"2024-07-24T15:40:07.148Z"}
+{"level":"info","message":"User disconnected","socketId":"VHvpqgmhdLGrjlGQAAC6","timestamp":"2024-07-24T15:40:14.016Z"}
+{"level":"info","message":"User disconnected","socketId":"a6z3rk9bqWwe_QVOAAC7","timestamp":"2024-07-24T15:40:20.225Z"}
+{"level":"info","message":"User connected","socketId":"hjGReYIrHyMPcMKiAAC9","timestamp":"2024-07-24T15:40:20.656Z"}
+{"level":"info","message":"User disconnected","socketId":"hjGReYIrHyMPcMKiAAC9","timestamp":"2024-07-24T15:40:21.135Z"}

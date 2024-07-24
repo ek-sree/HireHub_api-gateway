@@ -36,6 +36,8 @@ export const postController = {
       const userId = req.query.userId;
       const { text } = req.body;
       const images = req.files;
+      console.log("images",images);
+      
       if (!userId) {
         return res.status(400).json({ error: "UserId is missing" });
       }
