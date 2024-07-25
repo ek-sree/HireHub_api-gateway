@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package user;
 
+import "google/protobuf/timestamp.proto";
+
 service UserService {
     rpc RegisterUser(RegisterUserRequest) returns (RegisterUserResponse);
     rpc VerifyOtp(VerifyOtpRequest) returns (VerifyOtpResponse);
@@ -24,7 +26,9 @@ message UserData {
     string phone = 3;
     string password = 4;
     string _id = 5;
-    bool status = 6; 
+    bool status = 6;
+    bool isOnline = 7;
+    google.protobuf.Timestamp lastSeen = 8;
 }
 
 message RegisterUserResponse {
@@ -43,7 +47,6 @@ message VerifyOtpResponse {
     bool success = 2;
     bool isRecruiter = 3;
     UserData user_data = 4;
-    string token = 5;
 }
 
 message ResendOtpRequest {
@@ -66,7 +69,6 @@ message LoginUserResponse {
     bool success = 2;
     UserData user_data = 3;
     bool isRecruiter = 4;
-    string token = 5;
 }
 
 message LoginWithGoogleRequest {
@@ -76,12 +78,11 @@ message LoginWithGoogleRequest {
 message LoginWithGoogleResponse {
     bool success = 1;
     UserData user_data = 2;
-    string token = 3;
 }
 
 message GetAllUsersRequest {}
 
-message GetAllUsersResponse { 
+message GetAllUsersResponse {
     repeated UserData user_data = 1;
     bool success = 2;
     string message = 3;

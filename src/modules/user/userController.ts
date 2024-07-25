@@ -150,7 +150,7 @@ export const userController = {
             res.clearCookie('isRecruiter');
             res.clearCookie('token');
             res.clearCookie('user')
-                        return res.json({success: true})
+            return res.json({success: true})
         } catch (error) {
             console.log("Error during login with google auth", error);
             return res.status(500).json({success: false, error: "Internal server error" });

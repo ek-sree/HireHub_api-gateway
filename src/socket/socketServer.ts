@@ -21,7 +21,6 @@ export const initializeSocket = (server: HttpServer) => {
     });
 
     socket.on('sendMessage', async (message) => {
-      console.log("socket messages for upload111111",message);
       
       const { chatId, content,images, senderId, receiverId } = message;
       try {

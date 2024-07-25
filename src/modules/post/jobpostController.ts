@@ -103,13 +103,13 @@ console.log("................");
             const jobId = req.query.jobId;
             console.log(".....",req.body);
             
-            const { name,email,phone,resumes } = req.body;
-            if(!jobId || !name || !email || !phone || !resumes){
+            const { userId,name,email,phone,resumes } = req.body;
+            if(!userId || !jobId || !name || !email || !phone || !resumes){
                 return res.status(400).json({ error: "Please fill in all fields" });
             }
             
             const operation = 'apply-job';
-            const response = await jobpostRabbitMqClient.produce({jobId,name,email,phone,resumes},operation);
+            const response = await jobpostRabbitMqClient.produce({userId,jobId,name,email,phone,resumes},operation);
             return res.json(response);
         } catch (error) {
             console.error("Error applying job", error)
