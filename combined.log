@@ -2456,3 +2456,290 @@ undefined
 {"level":"info","message":"Server is running on 4000","timestamp":"2024-07-25T15:27:19.716Z"}
 {"level":"info","message":"User connected","socketId":"tfGTpJ043HdB_OLDAAAB","timestamp":"2024-07-25T15:28:06.398Z"}
 {"chatId":"66a25f99e121b57e5988bedb","level":"info","message":"User joined conversation","socketId":"tfGTpJ043HdB_OLDAAAB","timestamp":"2024-07-25T15:28:06.407Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T06:41:12.389Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T06:41:12.408Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T06:41:12.414Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T06:41:12.416Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T06:41:12.437Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T06:48:48.127Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T06:48:48.133Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T06:48:48.134Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T06:48:48.134Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T06:48:48.144Z"}
+{"level":"info","message":"User connected","socketId":"eLzTugJWo7TamlcaAAAB","timestamp":"2024-07-26T08:19:50.391Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"eLzTugJWo7TamlcaAAAB","timestamp":"2024-07-26T08:19:50.419Z"}
+{"level":"info","message":"User connected","socketId":"T4-fARzExW4M6rMwAAAD","timestamp":"2024-07-26T08:20:25.955Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"T4-fARzExW4M6rMwAAAD","timestamp":"2024-07-26T08:20:25.963Z"}
+{"level":"info","message":"User disconnected","socketId":"T4-fARzExW4M6rMwAAAD","timestamp":"2024-07-26T08:20:39.765Z"}
+{"level":"info","message":"User connected","socketId":"DEMT77OD-0RjnWxmAAAF","timestamp":"2024-07-26T08:20:41.659Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"DEMT77OD-0RjnWxmAAAF","timestamp":"2024-07-26T08:20:41.669Z"}
+{"level":"info","message":"User disconnected","socketId":"eLzTugJWo7TamlcaAAAB","timestamp":"2024-07-26T08:20:47.437Z"}
+{"level":"info","message":"User connected","socketId":"P1UNt-CMhGm1TNqjAAAH","timestamp":"2024-07-26T08:20:56.850Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"P1UNt-CMhGm1TNqjAAAH","timestamp":"2024-07-26T08:20:56.861Z"}
+{"level":"info","message":"User disconnected","socketId":"P1UNt-CMhGm1TNqjAAAH","timestamp":"2024-07-26T08:21:09.366Z"}
+{"level":"info","message":"User disconnected","socketId":"DEMT77OD-0RjnWxmAAAF","timestamp":"2024-07-26T08:23:14.169Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T09:37:20.351Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T09:37:20.357Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T09:37:20.359Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T09:37:20.362Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T09:37:20.370Z"}
+{"level":"info","message":"User connected","socketId":"9724Vk1jQjDbAOE4AAAB","timestamp":"2024-07-26T09:38:11.214Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"9724Vk1jQjDbAOE4AAAB","timestamp":"2024-07-26T09:38:11.452Z"}
+{"level":"info","message":"User disconnected","socketId":"9724Vk1jQjDbAOE4AAAB","timestamp":"2024-07-26T09:38:58.890Z"}
+{"level":"info","message":"User connected","socketId":"Z8qxRCqucX9mI_4gAAAD","timestamp":"2024-07-26T10:03:52.060Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"Z8qxRCqucX9mI_4gAAAD","timestamp":"2024-07-26T10:03:52.081Z"}
+{"level":"info","message":"User connected","socketId":"DvXEIAVmfKz9iIm3AAAF","timestamp":"2024-07-26T10:04:05.315Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"DvXEIAVmfKz9iIm3AAAF","timestamp":"2024-07-26T10:04:05.331Z"}
+{"level":"info","message":"User disconnected","socketId":"Z8qxRCqucX9mI_4gAAAD","timestamp":"2024-07-26T10:04:29.429Z"}
+{"level":"info","message":"User connected","socketId":"1F54uGzPD1cakLBbAAAH","timestamp":"2024-07-26T10:04:31.538Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"1F54uGzPD1cakLBbAAAH","timestamp":"2024-07-26T10:04:31.576Z"}
+{"level":"info","message":"User disconnected","socketId":"DvXEIAVmfKz9iIm3AAAF","timestamp":"2024-07-26T10:04:42.740Z"}
+{"level":"info","message":"User connected","socketId":"vTtY03WmvKan5-hzAAAJ","timestamp":"2024-07-26T10:04:42.761Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"vTtY03WmvKan5-hzAAAJ","timestamp":"2024-07-26T10:04:42.771Z"}
+{"level":"info","message":"User disconnected","socketId":"vTtY03WmvKan5-hzAAAJ","timestamp":"2024-07-26T10:06:17.457Z"}
+{"level":"info","message":"User connected","socketId":"TnnM97d4JGGpe6ylAAAL","timestamp":"2024-07-26T10:06:41.175Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"TnnM97d4JGGpe6ylAAAL","timestamp":"2024-07-26T10:06:41.180Z"}
+{"level":"info","message":"User disconnected","socketId":"TnnM97d4JGGpe6ylAAAL","timestamp":"2024-07-26T10:07:31.780Z"}
+{"level":"info","message":"User disconnected","socketId":"1F54uGzPD1cakLBbAAAH","timestamp":"2024-07-26T10:09:20.966Z"}
+{"level":"info","message":"User connected","socketId":"Yr2j-yW5xirrSsCoAAAN","timestamp":"2024-07-26T11:05:57.492Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T12:47:01.728Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T12:47:01.730Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T12:47:01.731Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T12:47:01.731Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T12:47:01.734Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:45:34.426Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:45:34.429Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:45:34.429Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:45:34.429Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:45:34.432Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:45:51.421Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:45:51.424Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:45:51.424Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:45:51.424Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:45:51.428Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:46:13.429Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:46:13.432Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:46:13.432Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:46:13.432Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:46:13.435Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:46:21.047Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:46:21.050Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:46:21.050Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:46:21.051Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:46:21.056Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:46:27.692Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:46:27.695Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:46:27.695Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:46:27.695Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:46:27.698Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:48:10.283Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:48:10.286Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:48:10.286Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:48:10.287Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:48:10.289Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:48:21.877Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:48:21.879Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:48:21.880Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:48:21.880Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:48:21.884Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:49:22.887Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:49:22.889Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:49:22.889Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:49:22.890Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:49:22.893Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:50:50.559Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:50:50.562Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:50:50.562Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:50:50.563Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:50:50.566Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:51:08.022Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:51:08.025Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:51:08.025Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:51:08.026Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:51:08.030Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:51:17.533Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:51:17.536Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:51:17.536Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:51:17.536Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:51:17.539Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T13:51:30.366Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T13:51:30.369Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T13:51:30.369Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T13:51:30.370Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T13:51:30.373Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T14:24:26.138Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T14:24:26.141Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T14:24:26.141Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T14:24:26.141Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T14:24:26.145Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T14:24:32.975Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T14:24:32.978Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T14:24:32.978Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T14:24:32.978Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T14:24:32.981Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T14:25:27.426Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T14:25:27.430Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T14:25:27.431Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T14:25:27.431Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T14:25:27.435Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T14:45:30.681Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T14:45:30.684Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T14:45:30.685Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T14:45:30.685Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T14:45:30.691Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T15:10:55.291Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T15:10:55.293Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T15:10:55.294Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T15:10:55.294Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T15:10:55.297Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T15:11:07.702Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T15:11:07.705Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T15:11:07.705Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T15:11:07.706Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T15:11:07.710Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T15:12:23.526Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T15:12:23.528Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T15:12:23.529Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T15:12:23.529Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T15:12:23.532Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T15:40:55.705Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T15:40:55.708Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T15:40:55.708Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T15:40:55.708Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T15:40:55.712Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T15:41:17.777Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T15:41:17.780Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T15:41:17.780Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T15:41:17.780Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T15:41:17.783Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T15:41:31.802Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T15:41:31.804Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T15:41:31.805Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T15:41:31.805Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T15:41:31.808Z"}
+{"level":"info","message":"User connected","socketId":"BoCRVi1NPeQmlrxjAAAB","timestamp":"2024-07-26T15:43:06.395Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"BoCRVi1NPeQmlrxjAAAB","timestamp":"2024-07-26T15:43:06.404Z"}
+{"level":"info","message":"User connected","socketId":"Yq5m1dLUf8C1BLoyAAAD","timestamp":"2024-07-26T15:43:49.117Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Yq5m1dLUf8C1BLoyAAAD","timestamp":"2024-07-26T15:43:49.128Z"}
+{"level":"info","message":"User disconnected","socketId":"BoCRVi1NPeQmlrxjAAAB","timestamp":"2024-07-26T15:46:03.532Z"}
+{"level":"info","message":"User disconnected","socketId":"Yq5m1dLUf8C1BLoyAAAD","timestamp":"2024-07-26T15:46:13.488Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T15:52:43.250Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T15:52:43.252Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T15:52:43.253Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T15:52:43.253Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T15:52:43.256Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:18:07.392Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:18:07.394Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:18:07.395Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:18:07.395Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:18:07.398Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:19:10.053Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:19:10.056Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:19:10.056Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:19:10.056Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:19:10.059Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:19:15.206Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:19:15.209Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:19:15.209Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:19:15.209Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:19:15.213Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:22:26.729Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:22:26.731Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:22:26.732Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:22:26.732Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:22:26.735Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:22:35.397Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:22:35.399Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:22:35.400Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:22:35.400Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:22:35.403Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:24:50.906Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:24:50.909Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:24:50.909Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:24:50.909Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:24:50.913Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:25:20.120Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:25:20.123Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:25:20.123Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:25:20.124Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:25:20.127Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:25:28.957Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:25:28.959Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:25:28.960Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:25:28.960Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:25:28.963Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:26:28.106Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:26:28.108Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:26:28.108Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:26:28.109Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:26:28.112Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:27:50.287Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:27:50.289Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:27:50.290Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:27:50.290Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:27:50.293Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:27:55.822Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:27:55.824Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:27:55.825Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:27:55.825Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:27:55.828Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:44:07.190Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:44:07.192Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:44:07.192Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:44:07.193Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:44:07.195Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:44:11.617Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:44:11.619Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:44:11.620Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:44:11.620Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:44:11.623Z"}
+{"level":"info","message":"User connected","socketId":"TjoOw6JwOod6KwhnAAAB","timestamp":"2024-07-26T16:48:55.015Z"}
+{"level":"info","message":"User disconnected","socketId":"TjoOw6JwOod6KwhnAAAB","timestamp":"2024-07-26T16:49:28.805Z"}
+{"level":"info","message":"User connected","socketId":"86HgmgVjWtGuwRqEAAAD","timestamp":"2024-07-26T16:49:29.116Z"}
+{"level":"info","message":"User disconnected","socketId":"86HgmgVjWtGuwRqEAAAD","timestamp":"2024-07-26T16:49:51.547Z"}
+{"level":"info","message":"User connected","socketId":"CoxCra1dUcBbonqDAAAF","timestamp":"2024-07-26T16:49:55.249Z"}
+{"level":"info","message":"User disconnected","socketId":"CoxCra1dUcBbonqDAAAF","timestamp":"2024-07-26T16:50:07.929Z"}
+{"level":"info","message":"User connected","socketId":"XD4HuTc8FasWUMMmAAAH","timestamp":"2024-07-26T16:50:22.683Z"}
+{"level":"info","message":"User connected","socketId":"7H4R9jekCWAzKKNCAAAJ","timestamp":"2024-07-26T16:50:27.849Z"}
+{"level":"info","message":"User disconnected","socketId":"XD4HuTc8FasWUMMmAAAH","timestamp":"2024-07-26T16:50:38.856Z"}
+{"level":"info","message":"User connected","socketId":"PV2ucWAmyCAXBq5AAAAL","timestamp":"2024-07-26T16:50:39.042Z"}
+{"level":"info","message":"User disconnected","socketId":"7H4R9jekCWAzKKNCAAAJ","timestamp":"2024-07-26T16:50:42.462Z"}
+{"level":"info","message":"User connected","socketId":"RvXcypWh1TGemK4GAAAN","timestamp":"2024-07-26T16:50:42.789Z"}
+{"level":"info","message":"User disconnected","socketId":"RvXcypWh1TGemK4GAAAN","timestamp":"2024-07-26T16:50:44.945Z"}
+{"level":"info","message":"User connected","socketId":"oCUJ0psajsI9YDIWAAAP","timestamp":"2024-07-26T16:50:46.731Z"}
+{"level":"info","message":"User disconnected","socketId":"PV2ucWAmyCAXBq5AAAAL","timestamp":"2024-07-26T16:50:49.915Z"}
+{"level":"info","message":"User connected","socketId":"EIjkPnzJVWehMtVcAAAR","timestamp":"2024-07-26T16:50:51.383Z"}
+{"chatId":"66a25f99e121b57e5988bedb","level":"info","message":"User joined conversation","socketId":"oCUJ0psajsI9YDIWAAAP","timestamp":"2024-07-26T16:50:59.968Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"EIjkPnzJVWehMtVcAAAR","timestamp":"2024-07-26T16:51:10.774Z"}
+{"level":"info","message":"User disconnected","socketId":"EIjkPnzJVWehMtVcAAAR","timestamp":"2024-07-26T16:51:15.818Z"}
+{"level":"info","message":"User connected","socketId":"u1srgginIn-mPO_7AAAT","timestamp":"2024-07-26T16:51:15.824Z"}
+{"chatId":"66a25f99e121b57e5988bedb","level":"info","message":"User joined conversation","socketId":"u1srgginIn-mPO_7AAAT","timestamp":"2024-07-26T16:51:15.830Z"}
+{"level":"info","message":"User disconnected","socketId":"u1srgginIn-mPO_7AAAT","timestamp":"2024-07-26T16:51:19.713Z"}
+{"level":"info","message":"User connected","socketId":"cldsMCqOFWOxcVbxAAAV","timestamp":"2024-07-26T16:51:21.468Z"}
+{"level":"info","message":"User disconnected","socketId":"oCUJ0psajsI9YDIWAAAP","timestamp":"2024-07-26T16:51:37.099Z"}
+{"level":"info","message":"User connected","socketId":"M4yyXv_npQJBhhL4AAAX","timestamp":"2024-07-26T16:51:37.106Z"}
+{"level":"info","message":"User disconnected","socketId":"cldsMCqOFWOxcVbxAAAV","timestamp":"2024-07-26T16:51:37.313Z"}
+{"level":"info","message":"User connected","socketId":"YIVJeMDmhknJrJzsAAAZ","timestamp":"2024-07-26T16:51:37.320Z"}
+{"level":"info","message":"User disconnected","socketId":"M4yyXv_npQJBhhL4AAAX","timestamp":"2024-07-26T16:51:40.181Z"}
+{"level":"info","message":"User connected","socketId":"ECUHiXwVlQ1oHqBnAAAb","timestamp":"2024-07-26T16:51:40.189Z"}
+{"level":"info","message":"User disconnected","socketId":"YIVJeMDmhknJrJzsAAAZ","timestamp":"2024-07-26T16:51:40.303Z"}
+{"level":"info","message":"User connected","socketId":"k4Vz11XGjdwV1AmiAAAd","timestamp":"2024-07-26T16:51:40.308Z"}
+{"level":"info","message":"User disconnected","socketId":"ECUHiXwVlQ1oHqBnAAAb","timestamp":"2024-07-26T16:51:44.187Z"}
+{"level":"info","message":"User connected","socketId":"m6VQjf3EbLm9psftAAAf","timestamp":"2024-07-26T16:51:44.195Z"}
+{"level":"info","message":"User disconnected","socketId":"k4Vz11XGjdwV1AmiAAAd","timestamp":"2024-07-26T16:51:44.308Z"}
+{"level":"info","message":"User connected","socketId":"n7Y7j918eiLoOwpnAAAh","timestamp":"2024-07-26T16:51:44.315Z"}
+{"level":"info","message":"User disconnected","socketId":"m6VQjf3EbLm9psftAAAf","timestamp":"2024-07-26T16:51:47.815Z"}
+{"level":"info","message":"User connected","socketId":"5dGJxiLNbO9dO5ggAAAj","timestamp":"2024-07-26T16:51:47.823Z"}
+{"level":"info","message":"User disconnected","socketId":"n7Y7j918eiLoOwpnAAAh","timestamp":"2024-07-26T16:51:48.308Z"}
+{"level":"info","message":"User connected","socketId":"W0jNNLU2wwFBmR1IAAAl","timestamp":"2024-07-26T16:51:48.312Z"}
+{"level":"info","message":"User disconnected","socketId":"W0jNNLU2wwFBmR1IAAAl","timestamp":"2024-07-26T16:53:29.828Z"}
+{"level":"info","message":"User disconnected","socketId":"5dGJxiLNbO9dO5ggAAAj","timestamp":"2024-07-26T16:53:37.154Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-26T16:54:09.757Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-26T16:54:09.759Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-26T16:54:09.759Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-26T16:54:09.760Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-26T16:54:09.762Z"}
+{"level":"info","message":"User connected","socketId":"DoY9vK9efiMdRS35AAAB","timestamp":"2024-07-26T16:54:15.396Z"}
+{"level":"info","message":"User connected","socketId":"1QJeiOa3cXQhc5INAAAD","timestamp":"2024-07-26T16:54:22.214Z"}
+{"level":"info","message":"User disconnected","socketId":"1QJeiOa3cXQhc5INAAAD","timestamp":"2024-07-26T16:54:34.669Z"}
+{"level":"info","message":"User disconnected","socketId":"DoY9vK9efiMdRS35AAAB","timestamp":"2024-07-26T16:54:49.055Z"}

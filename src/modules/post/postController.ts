@@ -314,6 +314,25 @@ updatePost: async(req:Request, res:Response)=>{
       console.log("Error editing user posts", error);
       res.status(500).json({success: false, message: "Internal server error"})
   }
+},
+
+editComment: async(req:Request, res:Response)=>{
+  try {
+    const id = req.query.commentId;
+      const postId = req.query.postId;
+      const content = req.body.content;
+      console.log("COntent body",content);
+      
+      if(!id || !postId || !content){
+        return res.status(400).json({ error: "commentId or postId were missing" });
+      }
+      const operation = 'edit-comment';
+      const response = await postRabbitMqClient.produce({id, postId, content},operation);
+      return res.json(response);
+  } catch (error) {
+    console.log("Error editing comment", error);
+      res.status(500).json({success: false, message: "Internal server error"})
+  }
 }
 
 };

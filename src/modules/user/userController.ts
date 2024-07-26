@@ -2,13 +2,21 @@ import express, { Request, Response } from 'express'
 import { Userclient } from './grpc/client/grpcClient'
 import { genenrateToken } from '../../jwt/jwtCreate'
 import userRabbitMqClient from './rabbitMQ/client';
+import { emitUserStatus } from '../../socket/socketServer';
 
+
+interface LogoutResponse {
+    success: boolean;
+    message: string;
+    data: {
+      isOnline: boolean;
+      lastSeen: string;
+    };
+  }
 
 export const userController = {
     register:(req: Request, res: Response)=>{
         try {
-            
-
             Userclient.RegisterUser(req.body, (err:Error | null, result: any)=>{
                 if(err){
                     return res.status(500).json({error:"Internal server error"});
@@ -108,6 +116,8 @@ export const userController = {
                 res.cookie('isRecruiter', isRecruiter);
                 result.isRecruiter = false;
                 result.token = token;
+                console.log("what is inside dataaaa11212321",result);
+                emitUserStatus(result.user_data._id, result.user_data.isOnline);
                 return res.json(result)
             })
         } catch (error) {
@@ -144,18 +154,35 @@ export const userController = {
         }
     },
 
-    logout: (req: Request, res: Response) => {
+    logout: async(req: Request, res: Response) => {
         try {
-            res.clearCookie('role');
-            res.clearCookie('isRecruiter');
-            res.clearCookie('token');
-            res.clearCookie('user')
-            return res.json({success: true})
+            const userId = req.query.userId as string;
+            if (!userId) {
+                return res.status(400).json({ success: false, error: "User ID is required" });
+            }
+    
+            const operation = 'user-log-out'
+            const response = await userRabbitMqClient.produce({userId}, operation)as LogoutResponse;
+            console.log("logout statussss", response);
+            
+            if(response && response.success) {
+                res.clearCookie('role');
+                res.clearCookie('isRecruiter');
+                res.clearCookie('token');
+                res.clearCookie('user')
+    
+                emitUserStatus(userId, response.data.isOnline);
+    
+                return res.json({success: true})
+            } else {
+                return res.status(400).json({success: false, error: "Logout failed"});
+            }
         } catch (error) {
-            console.log("Error during login with google auth", error);
+            console.log("Error during logout", error);
             return res.status(500).json({success: false, error: "Internal server error" });
         }
     },
+    
 
     addTitleProfile: async(req: Request, res: Response) =>{
         console.log("reached here", req.body);
