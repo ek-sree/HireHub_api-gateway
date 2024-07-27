@@ -96,92 +96,96 @@ export const userController = {
         }
     },
 
-    login:(req:Request, res:Response)=>{
+    login: (req: Request, res: Response) => {
         try {
-            
-            Userclient.Login(req.body, (err: Error | null, result: any)=>{
-                if(err){
+            Userclient.Login(req.body, (err: Error | null, result: any) => {
+                if (err) {
                     console.log("error while loging user", err);
-                    return res.status(500).json({error:"Internal server error"});
+                    return res.status(500).json({ error: "Internal server error" }); // Ensure to return here
                 }
-                console.log(result,"sdsd");
-                if(!result.success){
-                    return res.json(result);
+                console.log(result, "sdsd");
+                if (!result.success) {
+                    return res.json(result); // Ensure to return here
                 }
-                const token = genenrateToken({id:result.user_data._id,email:result.user_data.email});
-                let role ='user'
-                res.cookie('role',role, {maxAge: 3600000})
-                res.cookie('token', token,{httpOnly:true, maxAge: 3600000})
-                const isRecruiter =false;
+                const token = genenrateToken({ id: result.user_data._id, email: result.user_data.email });
+                let role = 'user';
+                res.cookie('role', role, { maxAge: 3600000 });
+                res.cookie('token', token, { httpOnly: true, maxAge: 3600000 });
+                const isRecruiter = false;
                 res.cookie('isRecruiter', isRecruiter);
                 result.isRecruiter = false;
                 result.token = token;
-                console.log("what is inside dataaaa11212321",result);
+                console.log("what is inside dataaaa11212321", result);
                 emitUserStatus(result.user_data._id, result.user_data.isOnline);
-                return res.json(result)
-            })
+                return res.json(result); 
+            });
         } catch (error) {
             console.log("Error loging in", error);
-            return res.status(500).json({error: "Internal server error"});
+            return res.status(500).json({ error: "Internal server error" });
         }
     },
+    
 
     loginWithGoogle: (req: Request, res: Response) => {
         try {
             console.log("google auth");
-
+    
             Userclient.LoginWithGoogle(req.body, (err: Error | null, result: any) => {
                 if (err) {
-                    res.status(500).json({ error: "Internal server error" });
+                    console.log("error while loging in with google", err);
+                    return res.status(500).json({ error: "Internal server error" }); // Ensure to return here
                 }
                 if (!result || !result.user_data) {
-                    return res.status(500).json({ error: "Invalid response from Google login service" });
+                    return res.status(500).json({ error: "Invalid response from Google login service" }); // Ensure to return here
                 }
                 const token = genenrateToken({ id: result.user_data._id, email: result.user_data.email });
-                let role = 'user'
-                res.cookie('role', role, { maxAge: 3600000 })
-                res.cookie('token', token, { httpOnly: true, maxAge: 3600000 })
+                let role = 'user';
+                res.cookie('role', role, { maxAge: 3600000 });
+                res.cookie('token', token, { httpOnly: true, maxAge: 3600000 });
                 const isRecruiter = false;
                 res.cookie('isRecruiter', isRecruiter);
                 console.log(result);
                 result.isRecruiter = false;
                 result.token = token;
-                return res.json(result)
-            })
+                emitUserStatus(result.user_data._id, result.user_data.isOnline);
+                return res.json(result); 
+            });
         } catch (error) {
             console.log("Error during login with google auth", error);
             return res.status(500).json({ error: "Internal server error" });
         }
     },
+    
 
-    logout: async(req: Request, res: Response) => {
+    logout: async (req: Request, res: Response) => {
         try {
             const userId = req.query.userId as string;
             if (!userId) {
-                return res.status(400).json({ success: false, error: "User ID is required" });
+                return res.status(400).json({ success: false, error: "User ID is required" }); // Ensure to return here
             }
     
-            const operation = 'user-log-out'
-            const response = await userRabbitMqClient.produce({userId}, operation)as LogoutResponse;
+            const operation = 'user-log-out';
+            const response = await userRabbitMqClient.produce({ userId }, operation) as LogoutResponse;
             console.log("logout statussss", response);
-            
-            if(response && response.success) {
+    
+            if (response && response.success) {
                 res.clearCookie('role');
                 res.clearCookie('isRecruiter');
                 res.clearCookie('token');
-                res.clearCookie('user')
+                res.clearCookie('user');
     
                 emitUserStatus(userId, response.data.isOnline);
     
-                return res.json({success: true})
+                return res.json({ success: true });
             } else {
-                return res.status(400).json({success: false, error: "Logout failed"});
+                return res.status(400).json({ success: false, error: "Logout failed" });
             }
         } catch (error) {
             console.log("Error during logout", error);
-            return res.status(500).json({success: false, error: "Internal server error" });
+            return res.status(500).json({ success: false, error: "Internal server error" }); 
         }
     },
+    
     
 
     addTitleProfile: async(req: Request, res: Response) =>{

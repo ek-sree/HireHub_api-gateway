@@ -118,7 +118,6 @@ export const messageController = {
             const chatId = req.query.chatId;
             const senderId = req.query.senderId;
             const receiverId = req.query.receiverId;
-            console.log("bbbae2324",images,chatId,senderId,receiverId);
             
             if(!senderId || !chatId || !images || !receiverId){
                 return res.status(400).json({ error: "UserId , receiverId, or imgUrl is missing" });
@@ -127,8 +126,28 @@ export const messageController = {
             const response = await messageRabbitMqClient.produce({images, senderId, chatId, receiverId}, operation)
             return res.json(response);
         } catch (error) {
-            logger.error("Error occurred while fetching messages", { error });
-            res.status(500).json({ error: "Error occurred while fetching messages" });
+            logger.error("Error occurred while saving images in messages", { error });
+            res.status(500).json({ error: "Error occurred while saving images in messages" });
+        }
+    },
+
+    saveVideo:async(req:Request, res:Response)=>{
+        try {
+            const video = req.file
+            const chatId = req.query.chatId;
+            const senderId = req.query.senderId;
+            const receiverId = req.query.receiverId;
+            console.log("bbbae2324",video,chatId,senderId,receiverId);
+            
+            if(!senderId || !chatId || !video || !receiverId){
+                return res.status(400).json({ error: "UserId , receiverId, or imgUrl is missing" });
+            }
+            const operation = 'save-video';
+            const response = await messageRabbitMqClient.produce({video, senderId, chatId, receiverId}, operation)
+            return res.json(response);
+        } catch (error) {
+            logger.error("Error occurred while saving video for message ", { error });
+            res.status(500).json({ error: "Error occurred while saving video for messages" });
         }
     }
 };

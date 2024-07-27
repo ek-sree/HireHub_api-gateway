@@ -23,10 +23,10 @@ export const initializeSocket = (server: HttpServer) => {
     });
 
     socket.on('sendMessage', async (message) => {
-      const { chatId, content, images, senderId, receiverId } = message;
+      const { chatId, content, images,video, senderId, receiverId } = message;
       try {
         const operation = 'save-message';
-        const response = await messageRabbitMqClient.produce({ chatId, content, images, senderId, receiverId }, operation);
+        const response = await messageRabbitMqClient.produce({ chatId, content, images,video, senderId, receiverId }, operation);
         if (response && typeof response === 'object') {
           io.to(chatId).emit('newMessage', { ...message, ...response });
         } else {

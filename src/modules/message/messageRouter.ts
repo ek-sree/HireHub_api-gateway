@@ -9,5 +9,6 @@ messageRouter.get('/getconvodata', authencticateToken, messageController.getConv
 messageRouter.post('/createChatId', authencticateToken, messageController.getChatId);
 messageRouter.get('/getmessages', authencticateToken, messageController.getMessage);
 messageRouter.post('/sendimage', authencticateToken, upload.array('images'), messageController.saveImages)
+messageRouter.post('/sendvideo', authencticateToken, upload.single('video'), messageController.saveVideo);
 
 export {messageRouter}
