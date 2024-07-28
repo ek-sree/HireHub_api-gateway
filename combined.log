@@ -4818,3 +4818,662 @@ undefined
 {"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"GPZATlOgN2kv71JnAAKt","timestamp":"2024-07-27T14:50:15.703Z"}
 {"level":"info","message":"User disconnected","socketId":"7MY8WCS1aPt4R45IAAKr","timestamp":"2024-07-27T14:57:26.642Z"}
 {"level":"info","message":"User disconnected","socketId":"GPZATlOgN2kv71JnAAKt","timestamp":"2024-07-27T14:57:36.251Z"}
+{"level":"info","message":"user-service running on port 50051","timestamp":"2024-07-28T08:41:09.324Z"}
+{"level":"info","message":"recruiter-service running on port 50052","timestamp":"2024-07-28T08:41:09.329Z"}
+{"level":"info","message":"admin-service running on port 50053","timestamp":"2024-07-28T08:41:09.330Z"}
+{"level":"info","message":"message-service running on port 50054","timestamp":"2024-07-28T08:41:09.331Z"}
+{"level":"info","message":"Server is running on 4000","timestamp":"2024-07-28T08:41:09.339Z"}
+{"level":"info","message":"User connected","socketId":"K2-2ci9dfdZB8OhgAAAB","timestamp":"2024-07-28T08:49:23.093Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"K2-2ci9dfdZB8OhgAAAB","timestamp":"2024-07-28T08:49:35.214Z"}
+{"level":"info","message":"User disconnected","socketId":"K2-2ci9dfdZB8OhgAAAB","timestamp":"2024-07-28T08:50:16.370Z"}
+{"level":"info","message":"User connected","socketId":"PmOL6n8d4N0GhzOKAAAD","timestamp":"2024-07-28T08:50:16.389Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"PmOL6n8d4N0GhzOKAAAD","timestamp":"2024-07-28T08:50:16.506Z"}
+{"level":"info","message":"User disconnected","socketId":"PmOL6n8d4N0GhzOKAAAD","timestamp":"2024-07-28T08:50:18.375Z"}
+{"level":"info","message":"User connected","socketId":"1_Sj_KbfGQ2SG8bQAAAF","timestamp":"2024-07-28T08:50:18.393Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"1_Sj_KbfGQ2SG8bQAAAF","timestamp":"2024-07-28T08:50:18.507Z"}
+{"level":"info","message":"User disconnected","socketId":"1_Sj_KbfGQ2SG8bQAAAF","timestamp":"2024-07-28T08:50:25.415Z"}
+{"level":"info","message":"User connected","socketId":"0QGQkOFbh82esUWYAAAH","timestamp":"2024-07-28T08:50:30.377Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"0QGQkOFbh82esUWYAAAH","timestamp":"2024-07-28T08:55:06.873Z"}
+{"level":"info","message":"User disconnected","socketId":"0QGQkOFbh82esUWYAAAH","timestamp":"2024-07-28T08:55:21.361Z"}
+{"level":"info","message":"User connected","socketId":"BYxJ9uB0FbSioHLGAAAJ","timestamp":"2024-07-28T08:55:21.408Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"BYxJ9uB0FbSioHLGAAAJ","timestamp":"2024-07-28T08:55:21.522Z"}
+{"level":"info","message":"User disconnected","socketId":"BYxJ9uB0FbSioHLGAAAJ","timestamp":"2024-07-28T08:55:23.881Z"}
+{"level":"info","message":"User connected","socketId":"PsF-XInN2wAcRFGbAAAL","timestamp":"2024-07-28T08:55:24.814Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"PsF-XInN2wAcRFGbAAAL","timestamp":"2024-07-28T08:55:26.729Z"}
+{"level":"info","message":"User disconnected","socketId":"PsF-XInN2wAcRFGbAAAL","timestamp":"2024-07-28T08:56:13.367Z"}
+{"level":"info","message":"User connected","socketId":"yNr6MW5y4cOblhrqAAAN","timestamp":"2024-07-28T08:56:13.428Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"yNr6MW5y4cOblhrqAAAN","timestamp":"2024-07-28T08:56:13.547Z"}
+{"level":"info","message":"User disconnected","socketId":"yNr6MW5y4cOblhrqAAAN","timestamp":"2024-07-28T08:56:16.370Z"}
+{"level":"info","message":"User connected","socketId":"Y2uiTudbg4dmIbldAAAP","timestamp":"2024-07-28T08:56:16.393Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Y2uiTudbg4dmIbldAAAP","timestamp":"2024-07-28T08:56:16.407Z"}
+{"level":"info","message":"User disconnected","socketId":"Y2uiTudbg4dmIbldAAAP","timestamp":"2024-07-28T08:56:26.358Z"}
+{"level":"info","message":"User connected","socketId":"X_5N8MLhLxfPqlfoAAAR","timestamp":"2024-07-28T08:56:26.382Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"X_5N8MLhLxfPqlfoAAAR","timestamp":"2024-07-28T08:56:26.510Z"}
+{"level":"info","message":"User disconnected","socketId":"X_5N8MLhLxfPqlfoAAAR","timestamp":"2024-07-28T08:56:28.365Z"}
+{"level":"info","message":"User connected","socketId":"psYhiHGgyBkKI9HMAAAT","timestamp":"2024-07-28T08:56:28.379Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"psYhiHGgyBkKI9HMAAAT","timestamp":"2024-07-28T08:56:28.492Z"}
+{"level":"info","message":"User disconnected","socketId":"psYhiHGgyBkKI9HMAAAT","timestamp":"2024-07-28T08:56:55.352Z"}
+{"level":"info","message":"User connected","socketId":"VsB-dMnhSAnuNaU5AAAV","timestamp":"2024-07-28T08:56:55.369Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"VsB-dMnhSAnuNaU5AAAV","timestamp":"2024-07-28T08:56:55.488Z"}
+{"level":"info","message":"User disconnected","socketId":"VsB-dMnhSAnuNaU5AAAV","timestamp":"2024-07-28T08:57:02.356Z"}
+{"level":"info","message":"User connected","socketId":"dsMnbQVaZxEqdqh6AAAX","timestamp":"2024-07-28T08:57:02.371Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"dsMnbQVaZxEqdqh6AAAX","timestamp":"2024-07-28T08:57:02.486Z"}
+{"level":"info","message":"User disconnected","socketId":"dsMnbQVaZxEqdqh6AAAX","timestamp":"2024-07-28T08:58:53.358Z"}
+{"level":"info","message":"User connected","socketId":"I-C13j7RNk3whvloAAAZ","timestamp":"2024-07-28T08:58:53.411Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"I-C13j7RNk3whvloAAAZ","timestamp":"2024-07-28T08:58:53.422Z"}
+{"level":"info","message":"User disconnected","socketId":"I-C13j7RNk3whvloAAAZ","timestamp":"2024-07-28T08:58:58.792Z"}
+{"level":"info","message":"User connected","socketId":"X8oimepewrflkwfSAAAb","timestamp":"2024-07-28T08:59:00.605Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"X8oimepewrflkwfSAAAb","timestamp":"2024-07-28T08:59:01.992Z"}
+{"level":"info","message":"User disconnected","socketId":"X8oimepewrflkwfSAAAb","timestamp":"2024-07-28T09:00:00.370Z"}
+{"level":"info","message":"User connected","socketId":"LgKjg2oYDWyixFs0AAAd","timestamp":"2024-07-28T09:00:00.396Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"LgKjg2oYDWyixFs0AAAd","timestamp":"2024-07-28T09:00:00.513Z"}
+{"level":"info","message":"User disconnected","socketId":"LgKjg2oYDWyixFs0AAAd","timestamp":"2024-07-28T09:00:02.370Z"}
+{"level":"info","message":"User connected","socketId":"doCGImlKR3hIlp7mAAAf","timestamp":"2024-07-28T09:00:02.430Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"doCGImlKR3hIlp7mAAAf","timestamp":"2024-07-28T09:00:02.548Z"}
+{"level":"info","message":"User disconnected","socketId":"doCGImlKR3hIlp7mAAAf","timestamp":"2024-07-28T09:00:06.355Z"}
+{"level":"info","message":"User connected","socketId":"BOnMD6FVU_txK80-AAAh","timestamp":"2024-07-28T09:00:06.370Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"BOnMD6FVU_txK80-AAAh","timestamp":"2024-07-28T09:00:06.381Z"}
+{"level":"info","message":"User disconnected","socketId":"BOnMD6FVU_txK80-AAAh","timestamp":"2024-07-28T09:00:09.361Z"}
+{"level":"info","message":"User connected","socketId":"3Ozrbq6xlQhhKGSZAAAj","timestamp":"2024-07-28T09:00:09.376Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"3Ozrbq6xlQhhKGSZAAAj","timestamp":"2024-07-28T09:00:09.495Z"}
+{"level":"info","message":"User disconnected","socketId":"3Ozrbq6xlQhhKGSZAAAj","timestamp":"2024-07-28T09:00:13.352Z"}
+{"level":"info","message":"User connected","socketId":"1AhiWCljw3plEFHUAAAl","timestamp":"2024-07-28T09:00:13.371Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"1AhiWCljw3plEFHUAAAl","timestamp":"2024-07-28T09:00:13.488Z"}
+{"level":"info","message":"User disconnected","socketId":"1AhiWCljw3plEFHUAAAl","timestamp":"2024-07-28T09:00:20.194Z"}
+{"level":"info","message":"User connected","socketId":"NjWS-rqsRICOBiMWAAAn","timestamp":"2024-07-28T09:00:21.734Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"NjWS-rqsRICOBiMWAAAn","timestamp":"2024-07-28T09:00:23.029Z"}
+{"level":"info","message":"User disconnected","socketId":"NjWS-rqsRICOBiMWAAAn","timestamp":"2024-07-28T09:00:40.329Z"}
+{"level":"info","message":"User connected","socketId":"eEPh2rId1hXz1oieAAAp","timestamp":"2024-07-28T09:00:40.343Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"eEPh2rId1hXz1oieAAAp","timestamp":"2024-07-28T09:00:40.462Z"}
+{"level":"info","message":"User disconnected","socketId":"eEPh2rId1hXz1oieAAAp","timestamp":"2024-07-28T09:00:41.980Z"}
+{"level":"info","message":"User connected","socketId":"nQfVsn0d-kfet3KjAAAr","timestamp":"2024-07-28T09:00:43.514Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"nQfVsn0d-kfet3KjAAAr","timestamp":"2024-07-28T09:00:44.847Z"}
+{"level":"info","message":"User disconnected","socketId":"nQfVsn0d-kfet3KjAAAr","timestamp":"2024-07-28T09:01:09.388Z"}
+{"level":"info","message":"User connected","socketId":"WtLCQcHs-SF3o9_UAAAt","timestamp":"2024-07-28T09:01:09.459Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"WtLCQcHs-SF3o9_UAAAt","timestamp":"2024-07-28T09:01:09.590Z"}
+{"level":"info","message":"User disconnected","socketId":"WtLCQcHs-SF3o9_UAAAt","timestamp":"2024-07-28T09:01:17.458Z"}
+{"level":"info","message":"User connected","socketId":"-KIT7jo1XL5Qwt78AAAv","timestamp":"2024-07-28T09:01:18.361Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"-KIT7jo1XL5Qwt78AAAv","timestamp":"2024-07-28T09:01:19.493Z"}
+{"level":"info","message":"User disconnected","socketId":"-KIT7jo1XL5Qwt78AAAv","timestamp":"2024-07-28T09:01:40.218Z"}
+{"level":"info","message":"User connected","socketId":"BZQBWPGHvKKY2bT_AAAx","timestamp":"2024-07-28T09:01:51.516Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"BZQBWPGHvKKY2bT_AAAx","timestamp":"2024-07-28T09:01:53.792Z"}
+{"level":"info","message":"User disconnected","socketId":"BZQBWPGHvKKY2bT_AAAx","timestamp":"2024-07-28T09:04:14.984Z"}
+{"level":"info","message":"User connected","socketId":"y_ZZf1cGyB-n3m2MAAAz","timestamp":"2024-07-28T09:04:18.585Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"y_ZZf1cGyB-n3m2MAAAz","timestamp":"2024-07-28T09:04:21.211Z"}
+{"level":"info","message":"User disconnected","socketId":"y_ZZf1cGyB-n3m2MAAAz","timestamp":"2024-07-28T09:04:32.016Z"}
+{"level":"info","message":"User connected","socketId":"lR9rJ5dh-hF8ZIb6AAA1","timestamp":"2024-07-28T09:06:56.509Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"lR9rJ5dh-hF8ZIb6AAA1","timestamp":"2024-07-28T09:06:58.373Z"}
+{"level":"info","message":"User connected","socketId":"ggXafnUl7cBoqdfnAAA3","timestamp":"2024-07-28T09:07:39.742Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"ggXafnUl7cBoqdfnAAA3","timestamp":"2024-07-28T09:07:47.173Z"}
+{"level":"info","message":"User disconnected","socketId":"lR9rJ5dh-hF8ZIb6AAA1","timestamp":"2024-07-28T09:08:01.917Z"}
+{"level":"info","message":"User connected","socketId":"RSN2J9Q700oOwejkAAA5","timestamp":"2024-07-28T09:08:03.529Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"RSN2J9Q700oOwejkAAA5","timestamp":"2024-07-28T09:08:04.844Z"}
+{"level":"info","message":"User disconnected","socketId":"RSN2J9Q700oOwejkAAA5","timestamp":"2024-07-28T09:08:16.741Z"}
+{"level":"info","message":"User connected","socketId":"KQwePZGILPZY47VeAAA7","timestamp":"2024-07-28T09:08:16.812Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"KQwePZGILPZY47VeAAA7","timestamp":"2024-07-28T09:08:16.927Z"}
+{"level":"info","message":"User disconnected","socketId":"ggXafnUl7cBoqdfnAAA3","timestamp":"2024-07-28T09:08:17.508Z"}
+{"level":"info","message":"User connected","socketId":"2tJ0Ic_uyiOzGkdZAAA9","timestamp":"2024-07-28T09:08:17.780Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"2tJ0Ic_uyiOzGkdZAAA9","timestamp":"2024-07-28T09:08:17.914Z"}
+{"level":"info","message":"User disconnected","socketId":"2tJ0Ic_uyiOzGkdZAAA9","timestamp":"2024-07-28T09:11:20.322Z"}
+{"level":"info","message":"User connected","socketId":"zpPbaIdPNEe0OfquAAA_","timestamp":"2024-07-28T09:11:20.344Z"}
+{"level":"info","message":"User disconnected","socketId":"KQwePZGILPZY47VeAAA7","timestamp":"2024-07-28T09:11:20.347Z"}
+{"level":"info","message":"User connected","socketId":"XLAyT-f7Ixj-loq7AABB","timestamp":"2024-07-28T09:11:20.374Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"XLAyT-f7Ixj-loq7AABB","timestamp":"2024-07-28T09:11:20.383Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"zpPbaIdPNEe0OfquAAA_","timestamp":"2024-07-28T09:11:20.463Z"}
+{"level":"info","message":"User disconnected","socketId":"zpPbaIdPNEe0OfquAAA_","timestamp":"2024-07-28T09:11:28.867Z"}
+{"level":"info","message":"User connected","socketId":"1_oY36nExBvXxaSQAABD","timestamp":"2024-07-28T09:11:28.881Z"}
+{"level":"info","message":"User disconnected","socketId":"XLAyT-f7Ixj-loq7AABB","timestamp":"2024-07-28T09:11:28.898Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"1_oY36nExBvXxaSQAABD","timestamp":"2024-07-28T09:11:28.992Z"}
+{"level":"info","message":"User disconnected","socketId":"1_oY36nExBvXxaSQAABD","timestamp":"2024-07-28T09:11:31.621Z"}
+{"level":"info","message":"User connected","socketId":"vl-_rP07Ww9NLw8ZAABF","timestamp":"2024-07-28T09:11:31.638Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"vl-_rP07Ww9NLw8ZAABF","timestamp":"2024-07-28T09:11:31.648Z"}
+{"level":"info","message":"User connected","socketId":"mR-qtJXIJ8aEEgBWAABH","timestamp":"2024-07-28T09:11:31.665Z"}
+{"level":"info","message":"User disconnected","socketId":"vl-_rP07Ww9NLw8ZAABF","timestamp":"2024-07-28T09:11:44.968Z"}
+{"level":"info","message":"User connected","socketId":"1P1YC2DETf6WDgDWAABJ","timestamp":"2024-07-28T09:11:44.984Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"1P1YC2DETf6WDgDWAABJ","timestamp":"2024-07-28T09:11:45.097Z"}
+{"level":"info","message":"User disconnected","socketId":"1P1YC2DETf6WDgDWAABJ","timestamp":"2024-07-28T09:11:46.212Z"}
+{"level":"info","message":"User connected","socketId":"eOO2cUM1QIDq5qwqAABL","timestamp":"2024-07-28T09:11:46.222Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"eOO2cUM1QIDq5qwqAABL","timestamp":"2024-07-28T09:11:46.333Z"}
+{"level":"info","message":"User disconnected","socketId":"eOO2cUM1QIDq5qwqAABL","timestamp":"2024-07-28T09:11:49.997Z"}
+{"level":"info","message":"User connected","socketId":"nGyflYCJSPOerhPNAABN","timestamp":"2024-07-28T09:11:56.456Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"mR-qtJXIJ8aEEgBWAABH","timestamp":"2024-07-28T09:12:11.823Z"}
+{"level":"info","message":"User disconnected","socketId":"mR-qtJXIJ8aEEgBWAABH","timestamp":"2024-07-28T09:12:47.175Z"}
+{"level":"info","message":"User connected","socketId":"jUViXPePoa49MBEUAABP","timestamp":"2024-07-28T09:12:47.194Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"jUViXPePoa49MBEUAABP","timestamp":"2024-07-28T09:12:47.323Z"}
+{"level":"info","message":"User disconnected","socketId":"jUViXPePoa49MBEUAABP","timestamp":"2024-07-28T09:12:48.648Z"}
+{"level":"info","message":"User connected","socketId":"Gqi1A-kM8DcSxjNTAABR","timestamp":"2024-07-28T09:12:48.667Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Gqi1A-kM8DcSxjNTAABR","timestamp":"2024-07-28T09:12:48.785Z"}
+{"level":"info","message":"User disconnected","socketId":"Gqi1A-kM8DcSxjNTAABR","timestamp":"2024-07-28T09:13:05.570Z"}
+{"level":"info","message":"User connected","socketId":"fqP270OpFvPJcFM4AABT","timestamp":"2024-07-28T09:13:05.593Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"fqP270OpFvPJcFM4AABT","timestamp":"2024-07-28T09:13:05.600Z"}
+{"level":"info","message":"User disconnected","socketId":"fqP270OpFvPJcFM4AABT","timestamp":"2024-07-28T09:18:33.373Z"}
+{"level":"info","message":"User connected","socketId":"CdjmH-1NaGgmZAsXAABV","timestamp":"2024-07-28T09:18:33.404Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"CdjmH-1NaGgmZAsXAABV","timestamp":"2024-07-28T09:18:33.529Z"}
+{"level":"info","message":"User disconnected","socketId":"CdjmH-1NaGgmZAsXAABV","timestamp":"2024-07-28T09:18:55.356Z"}
+{"level":"info","message":"User connected","socketId":"i-Kyje2Snc5ORNyCAABX","timestamp":"2024-07-28T09:18:55.427Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"i-Kyje2Snc5ORNyCAABX","timestamp":"2024-07-28T09:18:55.433Z"}
+{"level":"info","message":"User disconnected","socketId":"i-Kyje2Snc5ORNyCAABX","timestamp":"2024-07-28T09:19:03.357Z"}
+{"level":"info","message":"User connected","socketId":"K0RDwY7JyW_nlr7AAABZ","timestamp":"2024-07-28T09:19:03.383Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"K0RDwY7JyW_nlr7AAABZ","timestamp":"2024-07-28T09:19:03.507Z"}
+{"level":"info","message":"User disconnected","socketId":"K0RDwY7JyW_nlr7AAABZ","timestamp":"2024-07-28T09:19:37.357Z"}
+{"level":"info","message":"User connected","socketId":"6aaObTtLXGjgfRD-AABb","timestamp":"2024-07-28T09:19:37.420Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"6aaObTtLXGjgfRD-AABb","timestamp":"2024-07-28T09:19:37.546Z"}
+{"level":"info","message":"User disconnected","socketId":"6aaObTtLXGjgfRD-AABb","timestamp":"2024-07-28T09:19:52.364Z"}
+{"level":"info","message":"User connected","socketId":"sZC1BXS7HsWyPqvjAABd","timestamp":"2024-07-28T09:19:52.397Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"sZC1BXS7HsWyPqvjAABd","timestamp":"2024-07-28T09:19:52.509Z"}
+{"level":"info","message":"User disconnected","socketId":"sZC1BXS7HsWyPqvjAABd","timestamp":"2024-07-28T09:20:37.589Z"}
+{"level":"info","message":"User connected","socketId":"bLmJGun_OKmA4m7BAABf","timestamp":"2024-07-28T09:20:37.612Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"bLmJGun_OKmA4m7BAABf","timestamp":"2024-07-28T09:20:37.620Z"}
+{"level":"info","message":"User disconnected","socketId":"nGyflYCJSPOerhPNAABN","timestamp":"2024-07-28T09:21:02.838Z"}
+{"level":"info","message":"User disconnected","socketId":"bLmJGun_OKmA4m7BAABf","timestamp":"2024-07-28T09:21:02.911Z"}
+{"level":"info","message":"User connected","socketId":"SiSOz3G8XDk_asilAABh","timestamp":"2024-07-28T09:21:06.563Z"}
+{"level":"info","message":"User connected","socketId":"_RkLVblghgzLTpBmAABj","timestamp":"2024-07-28T09:21:06.864Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"_RkLVblghgzLTpBmAABj","timestamp":"2024-07-28T09:21:09.873Z"}
+{"level":"info","message":"User disconnected","socketId":"_RkLVblghgzLTpBmAABj","timestamp":"2024-07-28T09:21:45.551Z"}
+{"level":"info","message":"User connected","socketId":"m1gW8nI4zSjtzzdzAABl","timestamp":"2024-07-28T09:29:09.805Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"m1gW8nI4zSjtzzdzAABl","timestamp":"2024-07-28T09:29:11.369Z"}
+{"level":"info","message":"User disconnected","socketId":"m1gW8nI4zSjtzzdzAABl","timestamp":"2024-07-28T09:33:55.409Z"}
+{"level":"info","message":"User disconnected","socketId":"SiSOz3G8XDk_asilAABh","timestamp":"2024-07-28T09:33:58.071Z"}
+{"level":"info","message":"User connected","socketId":"xIG1Qxr22p-bEZTJAABn","timestamp":"2024-07-28T09:34:04.550Z"}
+{"level":"info","message":"User disconnected","socketId":"xIG1Qxr22p-bEZTJAABn","timestamp":"2024-07-28T09:34:05.772Z"}
+{"level":"info","message":"User connected","socketId":"Zqh6Am5w_353oO7QAABp","timestamp":"2024-07-28T09:34:22.182Z"}
+{"level":"info","message":"User disconnected","socketId":"Zqh6Am5w_353oO7QAABp","timestamp":"2024-07-28T09:34:23.482Z"}
+{"level":"info","message":"User connected","socketId":"7EsVXsXbTgc7sX5SAABr","timestamp":"2024-07-28T09:34:50.827Z"}
+{"level":"info","message":"User disconnected","socketId":"7EsVXsXbTgc7sX5SAABr","timestamp":"2024-07-28T09:34:54.309Z"}
+{"level":"info","message":"User connected","socketId":"RiTNeSvajecAJ_ZYAABt","timestamp":"2024-07-28T09:35:13.382Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"RiTNeSvajecAJ_ZYAABt","timestamp":"2024-07-28T09:35:23.463Z"}
+{"level":"info","message":"User disconnected","socketId":"RiTNeSvajecAJ_ZYAABt","timestamp":"2024-07-28T09:35:49.364Z"}
+{"level":"info","message":"User connected","socketId":"5rB9wJ5yzNIMaH01AABv","timestamp":"2024-07-28T09:35:49.394Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"5rB9wJ5yzNIMaH01AABv","timestamp":"2024-07-28T09:35:49.509Z"}
+{"level":"info","message":"User disconnected","socketId":"5rB9wJ5yzNIMaH01AABv","timestamp":"2024-07-28T09:35:50.386Z"}
+{"level":"info","message":"User connected","socketId":"XxqnaGCloAGMYZ7cAABx","timestamp":"2024-07-28T09:35:50.431Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"XxqnaGCloAGMYZ7cAABx","timestamp":"2024-07-28T09:35:50.555Z"}
+{"level":"info","message":"User disconnected","socketId":"XxqnaGCloAGMYZ7cAABx","timestamp":"2024-07-28T09:35:53.369Z"}
+{"level":"info","message":"User connected","socketId":"txFtvKxt8Ro8XVWlAABz","timestamp":"2024-07-28T09:35:53.399Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"txFtvKxt8Ro8XVWlAABz","timestamp":"2024-07-28T09:35:53.512Z"}
+{"level":"info","message":"User disconnected","socketId":"txFtvKxt8Ro8XVWlAABz","timestamp":"2024-07-28T09:35:57.361Z"}
+{"level":"info","message":"User connected","socketId":"X9H6PS6H1HidWTmgAAB1","timestamp":"2024-07-28T09:35:57.396Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"X9H6PS6H1HidWTmgAAB1","timestamp":"2024-07-28T09:35:57.521Z"}
+{"level":"info","message":"User disconnected","socketId":"X9H6PS6H1HidWTmgAAB1","timestamp":"2024-07-28T09:36:03.388Z"}
+{"level":"info","message":"User connected","socketId":"HlLrWhCLg3lpEo3iAAB3","timestamp":"2024-07-28T09:36:03.438Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"HlLrWhCLg3lpEo3iAAB3","timestamp":"2024-07-28T09:36:03.558Z"}
+{"level":"info","message":"User disconnected","socketId":"HlLrWhCLg3lpEo3iAAB3","timestamp":"2024-07-28T09:36:04.346Z"}
+{"level":"info","message":"User connected","socketId":"_b6vG_tUwDF10j--AAB5","timestamp":"2024-07-28T09:36:04.367Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"_b6vG_tUwDF10j--AAB5","timestamp":"2024-07-28T09:36:04.491Z"}
+{"level":"info","message":"User disconnected","socketId":"_b6vG_tUwDF10j--AAB5","timestamp":"2024-07-28T09:36:18.618Z"}
+{"level":"info","message":"User connected","socketId":"GNPIfYmYB4q-VwDdAAB7","timestamp":"2024-07-28T09:36:18.643Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"GNPIfYmYB4q-VwDdAAB7","timestamp":"2024-07-28T09:36:18.773Z"}
+{"level":"info","message":"User disconnected","socketId":"GNPIfYmYB4q-VwDdAAB7","timestamp":"2024-07-28T09:36:23.353Z"}
+{"level":"info","message":"User connected","socketId":"b7ZfyM6T-raZEc4aAAB9","timestamp":"2024-07-28T09:36:23.377Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"b7ZfyM6T-raZEc4aAAB9","timestamp":"2024-07-28T09:36:23.387Z"}
+{"level":"info","message":"User disconnected","socketId":"b7ZfyM6T-raZEc4aAAB9","timestamp":"2024-07-28T09:36:26.370Z"}
+{"level":"info","message":"User connected","socketId":"v9EBj1w-gXQARLFPAAB_","timestamp":"2024-07-28T09:36:26.404Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"v9EBj1w-gXQARLFPAAB_","timestamp":"2024-07-28T09:36:26.417Z"}
+{"level":"info","message":"User disconnected","socketId":"v9EBj1w-gXQARLFPAAB_","timestamp":"2024-07-28T09:36:32.602Z"}
+{"level":"info","message":"User connected","socketId":"pY9KvWhlxzFONFNgAACB","timestamp":"2024-07-28T09:36:32.624Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"pY9KvWhlxzFONFNgAACB","timestamp":"2024-07-28T09:36:32.743Z"}
+{"level":"info","message":"User disconnected","socketId":"pY9KvWhlxzFONFNgAACB","timestamp":"2024-07-28T09:36:38.353Z"}
+{"level":"info","message":"User connected","socketId":"syzWrCKiiwgRU4OYAACD","timestamp":"2024-07-28T09:36:38.375Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"syzWrCKiiwgRU4OYAACD","timestamp":"2024-07-28T09:36:38.503Z"}
+{"level":"info","message":"User disconnected","socketId":"syzWrCKiiwgRU4OYAACD","timestamp":"2024-07-28T09:36:40.359Z"}
+{"level":"info","message":"User connected","socketId":"zbLMcxpmLZ6k3KKgAACF","timestamp":"2024-07-28T09:36:40.383Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"zbLMcxpmLZ6k3KKgAACF","timestamp":"2024-07-28T09:36:40.392Z"}
+{"level":"info","message":"User disconnected","socketId":"zbLMcxpmLZ6k3KKgAACF","timestamp":"2024-07-28T09:36:41.296Z"}
+{"level":"info","message":"User connected","socketId":"C2jJJO7AroCf6_3IAACH","timestamp":"2024-07-28T09:36:41.328Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"C2jJJO7AroCf6_3IAACH","timestamp":"2024-07-28T09:36:41.446Z"}
+{"level":"info","message":"User disconnected","socketId":"C2jJJO7AroCf6_3IAACH","timestamp":"2024-07-28T09:36:49.383Z"}
+{"level":"info","message":"User connected","socketId":"ql09wXlAlBPn6J-AAACJ","timestamp":"2024-07-28T09:36:49.434Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"ql09wXlAlBPn6J-AAACJ","timestamp":"2024-07-28T09:36:49.547Z"}
+{"level":"info","message":"User disconnected","socketId":"ql09wXlAlBPn6J-AAACJ","timestamp":"2024-07-28T09:36:50.363Z"}
+{"level":"info","message":"User connected","socketId":"o9BzqCu7F_2nAyntAACL","timestamp":"2024-07-28T09:36:50.389Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"o9BzqCu7F_2nAyntAACL","timestamp":"2024-07-28T09:36:50.521Z"}
+{"level":"info","message":"User disconnected","socketId":"o9BzqCu7F_2nAyntAACL","timestamp":"2024-07-28T09:37:08.725Z"}
+{"level":"info","message":"User connected","socketId":"Q7jpDKC4SrkwKvhoAACN","timestamp":"2024-07-28T09:37:08.746Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Q7jpDKC4SrkwKvhoAACN","timestamp":"2024-07-28T09:37:08.873Z"}
+{"level":"info","message":"User disconnected","socketId":"Q7jpDKC4SrkwKvhoAACN","timestamp":"2024-07-28T09:37:41.391Z"}
+{"level":"info","message":"User connected","socketId":"Q9kfz-hR77zQ9HztAACP","timestamp":"2024-07-28T09:37:41.481Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Q9kfz-hR77zQ9HztAACP","timestamp":"2024-07-28T09:37:41.608Z"}
+{"level":"info","message":"User disconnected","socketId":"Q9kfz-hR77zQ9HztAACP","timestamp":"2024-07-28T09:37:55.432Z"}
+{"level":"info","message":"User connected","socketId":"kUg8pErGmjCaDrYDAACR","timestamp":"2024-07-28T09:38:00.416Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"kUg8pErGmjCaDrYDAACR","timestamp":"2024-07-28T09:40:43.692Z"}
+{"level":"info","message":"User disconnected","socketId":"kUg8pErGmjCaDrYDAACR","timestamp":"2024-07-28T09:42:55.367Z"}
+{"level":"info","message":"User connected","socketId":"LduV75BBGLUOgj0PAACT","timestamp":"2024-07-28T09:42:55.387Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"LduV75BBGLUOgj0PAACT","timestamp":"2024-07-28T09:42:55.506Z"}
+{"level":"info","message":"User disconnected","socketId":"LduV75BBGLUOgj0PAACT","timestamp":"2024-07-28T09:44:39.360Z"}
+{"level":"info","message":"User connected","socketId":"lnXTnSv0XgcO3TUyAACV","timestamp":"2024-07-28T09:44:39.479Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"lnXTnSv0XgcO3TUyAACV","timestamp":"2024-07-28T09:44:39.610Z"}
+{"level":"info","message":"User disconnected","socketId":"lnXTnSv0XgcO3TUyAACV","timestamp":"2024-07-28T09:45:36.365Z"}
+{"level":"info","message":"User connected","socketId":"iwl3om4lIAgIpzWlAACX","timestamp":"2024-07-28T09:45:36.385Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"iwl3om4lIAgIpzWlAACX","timestamp":"2024-07-28T09:45:36.509Z"}
+{"level":"info","message":"User disconnected","socketId":"iwl3om4lIAgIpzWlAACX","timestamp":"2024-07-28T09:45:38.370Z"}
+{"level":"info","message":"User connected","socketId":"qzZfxzQuvJPSyo_NAACZ","timestamp":"2024-07-28T09:45:38.397Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"qzZfxzQuvJPSyo_NAACZ","timestamp":"2024-07-28T09:45:38.518Z"}
+{"level":"info","message":"User disconnected","socketId":"qzZfxzQuvJPSyo_NAACZ","timestamp":"2024-07-28T09:45:54.364Z"}
+{"level":"info","message":"User connected","socketId":"QlYhxGfaBEx1-ScPAACb","timestamp":"2024-07-28T09:45:54.424Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"QlYhxGfaBEx1-ScPAACb","timestamp":"2024-07-28T09:45:54.546Z"}
+{"level":"info","message":"User disconnected","socketId":"QlYhxGfaBEx1-ScPAACb","timestamp":"2024-07-28T09:46:28.395Z"}
+{"level":"info","message":"User connected","socketId":"reuqebmZSxcgaAtiAACd","timestamp":"2024-07-28T09:46:28.505Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"reuqebmZSxcgaAtiAACd","timestamp":"2024-07-28T09:46:28.515Z"}
+{"level":"info","message":"User disconnected","socketId":"reuqebmZSxcgaAtiAACd","timestamp":"2024-07-28T09:46:33.367Z"}
+{"level":"info","message":"User connected","socketId":"pEVLkjFR9rV8CUS0AACf","timestamp":"2024-07-28T09:46:33.398Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"pEVLkjFR9rV8CUS0AACf","timestamp":"2024-07-28T09:46:33.557Z"}
+{"level":"info","message":"User disconnected","socketId":"pEVLkjFR9rV8CUS0AACf","timestamp":"2024-07-28T09:46:34.355Z"}
+{"level":"info","message":"User connected","socketId":"JZp0q4UXJBdPnq8hAACh","timestamp":"2024-07-28T09:46:34.377Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"JZp0q4UXJBdPnq8hAACh","timestamp":"2024-07-28T09:46:34.498Z"}
+{"level":"info","message":"User disconnected","socketId":"JZp0q4UXJBdPnq8hAACh","timestamp":"2024-07-28T09:46:39.367Z"}
+{"level":"info","message":"User connected","socketId":"YVgqKhQECBUVNZIHAACj","timestamp":"2024-07-28T09:46:39.387Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"YVgqKhQECBUVNZIHAACj","timestamp":"2024-07-28T09:46:39.512Z"}
+{"level":"info","message":"User disconnected","socketId":"YVgqKhQECBUVNZIHAACj","timestamp":"2024-07-28T09:46:41.377Z"}
+{"level":"info","message":"User connected","socketId":"hQ7rs2x3WAn8ETwTAACl","timestamp":"2024-07-28T09:46:41.409Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"hQ7rs2x3WAn8ETwTAACl","timestamp":"2024-07-28T09:46:41.534Z"}
+{"level":"info","message":"User disconnected","socketId":"hQ7rs2x3WAn8ETwTAACl","timestamp":"2024-07-28T09:46:42.377Z"}
+{"level":"info","message":"User connected","socketId":"qJ8zs3CXNx0_azmvAACn","timestamp":"2024-07-28T09:46:42.402Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"qJ8zs3CXNx0_azmvAACn","timestamp":"2024-07-28T09:46:42.528Z"}
+{"level":"info","message":"User disconnected","socketId":"qJ8zs3CXNx0_azmvAACn","timestamp":"2024-07-28T09:46:44.361Z"}
+{"level":"info","message":"User connected","socketId":"K937Ks2juYD0hw51AACp","timestamp":"2024-07-28T09:46:44.381Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"K937Ks2juYD0hw51AACp","timestamp":"2024-07-28T09:46:44.511Z"}
+{"level":"info","message":"User disconnected","socketId":"K937Ks2juYD0hw51AACp","timestamp":"2024-07-28T09:46:46.374Z"}
+{"level":"info","message":"User connected","socketId":"GFs0DHe7BslMlaK8AACr","timestamp":"2024-07-28T09:46:46.423Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"GFs0DHe7BslMlaK8AACr","timestamp":"2024-07-28T09:46:46.550Z"}
+{"level":"info","message":"User disconnected","socketId":"GFs0DHe7BslMlaK8AACr","timestamp":"2024-07-28T09:47:23.444Z"}
+{"level":"info","message":"User connected","socketId":"KKpZoHwws2s4QfpCAACt","timestamp":"2024-07-28T09:47:23.502Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"KKpZoHwws2s4QfpCAACt","timestamp":"2024-07-28T09:47:23.652Z"}
+{"level":"info","message":"User disconnected","socketId":"KKpZoHwws2s4QfpCAACt","timestamp":"2024-07-28T09:47:36.362Z"}
+{"level":"info","message":"User connected","socketId":"8P8jRVocBheeD_BYAACv","timestamp":"2024-07-28T09:47:36.382Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"8P8jRVocBheeD_BYAACv","timestamp":"2024-07-28T09:47:36.505Z"}
+{"level":"info","message":"User disconnected","socketId":"8P8jRVocBheeD_BYAACv","timestamp":"2024-07-28T09:55:04.369Z"}
+{"level":"info","message":"User connected","socketId":"FH-Btu8qm_38pfE_AACx","timestamp":"2024-07-28T09:55:04.399Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"FH-Btu8qm_38pfE_AACx","timestamp":"2024-07-28T09:55:04.409Z"}
+{"level":"info","message":"User disconnected","socketId":"FH-Btu8qm_38pfE_AACx","timestamp":"2024-07-28T09:55:47.360Z"}
+{"level":"info","message":"User connected","socketId":"RGyr9kEjzUbvr2LWAACz","timestamp":"2024-07-28T09:55:47.382Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"RGyr9kEjzUbvr2LWAACz","timestamp":"2024-07-28T09:55:47.507Z"}
+{"level":"info","message":"User disconnected","socketId":"RGyr9kEjzUbvr2LWAACz","timestamp":"2024-07-28T09:56:13.372Z"}
+{"level":"info","message":"User connected","socketId":"G0E8JuJLqZZL2ovJAAC1","timestamp":"2024-07-28T09:56:13.391Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"G0E8JuJLqZZL2ovJAAC1","timestamp":"2024-07-28T09:56:13.399Z"}
+{"level":"info","message":"User disconnected","socketId":"G0E8JuJLqZZL2ovJAAC1","timestamp":"2024-07-28T09:56:16.360Z"}
+{"level":"info","message":"User connected","socketId":"8sfuPcN5bZvJam6aAAC3","timestamp":"2024-07-28T09:56:16.413Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"8sfuPcN5bZvJam6aAAC3","timestamp":"2024-07-28T09:56:16.553Z"}
+{"level":"info","message":"User disconnected","socketId":"8sfuPcN5bZvJam6aAAC3","timestamp":"2024-07-28T09:56:19.360Z"}
+{"level":"info","message":"User connected","socketId":"rISHhhfyq6A4yXcfAAC5","timestamp":"2024-07-28T09:56:19.376Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"rISHhhfyq6A4yXcfAAC5","timestamp":"2024-07-28T09:56:19.506Z"}
+{"level":"info","message":"User disconnected","socketId":"rISHhhfyq6A4yXcfAAC5","timestamp":"2024-07-28T09:56:25.361Z"}
+{"level":"info","message":"User connected","socketId":"2X8wu1vnIGinbWPwAAC7","timestamp":"2024-07-28T09:56:25.386Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"2X8wu1vnIGinbWPwAAC7","timestamp":"2024-07-28T09:56:25.506Z"}
+{"level":"info","message":"User disconnected","socketId":"2X8wu1vnIGinbWPwAAC7","timestamp":"2024-07-28T09:56:27.367Z"}
+{"level":"info","message":"User connected","socketId":"dy1Exf9nG4assW1gAAC9","timestamp":"2024-07-28T09:56:27.399Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"dy1Exf9nG4assW1gAAC9","timestamp":"2024-07-28T09:56:27.523Z"}
+{"level":"info","message":"User disconnected","socketId":"dy1Exf9nG4assW1gAAC9","timestamp":"2024-07-28T09:56:30.366Z"}
+{"level":"info","message":"User connected","socketId":"biq_V_qDIjDobGoyAAC_","timestamp":"2024-07-28T09:56:30.393Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"biq_V_qDIjDobGoyAAC_","timestamp":"2024-07-28T09:56:30.399Z"}
+{"level":"info","message":"User disconnected","socketId":"biq_V_qDIjDobGoyAAC_","timestamp":"2024-07-28T09:56:35.355Z"}
+{"level":"info","message":"User connected","socketId":"79yQcMS2SbPvy9j6AADB","timestamp":"2024-07-28T09:56:35.379Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"79yQcMS2SbPvy9j6AADB","timestamp":"2024-07-28T09:56:35.504Z"}
+{"level":"info","message":"User disconnected","socketId":"79yQcMS2SbPvy9j6AADB","timestamp":"2024-07-28T09:56:37.377Z"}
+{"level":"info","message":"User connected","socketId":"02h-lbMZ0JpYbFF2AADD","timestamp":"2024-07-28T09:56:37.411Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"02h-lbMZ0JpYbFF2AADD","timestamp":"2024-07-28T09:56:37.529Z"}
+{"level":"info","message":"User disconnected","socketId":"02h-lbMZ0JpYbFF2AADD","timestamp":"2024-07-28T09:56:38.365Z"}
+{"level":"info","message":"User connected","socketId":"DfUgGI9Cu5_IRI5XAADF","timestamp":"2024-07-28T09:56:38.388Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"DfUgGI9Cu5_IRI5XAADF","timestamp":"2024-07-28T09:56:38.394Z"}
+{"level":"info","message":"User disconnected","socketId":"DfUgGI9Cu5_IRI5XAADF","timestamp":"2024-07-28T09:56:41.355Z"}
+{"level":"info","message":"User connected","socketId":"g0r7iRd2yUPJvYL0AADH","timestamp":"2024-07-28T09:56:41.386Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"g0r7iRd2yUPJvYL0AADH","timestamp":"2024-07-28T09:56:41.524Z"}
+{"level":"info","message":"User disconnected","socketId":"g0r7iRd2yUPJvYL0AADH","timestamp":"2024-07-28T09:56:43.361Z"}
+{"level":"info","message":"User connected","socketId":"5Qw26GmqQHxDJdi4AADJ","timestamp":"2024-07-28T09:56:43.383Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"5Qw26GmqQHxDJdi4AADJ","timestamp":"2024-07-28T09:56:43.503Z"}
+{"level":"info","message":"User disconnected","socketId":"5Qw26GmqQHxDJdi4AADJ","timestamp":"2024-07-28T09:57:00.382Z"}
+{"level":"info","message":"User connected","socketId":"xopXxYASV9dq4IC9AADL","timestamp":"2024-07-28T09:57:06.401Z"}
+{"level":"info","message":"User disconnected","socketId":"xopXxYASV9dq4IC9AADL","timestamp":"2024-07-28T09:59:59.637Z"}
+{"level":"info","message":"User connected","socketId":"s6A4Kt05cHJk_2PzAADN","timestamp":"2024-07-28T10:00:05.646Z"}
+{"level":"info","message":"User disconnected","socketId":"s6A4Kt05cHJk_2PzAADN","timestamp":"2024-07-28T10:00:43.997Z"}
+{"level":"info","message":"User connected","socketId":"vCQB6TjQsep8XNyIAADP","timestamp":"2024-07-28T10:00:50.842Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"vCQB6TjQsep8XNyIAADP","timestamp":"2024-07-28T10:00:54.596Z"}
+{"level":"info","message":"User disconnected","socketId":"vCQB6TjQsep8XNyIAADP","timestamp":"2024-07-28T10:02:02.365Z"}
+{"level":"info","message":"User connected","socketId":"FqIs8W-i0MpOC3itAADR","timestamp":"2024-07-28T10:02:02.393Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"FqIs8W-i0MpOC3itAADR","timestamp":"2024-07-28T10:02:02.407Z"}
+{"level":"info","message":"User disconnected","socketId":"FqIs8W-i0MpOC3itAADR","timestamp":"2024-07-28T10:02:14.446Z"}
+{"level":"info","message":"User connected","socketId":"fdunSPd4jyNDTPjlAADT","timestamp":"2024-07-28T10:02:18.533Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"fdunSPd4jyNDTPjlAADT","timestamp":"2024-07-28T10:04:02.676Z"}
+{"level":"info","message":"User disconnected","socketId":"fdunSPd4jyNDTPjlAADT","timestamp":"2024-07-28T10:04:31.936Z"}
+{"level":"info","message":"User connected","socketId":"h9KCjz9IL9K2SN2yAADV","timestamp":"2024-07-28T10:04:41.400Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"h9KCjz9IL9K2SN2yAADV","timestamp":"2024-07-28T10:22:05.501Z"}
+{"level":"info","message":"User disconnected","socketId":"h9KCjz9IL9K2SN2yAADV","timestamp":"2024-07-28T10:22:23.908Z"}
+{"level":"info","message":"User connected","socketId":"_h09MZpKaUxlvxZkAADX","timestamp":"2024-07-28T11:33:02.704Z"}
+{"level":"info","message":"User disconnected","socketId":"_h09MZpKaUxlvxZkAADX","timestamp":"2024-07-28T11:33:08.899Z"}
+{"level":"info","message":"User connected","socketId":"PB-3uN_dTivt1kNIAADZ","timestamp":"2024-07-28T11:33:21.296Z"}
+{"level":"info","message":"User disconnected","socketId":"PB-3uN_dTivt1kNIAADZ","timestamp":"2024-07-28T11:33:25.931Z"}
+{"level":"info","message":"User connected","socketId":"RcAxsm7-46QE7lKRAADb","timestamp":"2024-07-28T11:35:57.488Z"}
+{"level":"info","message":"User disconnected","socketId":"RcAxsm7-46QE7lKRAADb","timestamp":"2024-07-28T11:35:59.739Z"}
+{"level":"info","message":"User connected","socketId":"hiTjH8fDe6-inta6AADd","timestamp":"2024-07-28T11:36:46.578Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"hiTjH8fDe6-inta6AADd","timestamp":"2024-07-28T11:37:22.324Z"}
+{"level":"info","message":"User disconnected","socketId":"hiTjH8fDe6-inta6AADd","timestamp":"2024-07-28T11:40:05.938Z"}
+{"level":"info","message":"User connected","socketId":"c_inWPhvVa6pIx2QAADf","timestamp":"2024-07-28T11:40:05.960Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"c_inWPhvVa6pIx2QAADf","timestamp":"2024-07-28T11:40:06.069Z"}
+{"level":"info","message":"User disconnected","socketId":"c_inWPhvVa6pIx2QAADf","timestamp":"2024-07-28T11:40:21.039Z"}
+{"level":"info","message":"User connected","socketId":"vYo4igh03tT33DadAADh","timestamp":"2024-07-28T11:40:21.046Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"vYo4igh03tT33DadAADh","timestamp":"2024-07-28T11:40:21.166Z"}
+{"level":"info","message":"User disconnected","socketId":"vYo4igh03tT33DadAADh","timestamp":"2024-07-28T11:40:27.882Z"}
+{"level":"info","message":"User connected","socketId":"TkxMiVR6V0XxhizGAADj","timestamp":"2024-07-28T11:40:28.227Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"TkxMiVR6V0XxhizGAADj","timestamp":"2024-07-28T11:40:29.907Z"}
+{"level":"info","message":"User disconnected","socketId":"TkxMiVR6V0XxhizGAADj","timestamp":"2024-07-28T11:41:03.050Z"}
+{"level":"info","message":"User connected","socketId":"wvNEu6MT6oA67EcEAADl","timestamp":"2024-07-28T11:41:03.057Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"wvNEu6MT6oA67EcEAADl","timestamp":"2024-07-28T11:41:03.163Z"}
+{"level":"info","message":"User disconnected","socketId":"wvNEu6MT6oA67EcEAADl","timestamp":"2024-07-28T11:41:22.753Z"}
+{"level":"info","message":"User connected","socketId":"NDX27913nGrU9VlbAADn","timestamp":"2024-07-28T11:41:24.895Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"NDX27913nGrU9VlbAADn","timestamp":"2024-07-28T11:41:26.591Z"}
+{"level":"info","message":"User disconnected","socketId":"NDX27913nGrU9VlbAADn","timestamp":"2024-07-28T11:42:07.358Z"}
+{"level":"info","message":"User connected","socketId":"h-FmvcTUKF1qcc_hAADp","timestamp":"2024-07-28T11:42:07.368Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"h-FmvcTUKF1qcc_hAADp","timestamp":"2024-07-28T11:42:07.481Z"}
+{"level":"info","message":"User disconnected","socketId":"h-FmvcTUKF1qcc_hAADp","timestamp":"2024-07-28T11:42:15.358Z"}
+{"level":"info","message":"User connected","socketId":"HkP9pKnfS_DCWPp1AADr","timestamp":"2024-07-28T11:42:15.368Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"HkP9pKnfS_DCWPp1AADr","timestamp":"2024-07-28T11:42:15.475Z"}
+{"level":"info","message":"User disconnected","socketId":"HkP9pKnfS_DCWPp1AADr","timestamp":"2024-07-28T11:42:19.347Z"}
+{"level":"info","message":"User connected","socketId":"vdWLGHG-nZFX6lIkAADt","timestamp":"2024-07-28T11:42:19.357Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"vdWLGHG-nZFX6lIkAADt","timestamp":"2024-07-28T11:42:19.467Z"}
+{"level":"info","message":"User disconnected","socketId":"vdWLGHG-nZFX6lIkAADt","timestamp":"2024-07-28T11:42:22.352Z"}
+{"level":"info","message":"User connected","socketId":"BXzGZmqchUtWiY8OAADv","timestamp":"2024-07-28T11:42:22.366Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"BXzGZmqchUtWiY8OAADv","timestamp":"2024-07-28T11:42:22.475Z"}
+{"level":"info","message":"User disconnected","socketId":"BXzGZmqchUtWiY8OAADv","timestamp":"2024-07-28T11:42:26.356Z"}
+{"level":"info","message":"User connected","socketId":"o_OF8JLgcrSidcCIAADx","timestamp":"2024-07-28T11:42:26.367Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"o_OF8JLgcrSidcCIAADx","timestamp":"2024-07-28T11:42:26.371Z"}
+{"level":"info","message":"User disconnected","socketId":"o_OF8JLgcrSidcCIAADx","timestamp":"2024-07-28T11:42:41.345Z"}
+{"level":"info","message":"User connected","socketId":"tVd6ZLduEGSDGgwJAADz","timestamp":"2024-07-28T11:42:41.768Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"tVd6ZLduEGSDGgwJAADz","timestamp":"2024-07-28T11:42:42.782Z"}
+{"level":"info","message":"User disconnected","socketId":"tVd6ZLduEGSDGgwJAADz","timestamp":"2024-07-28T11:43:15.360Z"}
+{"level":"info","message":"User connected","socketId":"oXDsvfzrHJNYMjIWAAD1","timestamp":"2024-07-28T11:43:15.386Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"oXDsvfzrHJNYMjIWAAD1","timestamp":"2024-07-28T11:43:15.497Z"}
+{"level":"info","message":"User disconnected","socketId":"oXDsvfzrHJNYMjIWAAD1","timestamp":"2024-07-28T11:43:17.205Z"}
+{"level":"info","message":"User connected","socketId":"ojAPwk9EFTSg_I3JAAD3","timestamp":"2024-07-28T11:43:17.583Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"ojAPwk9EFTSg_I3JAAD3","timestamp":"2024-07-28T11:43:19.697Z"}
+{"level":"info","message":"User disconnected","socketId":"ojAPwk9EFTSg_I3JAAD3","timestamp":"2024-07-28T11:46:44.359Z"}
+{"level":"info","message":"User connected","socketId":"ro7vsDA4VRvTT4giAAD5","timestamp":"2024-07-28T11:46:44.386Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"ro7vsDA4VRvTT4giAAD5","timestamp":"2024-07-28T11:46:44.495Z"}
+{"level":"info","message":"User disconnected","socketId":"ro7vsDA4VRvTT4giAAD5","timestamp":"2024-07-28T11:50:40.912Z"}
+{"level":"info","message":"User connected","socketId":"TDWTF2VfofegTg1xAAD7","timestamp":"2024-07-28T11:50:41.375Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"TDWTF2VfofegTg1xAAD7","timestamp":"2024-07-28T11:50:42.518Z"}
+{"level":"info","message":"User disconnected","socketId":"TDWTF2VfofegTg1xAAD7","timestamp":"2024-07-28T11:51:31.350Z"}
+{"level":"info","message":"User connected","socketId":"S-KkHINLTixmnW_IAAD9","timestamp":"2024-07-28T11:51:31.366Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"S-KkHINLTixmnW_IAAD9","timestamp":"2024-07-28T11:51:31.484Z"}
+{"level":"info","message":"User disconnected","socketId":"S-KkHINLTixmnW_IAAD9","timestamp":"2024-07-28T11:51:33.619Z"}
+{"level":"info","message":"User connected","socketId":"fmYrhSsMeEUT_HPIAAD_","timestamp":"2024-07-28T11:51:33.910Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"fmYrhSsMeEUT_HPIAAD_","timestamp":"2024-07-28T11:51:34.949Z"}
+{"level":"info","message":"User disconnected","socketId":"fmYrhSsMeEUT_HPIAAD_","timestamp":"2024-07-28T11:57:19.369Z"}
+{"level":"info","message":"User connected","socketId":"xPwE2sVXDUgDr3HyAAEB","timestamp":"2024-07-28T11:57:21.390Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"xPwE2sVXDUgDr3HyAAEB","timestamp":"2024-07-28T11:57:27.402Z"}
+{"level":"info","message":"User disconnected","socketId":"xPwE2sVXDUgDr3HyAAEB","timestamp":"2024-07-28T11:57:44.735Z"}
+{"level":"info","message":"User connected","socketId":"xisZ05k2qp34gPWOAAED","timestamp":"2024-07-28T12:06:10.812Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"xisZ05k2qp34gPWOAAED","timestamp":"2024-07-28T12:06:11.995Z"}
+{"level":"info","message":"User disconnected","socketId":"xisZ05k2qp34gPWOAAED","timestamp":"2024-07-28T12:06:33.357Z"}
+{"level":"info","message":"User connected","socketId":"aQl7TKMjH55DZa77AAEF","timestamp":"2024-07-28T12:06:33.382Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"aQl7TKMjH55DZa77AAEF","timestamp":"2024-07-28T12:06:33.490Z"}
+{"level":"info","message":"User disconnected","socketId":"aQl7TKMjH55DZa77AAEF","timestamp":"2024-07-28T12:06:42.348Z"}
+{"level":"info","message":"User connected","socketId":"jEy8NPKZCly0Zj4DAAEH","timestamp":"2024-07-28T12:06:42.358Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"jEy8NPKZCly0Zj4DAAEH","timestamp":"2024-07-28T12:06:42.467Z"}
+{"level":"info","message":"User disconnected","socketId":"jEy8NPKZCly0Zj4DAAEH","timestamp":"2024-07-28T12:08:18.351Z"}
+{"level":"info","message":"User connected","socketId":"wKXwjf05oTDXsXoZAAEJ","timestamp":"2024-07-28T12:08:18.366Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"wKXwjf05oTDXsXoZAAEJ","timestamp":"2024-07-28T12:08:18.471Z"}
+{"level":"info","message":"User disconnected","socketId":"wKXwjf05oTDXsXoZAAEJ","timestamp":"2024-07-28T12:08:35.542Z"}
+{"level":"info","message":"User connected","socketId":"_b4Nr8RDC-MyzyopAAEL","timestamp":"2024-07-28T12:08:35.985Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"_b4Nr8RDC-MyzyopAAEL","timestamp":"2024-07-28T12:08:37.192Z"}
+{"level":"info","message":"User disconnected","socketId":"_b4Nr8RDC-MyzyopAAEL","timestamp":"2024-07-28T12:08:49.355Z"}
+{"level":"info","message":"User connected","socketId":"3j-59DApum5qGJdjAAEN","timestamp":"2024-07-28T12:08:49.361Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"3j-59DApum5qGJdjAAEN","timestamp":"2024-07-28T12:08:49.474Z"}
+{"level":"info","message":"User disconnected","socketId":"3j-59DApum5qGJdjAAEN","timestamp":"2024-07-28T12:13:45.363Z"}
+{"level":"info","message":"User connected","socketId":"25Pvp7mvr_ap8DmDAAEP","timestamp":"2024-07-28T12:13:45.401Z"}
+{"level":"info","message":"User disconnected","socketId":"25Pvp7mvr_ap8DmDAAEP","timestamp":"2024-07-28T12:13:49.908Z"}
+{"level":"info","message":"User connected","socketId":"nJIBOBk9rnXsP2eTAAER","timestamp":"2024-07-28T12:13:50.380Z"}
+{"level":"info","message":"User disconnected","socketId":"nJIBOBk9rnXsP2eTAAER","timestamp":"2024-07-28T12:14:06.300Z"}
+{"level":"info","message":"User connected","socketId":"D9awrOBnQL-z2ysjAAET","timestamp":"2024-07-28T12:14:07.785Z"}
+{"level":"info","message":"User disconnected","socketId":"D9awrOBnQL-z2ysjAAET","timestamp":"2024-07-28T12:14:15.820Z"}
+{"level":"info","message":"User connected","socketId":"tEblpISqffQ_sHkXAAEV","timestamp":"2024-07-28T12:14:15.846Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"tEblpISqffQ_sHkXAAEV","timestamp":"2024-07-28T12:14:15.849Z"}
+{"level":"info","message":"User disconnected","socketId":"tEblpISqffQ_sHkXAAEV","timestamp":"2024-07-28T12:16:15.521Z"}
+{"level":"info","message":"User connected","socketId":"lI6wd8Qt9S-vejHxAAEX","timestamp":"2024-07-28T12:16:15.841Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"lI6wd8Qt9S-vejHxAAEX","timestamp":"2024-07-28T12:16:18.480Z"}
+{"level":"info","message":"User disconnected","socketId":"lI6wd8Qt9S-vejHxAAEX","timestamp":"2024-07-28T12:20:18.360Z"}
+{"level":"info","message":"User connected","socketId":"NLxBKbG7cgo0_YRKAAEZ","timestamp":"2024-07-28T12:20:18.371Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"NLxBKbG7cgo0_YRKAAEZ","timestamp":"2024-07-28T12:20:18.494Z"}
+{"level":"info","message":"User disconnected","socketId":"NLxBKbG7cgo0_YRKAAEZ","timestamp":"2024-07-28T12:20:23.358Z"}
+{"level":"info","message":"User connected","socketId":"vZsFusWHnLSiumebAAEb","timestamp":"2024-07-28T12:20:23.366Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"vZsFusWHnLSiumebAAEb","timestamp":"2024-07-28T12:20:23.372Z"}
+{"level":"info","message":"User disconnected","socketId":"vZsFusWHnLSiumebAAEb","timestamp":"2024-07-28T12:20:28.360Z"}
+{"level":"info","message":"User connected","socketId":"jNuEwpDCYtxr0O0hAAEd","timestamp":"2024-07-28T12:20:28.367Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"jNuEwpDCYtxr0O0hAAEd","timestamp":"2024-07-28T12:20:28.481Z"}
+{"level":"info","message":"User disconnected","socketId":"jNuEwpDCYtxr0O0hAAEd","timestamp":"2024-07-28T12:20:33.361Z"}
+{"level":"info","message":"User connected","socketId":"wbz8VTQdviymMOVMAAEf","timestamp":"2024-07-28T12:20:33.367Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"wbz8VTQdviymMOVMAAEf","timestamp":"2024-07-28T12:20:33.479Z"}
+{"level":"info","message":"User disconnected","socketId":"wbz8VTQdviymMOVMAAEf","timestamp":"2024-07-28T12:20:39.355Z"}
+{"level":"info","message":"User connected","socketId":"p2M6izR6ZEJc3irkAAEh","timestamp":"2024-07-28T12:20:39.370Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"p2M6izR6ZEJc3irkAAEh","timestamp":"2024-07-28T12:20:39.477Z"}
+{"level":"info","message":"User disconnected","socketId":"p2M6izR6ZEJc3irkAAEh","timestamp":"2024-07-28T12:21:01.352Z"}
+{"level":"info","message":"User connected","socketId":"7mjv6VrHCZPlKRevAAEj","timestamp":"2024-07-28T12:21:01.361Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"7mjv6VrHCZPlKRevAAEj","timestamp":"2024-07-28T12:21:01.473Z"}
+{"level":"info","message":"User disconnected","socketId":"7mjv6VrHCZPlKRevAAEj","timestamp":"2024-07-28T12:21:02.362Z"}
+{"level":"info","message":"User connected","socketId":"UhoFoJ9tBLuQZgQcAAEl","timestamp":"2024-07-28T12:21:02.372Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"UhoFoJ9tBLuQZgQcAAEl","timestamp":"2024-07-28T12:21:02.375Z"}
+{"level":"info","message":"User disconnected","socketId":"UhoFoJ9tBLuQZgQcAAEl","timestamp":"2024-07-28T12:21:12.358Z"}
+{"level":"info","message":"User connected","socketId":"48SC-Olu_6AKMPWSAAEn","timestamp":"2024-07-28T12:21:12.368Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"48SC-Olu_6AKMPWSAAEn","timestamp":"2024-07-28T12:21:12.478Z"}
+{"level":"info","message":"User disconnected","socketId":"48SC-Olu_6AKMPWSAAEn","timestamp":"2024-07-28T12:21:14.355Z"}
+{"level":"info","message":"User connected","socketId":"lLfAaJ4r5dnLiCqMAAEp","timestamp":"2024-07-28T12:21:14.366Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"lLfAaJ4r5dnLiCqMAAEp","timestamp":"2024-07-28T12:21:14.369Z"}
+{"level":"info","message":"User disconnected","socketId":"lLfAaJ4r5dnLiCqMAAEp","timestamp":"2024-07-28T12:21:43.356Z"}
+{"level":"info","message":"User connected","socketId":"enM_Krw5tCCeBeOcAAEr","timestamp":"2024-07-28T12:21:43.363Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"enM_Krw5tCCeBeOcAAEr","timestamp":"2024-07-28T12:21:43.471Z"}
+{"level":"info","message":"User disconnected","socketId":"enM_Krw5tCCeBeOcAAEr","timestamp":"2024-07-28T12:22:05.350Z"}
+{"level":"info","message":"User connected","socketId":"BdKgLHea7SHdMtq-AAEt","timestamp":"2024-07-28T12:22:05.362Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"BdKgLHea7SHdMtq-AAEt","timestamp":"2024-07-28T12:22:05.365Z"}
+{"level":"info","message":"User disconnected","socketId":"BdKgLHea7SHdMtq-AAEt","timestamp":"2024-07-28T12:22:08.005Z"}
+{"level":"info","message":"User connected","socketId":"tioznoEfKU4Tw13OAAEv","timestamp":"2024-07-28T12:22:08.399Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"tioznoEfKU4Tw13OAAEv","timestamp":"2024-07-28T12:22:09.741Z"}
+{"level":"info","message":"User disconnected","socketId":"tioznoEfKU4Tw13OAAEv","timestamp":"2024-07-28T12:22:54.354Z"}
+{"level":"info","message":"User connected","socketId":"Kv4aa_pTJe8qAkhKAAEx","timestamp":"2024-07-28T12:22:54.366Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Kv4aa_pTJe8qAkhKAAEx","timestamp":"2024-07-28T12:22:54.476Z"}
+{"level":"info","message":"User disconnected","socketId":"Kv4aa_pTJe8qAkhKAAEx","timestamp":"2024-07-28T12:26:35.346Z"}
+{"level":"info","message":"User connected","socketId":"jZRMAxkZKjv9mzekAAEz","timestamp":"2024-07-28T12:26:35.354Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"jZRMAxkZKjv9mzekAAEz","timestamp":"2024-07-28T12:26:35.356Z"}
+{"level":"info","message":"User disconnected","socketId":"jZRMAxkZKjv9mzekAAEz","timestamp":"2024-07-28T12:26:37.347Z"}
+{"level":"info","message":"User connected","socketId":"pd-7Dda2cGll7gKlAAE1","timestamp":"2024-07-28T12:26:37.355Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"pd-7Dda2cGll7gKlAAE1","timestamp":"2024-07-28T12:26:37.358Z"}
+{"level":"info","message":"User disconnected","socketId":"pd-7Dda2cGll7gKlAAE1","timestamp":"2024-07-28T12:26:45.538Z"}
+{"level":"info","message":"User connected","socketId":"41D-PS75tIrNZBclAAE3","timestamp":"2024-07-28T12:26:45.967Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"41D-PS75tIrNZBclAAE3","timestamp":"2024-07-28T12:26:46.866Z"}
+{"level":"info","message":"User disconnected","socketId":"41D-PS75tIrNZBclAAE3","timestamp":"2024-07-28T12:27:07.362Z"}
+{"level":"info","message":"User connected","socketId":"sGWA6ec_Zrxgl24nAAE5","timestamp":"2024-07-28T12:27:11.359Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"sGWA6ec_Zrxgl24nAAE5","timestamp":"2024-07-28T12:27:18.733Z"}
+{"level":"info","message":"User disconnected","socketId":"sGWA6ec_Zrxgl24nAAE5","timestamp":"2024-07-28T12:27:32.353Z"}
+{"level":"info","message":"User connected","socketId":"pLY45DQXQuR_8zswAAE7","timestamp":"2024-07-28T12:27:32.361Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"pLY45DQXQuR_8zswAAE7","timestamp":"2024-07-28T12:27:32.472Z"}
+{"level":"info","message":"User disconnected","socketId":"pLY45DQXQuR_8zswAAE7","timestamp":"2024-07-28T12:29:06.357Z"}
+{"level":"info","message":"User connected","socketId":"G3y8bRq-yDzFEbJnAAE9","timestamp":"2024-07-28T12:29:06.370Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"G3y8bRq-yDzFEbJnAAE9","timestamp":"2024-07-28T12:29:06.373Z"}
+{"level":"info","message":"User disconnected","socketId":"G3y8bRq-yDzFEbJnAAE9","timestamp":"2024-07-28T12:29:28.356Z"}
+{"level":"info","message":"User connected","socketId":"9h19IULmlwboQ7_NAAE_","timestamp":"2024-07-28T12:29:28.371Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"9h19IULmlwboQ7_NAAE_","timestamp":"2024-07-28T12:29:28.476Z"}
+{"level":"info","message":"User disconnected","socketId":"9h19IULmlwboQ7_NAAE_","timestamp":"2024-07-28T12:29:32.354Z"}
+{"level":"info","message":"User connected","socketId":"4G1BWMImy9-e83HBAAFB","timestamp":"2024-07-28T12:29:32.375Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"4G1BWMImy9-e83HBAAFB","timestamp":"2024-07-28T12:29:32.486Z"}
+{"level":"info","message":"User disconnected","socketId":"4G1BWMImy9-e83HBAAFB","timestamp":"2024-07-28T12:29:51.358Z"}
+{"level":"info","message":"User connected","socketId":"72ZaLRuqUEo6874MAAFD","timestamp":"2024-07-28T12:29:51.365Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"72ZaLRuqUEo6874MAAFD","timestamp":"2024-07-28T12:29:51.477Z"}
+{"level":"info","message":"User disconnected","socketId":"72ZaLRuqUEo6874MAAFD","timestamp":"2024-07-28T12:29:56.354Z"}
+{"level":"info","message":"User connected","socketId":"5UNDaUBbyR3gFurSAAFF","timestamp":"2024-07-28T12:29:56.365Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"5UNDaUBbyR3gFurSAAFF","timestamp":"2024-07-28T12:29:56.474Z"}
+{"level":"info","message":"User disconnected","socketId":"5UNDaUBbyR3gFurSAAFF","timestamp":"2024-07-28T12:30:00.354Z"}
+{"level":"info","message":"User connected","socketId":"n9EF7tB5JJWR8iEoAAFH","timestamp":"2024-07-28T12:30:00.361Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"n9EF7tB5JJWR8iEoAAFH","timestamp":"2024-07-28T12:30:00.474Z"}
+{"level":"info","message":"User disconnected","socketId":"n9EF7tB5JJWR8iEoAAFH","timestamp":"2024-07-28T12:31:27.359Z"}
+{"level":"info","message":"User connected","socketId":"N-ux-b4ZgridLYDIAAFJ","timestamp":"2024-07-28T12:31:29.360Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"N-ux-b4ZgridLYDIAAFJ","timestamp":"2024-07-28T12:31:48.457Z"}
+{"level":"info","message":"User disconnected","socketId":"N-ux-b4ZgridLYDIAAFJ","timestamp":"2024-07-28T12:32:23.209Z"}
+{"level":"info","message":"User connected","socketId":"hoGXkINnDHcoIribAAFL","timestamp":"2024-07-28T12:32:23.605Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"hoGXkINnDHcoIribAAFL","timestamp":"2024-07-28T12:32:25.879Z"}
+{"level":"info","message":"User disconnected","socketId":"hoGXkINnDHcoIribAAFL","timestamp":"2024-07-28T12:32:49.311Z"}
+{"level":"info","message":"User connected","socketId":"tjOhRaiTffFFONESAAFN","timestamp":"2024-07-28T12:32:49.583Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"tjOhRaiTffFFONESAAFN","timestamp":"2024-07-28T12:36:26.110Z"}
+{"level":"info","message":"User disconnected","socketId":"tjOhRaiTffFFONESAAFN","timestamp":"2024-07-28T12:37:35.359Z"}
+{"level":"info","message":"User connected","socketId":"SmDXudPfl8533aXwAAFP","timestamp":"2024-07-28T12:37:35.370Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"SmDXudPfl8533aXwAAFP","timestamp":"2024-07-28T12:37:35.479Z"}
+{"level":"info","message":"User disconnected","socketId":"SmDXudPfl8533aXwAAFP","timestamp":"2024-07-28T12:37:43.298Z"}
+{"level":"info","message":"User connected","socketId":"jiQxR6hfE6N4gFpUAAFR","timestamp":"2024-07-28T12:37:43.802Z"}
+{"level":"info","message":"User disconnected","socketId":"jiQxR6hfE6N4gFpUAAFR","timestamp":"2024-07-28T12:37:46.718Z"}
+{"level":"info","message":"User connected","socketId":"Y04FVYS_TNrphvLAAAFT","timestamp":"2024-07-28T12:37:51.820Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"Y04FVYS_TNrphvLAAAFT","timestamp":"2024-07-28T12:37:55.266Z"}
+{"level":"info","message":"User disconnected","socketId":"Y04FVYS_TNrphvLAAAFT","timestamp":"2024-07-28T12:38:32.608Z"}
+{"level":"info","message":"User connected","socketId":"_EKOpqZJDImKGA6MAAFV","timestamp":"2024-07-28T12:38:33.055Z"}
+{"level":"info","message":"User disconnected","socketId":"_EKOpqZJDImKGA6MAAFV","timestamp":"2024-07-28T12:40:25.953Z"}
+{"level":"info","message":"User connected","socketId":"8BcL210RfwC89HN-AAFX","timestamp":"2024-07-28T12:40:26.235Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"8BcL210RfwC89HN-AAFX","timestamp":"2024-07-28T12:40:28.270Z"}
+{"level":"info","message":"User disconnected","socketId":"8BcL210RfwC89HN-AAFX","timestamp":"2024-07-28T12:41:25.365Z"}
+{"level":"info","message":"User connected","socketId":"cIbp07YhDk7EbFJ_AAFZ","timestamp":"2024-07-28T12:41:25.762Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"cIbp07YhDk7EbFJ_AAFZ","timestamp":"2024-07-28T12:41:27.075Z"}
+{"level":"info","message":"User disconnected","socketId":"cIbp07YhDk7EbFJ_AAFZ","timestamp":"2024-07-28T12:41:56.322Z"}
+{"level":"info","message":"User connected","socketId":"_5HJ6RXemd2KskxmAAFb","timestamp":"2024-07-28T12:41:56.343Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"_5HJ6RXemd2KskxmAAFb","timestamp":"2024-07-28T12:41:56.346Z"}
+{"level":"info","message":"User disconnected","socketId":"_5HJ6RXemd2KskxmAAFb","timestamp":"2024-07-28T12:41:57.543Z"}
+{"level":"info","message":"User connected","socketId":"91iWKsw1ejb7rWoZAAFd","timestamp":"2024-07-28T12:41:57.555Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"91iWKsw1ejb7rWoZAAFd","timestamp":"2024-07-28T12:41:57.559Z"}
+{"level":"info","message":"User disconnected","socketId":"91iWKsw1ejb7rWoZAAFd","timestamp":"2024-07-28T12:42:16.482Z"}
+{"level":"info","message":"User connected","socketId":"HO1p1JmUEUCbeDSoAAFf","timestamp":"2024-07-28T12:42:16.887Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"HO1p1JmUEUCbeDSoAAFf","timestamp":"2024-07-28T12:43:15.287Z"}
+{"level":"info","message":"User disconnected","socketId":"HO1p1JmUEUCbeDSoAAFf","timestamp":"2024-07-28T12:46:03.364Z"}
+{"level":"info","message":"User connected","socketId":"uyuXGxYtsKP6Ffx4AAFh","timestamp":"2024-07-28T12:46:10.323Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"uyuXGxYtsKP6Ffx4AAFh","timestamp":"2024-07-28T12:47:38.130Z"}
+{"level":"info","message":"User disconnected","socketId":"uyuXGxYtsKP6Ffx4AAFh","timestamp":"2024-07-28T12:49:01.359Z"}
+{"level":"info","message":"User connected","socketId":"oTI8FZD1xEW-vR3eAAFj","timestamp":"2024-07-28T12:49:03.358Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"oTI8FZD1xEW-vR3eAAFj","timestamp":"2024-07-28T12:49:05.523Z"}
+{"level":"info","message":"User disconnected","socketId":"oTI8FZD1xEW-vR3eAAFj","timestamp":"2024-07-28T12:49:54.357Z"}
+{"level":"info","message":"User connected","socketId":"L6ci7xQcfcokZHMuAAFl","timestamp":"2024-07-28T12:49:54.368Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"L6ci7xQcfcokZHMuAAFl","timestamp":"2024-07-28T12:49:54.371Z"}
+{"level":"info","message":"User disconnected","socketId":"L6ci7xQcfcokZHMuAAFl","timestamp":"2024-07-28T12:49:57.349Z"}
+{"level":"info","message":"User connected","socketId":"t0SDkvzcTRs59z5FAAFn","timestamp":"2024-07-28T12:49:57.358Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"t0SDkvzcTRs59z5FAAFn","timestamp":"2024-07-28T12:49:57.360Z"}
+{"level":"info","message":"User disconnected","socketId":"t0SDkvzcTRs59z5FAAFn","timestamp":"2024-07-28T12:49:59.360Z"}
+{"level":"info","message":"User connected","socketId":"HIm58_C9jPT7X3QXAAFp","timestamp":"2024-07-28T12:49:59.375Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"HIm58_C9jPT7X3QXAAFp","timestamp":"2024-07-28T12:49:59.494Z"}
+{"level":"info","message":"User disconnected","socketId":"HIm58_C9jPT7X3QXAAFp","timestamp":"2024-07-28T12:50:03.252Z"}
+{"level":"info","message":"User connected","socketId":"in87V2COtjCfZpq8AAFr","timestamp":"2024-07-28T12:50:03.264Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"in87V2COtjCfZpq8AAFr","timestamp":"2024-07-28T12:50:03.374Z"}
+{"level":"info","message":"User disconnected","socketId":"in87V2COtjCfZpq8AAFr","timestamp":"2024-07-28T12:50:20.605Z"}
+{"level":"info","message":"User connected","socketId":"ALubuoXSSct0kg2GAAFt","timestamp":"2024-07-28T12:50:22.134Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"ALubuoXSSct0kg2GAAFt","timestamp":"2024-07-28T12:50:23.477Z"}
+{"level":"info","message":"User disconnected","socketId":"ALubuoXSSct0kg2GAAFt","timestamp":"2024-07-28T12:50:40.354Z"}
+{"level":"info","message":"User connected","socketId":"fO1zRiG_dSJ50jkfAAFv","timestamp":"2024-07-28T12:50:40.365Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"fO1zRiG_dSJ50jkfAAFv","timestamp":"2024-07-28T12:50:40.472Z"}
+{"level":"info","message":"User disconnected","socketId":"fO1zRiG_dSJ50jkfAAFv","timestamp":"2024-07-28T12:50:42.358Z"}
+{"level":"info","message":"User connected","socketId":"JJa4r7RuYLHdiiqeAAFx","timestamp":"2024-07-28T12:50:42.368Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"JJa4r7RuYLHdiiqeAAFx","timestamp":"2024-07-28T12:50:42.370Z"}
+{"level":"info","message":"User disconnected","socketId":"JJa4r7RuYLHdiiqeAAFx","timestamp":"2024-07-28T12:51:30.351Z"}
+{"level":"info","message":"User connected","socketId":"-_B7JYFXORw6W_C0AAFz","timestamp":"2024-07-28T12:51:30.368Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"-_B7JYFXORw6W_C0AAFz","timestamp":"2024-07-28T12:51:30.475Z"}
+{"level":"info","message":"User disconnected","socketId":"-_B7JYFXORw6W_C0AAFz","timestamp":"2024-07-28T12:51:37.350Z"}
+{"level":"info","message":"User connected","socketId":"c0DCi24b7Pzhu1BDAAF1","timestamp":"2024-07-28T12:51:37.358Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"c0DCi24b7Pzhu1BDAAF1","timestamp":"2024-07-28T12:51:37.360Z"}
+{"level":"info","message":"User disconnected","socketId":"c0DCi24b7Pzhu1BDAAF1","timestamp":"2024-07-28T12:52:12.358Z"}
+{"level":"info","message":"User connected","socketId":"b5X1PQL26UPspoUtAAF3","timestamp":"2024-07-28T12:52:12.371Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"b5X1PQL26UPspoUtAAF3","timestamp":"2024-07-28T12:52:12.489Z"}
+{"level":"info","message":"User disconnected","socketId":"b5X1PQL26UPspoUtAAF3","timestamp":"2024-07-28T12:52:13.356Z"}
+{"level":"info","message":"User connected","socketId":"sY1jg1RdEE8o28a2AAF5","timestamp":"2024-07-28T12:52:13.367Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"sY1jg1RdEE8o28a2AAF5","timestamp":"2024-07-28T12:52:13.475Z"}
+{"level":"info","message":"User disconnected","socketId":"sY1jg1RdEE8o28a2AAF5","timestamp":"2024-07-28T12:52:22.356Z"}
+{"level":"info","message":"User connected","socketId":"C4V_XOTRneSNoGVKAAF7","timestamp":"2024-07-28T12:52:22.365Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"C4V_XOTRneSNoGVKAAF7","timestamp":"2024-07-28T12:52:22.477Z"}
+{"level":"info","message":"User disconnected","socketId":"C4V_XOTRneSNoGVKAAF7","timestamp":"2024-07-28T12:52:25.116Z"}
+{"level":"info","message":"User connected","socketId":"4WK2iAQGkVKAPhYRAAF9","timestamp":"2024-07-28T12:52:25.566Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"4WK2iAQGkVKAPhYRAAF9","timestamp":"2024-07-28T12:52:27.240Z"}
+{"level":"info","message":"User disconnected","socketId":"4WK2iAQGkVKAPhYRAAF9","timestamp":"2024-07-28T12:52:40.946Z"}
+{"level":"info","message":"User connected","socketId":"TO39UTGXkEDyIiZoAAF_","timestamp":"2024-07-28T12:52:40.962Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"TO39UTGXkEDyIiZoAAF_","timestamp":"2024-07-28T12:52:41.077Z"}
+{"level":"info","message":"User disconnected","socketId":"TO39UTGXkEDyIiZoAAF_","timestamp":"2024-07-28T12:53:05.879Z"}
+{"level":"info","message":"User connected","socketId":"38lZbv_MrQZtiDwgAAGB","timestamp":"2024-07-28T12:53:06.231Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"38lZbv_MrQZtiDwgAAGB","timestamp":"2024-07-28T12:53:14.625Z"}
+{"level":"info","message":"User disconnected","socketId":"38lZbv_MrQZtiDwgAAGB","timestamp":"2024-07-28T12:53:32.179Z"}
+{"level":"info","message":"User connected","socketId":"kqj_gIXw3hFkn0-8AAGD","timestamp":"2024-07-28T12:53:32.449Z"}
+{"chatId":"669f7e95e4122c72b1309517","level":"info","message":"User joined conversation","socketId":"kqj_gIXw3hFkn0-8AAGD","timestamp":"2024-07-28T12:53:34.326Z"}
+{"level":"info","message":"User disconnected","socketId":"kqj_gIXw3hFkn0-8AAGD","timestamp":"2024-07-28T12:53:53.349Z"}
+{"level":"info","message":"User connected","socketId":"YnvMa023c8S759GiAAGF","timestamp":"2024-07-28T12:53:53.618Z"}
+{"level":"info","message":"User disconnected","socketId":"YnvMa023c8S759GiAAGF","timestamp":"2024-07-28T12:54:42.447Z"}
+{"level":"info","message":"User connected","socketId":"8Voj9wQ5biQSasphAAGH","timestamp":"2024-07-28T19:33:17.446Z"}
+{"level":"info","message":"User disconnected","socketId":"8Voj9wQ5biQSasphAAGH","timestamp":"2024-07-28T19:35:13.455Z"}
+{"level":"info","message":"User connected","socketId":"1b_N5uznEtNzAxDHAAGJ","timestamp":"2024-07-28T19:35:14.795Z"}
+{"level":"info","message":"User disconnected","socketId":"1b_N5uznEtNzAxDHAAGJ","timestamp":"2024-07-28T19:35:16.354Z"}
+{"level":"info","message":"User connected","socketId":"cTNd2hCn_DDr3-P6AAGL","timestamp":"2024-07-28T19:35:27.550Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"cTNd2hCn_DDr3-P6AAGL","timestamp":"2024-07-28T19:35:32.009Z"}
+{"level":"info","message":"User disconnected","socketId":"cTNd2hCn_DDr3-P6AAGL","timestamp":"2024-07-28T19:35:58.440Z"}
+{"level":"info","message":"User connected","socketId":"PwLo1A6r0TefeqR4AAGN","timestamp":"2024-07-28T19:35:58.456Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"PwLo1A6r0TefeqR4AAGN","timestamp":"2024-07-28T19:35:58.587Z"}
+{"level":"info","message":"User disconnected","socketId":"PwLo1A6r0TefeqR4AAGN","timestamp":"2024-07-28T19:38:02.331Z"}
+{"level":"info","message":"User connected","socketId":"KtQwD7DvcmnYYO7gAAGP","timestamp":"2024-07-28T19:38:02.345Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"KtQwD7DvcmnYYO7gAAGP","timestamp":"2024-07-28T19:38:02.461Z"}
+{"level":"info","message":"User disconnected","socketId":"KtQwD7DvcmnYYO7gAAGP","timestamp":"2024-07-28T19:38:14.635Z"}
+{"level":"info","message":"User connected","socketId":"lZlUx_pqJKp_Zop9AAGR","timestamp":"2024-07-28T19:38:15.535Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"lZlUx_pqJKp_Zop9AAGR","timestamp":"2024-07-28T19:38:16.824Z"}
+{"level":"info","message":"User disconnected","socketId":"lZlUx_pqJKp_Zop9AAGR","timestamp":"2024-07-28T19:39:01.851Z"}
+{"level":"info","message":"User connected","socketId":"hFO3-RpZWOI6HOxSAAGT","timestamp":"2024-07-28T19:39:01.867Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"hFO3-RpZWOI6HOxSAAGT","timestamp":"2024-07-28T19:39:01.874Z"}
+{"level":"info","message":"User disconnected","socketId":"hFO3-RpZWOI6HOxSAAGT","timestamp":"2024-07-28T19:39:04.086Z"}
+{"level":"info","message":"User connected","socketId":"E8x_HARY0fNGqkGtAAGV","timestamp":"2024-07-28T19:39:04.099Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"E8x_HARY0fNGqkGtAAGV","timestamp":"2024-07-28T19:39:04.104Z"}
+{"level":"info","message":"User disconnected","socketId":"E8x_HARY0fNGqkGtAAGV","timestamp":"2024-07-28T19:40:30.348Z"}
+{"level":"info","message":"User connected","socketId":"oflaD88N3CJnoQwvAAGX","timestamp":"2024-07-28T19:40:30.369Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"oflaD88N3CJnoQwvAAGX","timestamp":"2024-07-28T19:40:30.491Z"}
+{"level":"info","message":"User disconnected","socketId":"oflaD88N3CJnoQwvAAGX","timestamp":"2024-07-28T19:40:31.378Z"}
+{"level":"info","message":"User connected","socketId":"IBO07d3lWGfHPo7PAAGZ","timestamp":"2024-07-28T19:40:31.429Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"IBO07d3lWGfHPo7PAAGZ","timestamp":"2024-07-28T19:40:31.568Z"}
+{"level":"info","message":"User disconnected","socketId":"IBO07d3lWGfHPo7PAAGZ","timestamp":"2024-07-28T19:42:24.346Z"}
+{"level":"info","message":"User connected","socketId":"xFGqN0jrZp53ndzNAAGb","timestamp":"2024-07-28T19:42:54.367Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"xFGqN0jrZp53ndzNAAGb","timestamp":"2024-07-28T19:44:11.044Z"}
+{"level":"info","message":"User disconnected","socketId":"xFGqN0jrZp53ndzNAAGb","timestamp":"2024-07-28T19:50:34.346Z"}
+{"level":"info","message":"User connected","socketId":"O-Cw_CqpZRQumGCnAAGd","timestamp":"2024-07-28T19:50:34.374Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"O-Cw_CqpZRQumGCnAAGd","timestamp":"2024-07-28T19:50:34.382Z"}
+{"level":"info","message":"User disconnected","socketId":"O-Cw_CqpZRQumGCnAAGd","timestamp":"2024-07-28T19:53:11.338Z"}
+{"level":"info","message":"User connected","socketId":"Ei_jv6oTWDENanWeAAGf","timestamp":"2024-07-28T19:53:11.365Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Ei_jv6oTWDENanWeAAGf","timestamp":"2024-07-28T19:53:11.495Z"}
+{"level":"info","message":"User disconnected","socketId":"Ei_jv6oTWDENanWeAAGf","timestamp":"2024-07-28T19:53:16.403Z"}
+{"level":"info","message":"User connected","socketId":"VxnNaRcQVZRmPRrAAAGh","timestamp":"2024-07-28T19:53:16.548Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"VxnNaRcQVZRmPRrAAAGh","timestamp":"2024-07-28T19:53:16.567Z"}
+{"level":"info","message":"User disconnected","socketId":"VxnNaRcQVZRmPRrAAAGh","timestamp":"2024-07-28T19:54:03.328Z"}
+{"level":"info","message":"User connected","socketId":"AJiAk0chJ8l7Zl-7AAGj","timestamp":"2024-07-28T19:54:03.347Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"AJiAk0chJ8l7Zl-7AAGj","timestamp":"2024-07-28T19:54:03.478Z"}
+{"level":"info","message":"User disconnected","socketId":"AJiAk0chJ8l7Zl-7AAGj","timestamp":"2024-07-28T19:54:27.348Z"}
+{"level":"info","message":"User connected","socketId":"yupMstcjblZs85XAAAGl","timestamp":"2024-07-28T19:54:30.376Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"yupMstcjblZs85XAAAGl","timestamp":"2024-07-28T19:54:32.543Z"}
+{"level":"info","message":"User disconnected","socketId":"yupMstcjblZs85XAAAGl","timestamp":"2024-07-28T19:55:05.254Z"}
+{"level":"info","message":"User connected","socketId":"5kuencN2QO7h5Ko8AAGn","timestamp":"2024-07-28T19:55:06.175Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"5kuencN2QO7h5Ko8AAGn","timestamp":"2024-07-28T19:55:07.545Z"}
+{"level":"info","message":"User disconnected","socketId":"5kuencN2QO7h5Ko8AAGn","timestamp":"2024-07-28T19:55:13.338Z"}
+{"level":"info","message":"User connected","socketId":"UqQCklwp3WNwyvcCAAGp","timestamp":"2024-07-28T19:55:13.366Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"UqQCklwp3WNwyvcCAAGp","timestamp":"2024-07-28T19:55:13.484Z"}
+{"level":"info","message":"User disconnected","socketId":"UqQCklwp3WNwyvcCAAGp","timestamp":"2024-07-28T19:55:14.353Z"}
+{"level":"info","message":"User connected","socketId":"Sl8oODWWIivJ6q1ZAAGr","timestamp":"2024-07-28T19:55:14.438Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Sl8oODWWIivJ6q1ZAAGr","timestamp":"2024-07-28T19:55:14.634Z"}
+{"level":"info","message":"User disconnected","socketId":"Sl8oODWWIivJ6q1ZAAGr","timestamp":"2024-07-28T19:58:47.338Z"}
+{"level":"info","message":"User connected","socketId":"R3VBUowkoPGctAFMAAGt","timestamp":"2024-07-28T19:58:47.356Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"R3VBUowkoPGctAFMAAGt","timestamp":"2024-07-28T19:58:47.367Z"}
+{"level":"info","message":"User disconnected","socketId":"R3VBUowkoPGctAFMAAGt","timestamp":"2024-07-28T19:59:09.364Z"}
+{"level":"info","message":"User connected","socketId":"hEtt_Zttyaj0GclCAAGv","timestamp":"2024-07-28T19:59:09.379Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"hEtt_Zttyaj0GclCAAGv","timestamp":"2024-07-28T19:59:09.507Z"}
+{"level":"info","message":"User disconnected","socketId":"hEtt_Zttyaj0GclCAAGv","timestamp":"2024-07-28T19:59:33.970Z"}
+{"level":"info","message":"User connected","socketId":"MVdmmeimtVx_h_oUAAGx","timestamp":"2024-07-28T19:59:33.987Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"MVdmmeimtVx_h_oUAAGx","timestamp":"2024-07-28T19:59:34.105Z"}
+{"level":"info","message":"User disconnected","socketId":"MVdmmeimtVx_h_oUAAGx","timestamp":"2024-07-28T20:00:42.332Z"}
+{"level":"info","message":"User connected","socketId":"hc-Kr_2xOg67F3sCAAGz","timestamp":"2024-07-28T20:00:42.350Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"hc-Kr_2xOg67F3sCAAGz","timestamp":"2024-07-28T20:00:42.468Z"}
+{"level":"info","message":"User disconnected","socketId":"hc-Kr_2xOg67F3sCAAGz","timestamp":"2024-07-28T20:00:49.331Z"}
+{"level":"info","message":"User connected","socketId":"rkQwZ4FnVCwPOLyNAAG1","timestamp":"2024-07-28T20:00:49.346Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"rkQwZ4FnVCwPOLyNAAG1","timestamp":"2024-07-28T20:00:49.464Z"}
+{"level":"info","message":"User connected","socketId":"HP188nsWKyyCJcBRAAG3","timestamp":"2024-07-28T20:01:34.986Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"HP188nsWKyyCJcBRAAG3","timestamp":"2024-07-28T20:01:39.275Z"}
+{"level":"info","message":"User disconnected","socketId":"HP188nsWKyyCJcBRAAG3","timestamp":"2024-07-28T20:01:40.309Z"}
+{"level":"info","message":"User connected","socketId":"Xx7Jl5ptYNFtj3zMAAG5","timestamp":"2024-07-28T20:01:40.326Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"Xx7Jl5ptYNFtj3zMAAG5","timestamp":"2024-07-28T20:01:40.462Z"}
+{"level":"info","message":"User disconnected","socketId":"rkQwZ4FnVCwPOLyNAAG1","timestamp":"2024-07-28T20:01:56.043Z"}
+{"level":"info","message":"User connected","socketId":"U8_Za7J51HVTAYbWAAG7","timestamp":"2024-07-28T20:01:56.946Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"U8_Za7J51HVTAYbWAAG7","timestamp":"2024-07-28T20:01:59.232Z"}
+{"level":"info","message":"User disconnected","socketId":"Xx7Jl5ptYNFtj3zMAAG5","timestamp":"2024-07-28T20:02:03.795Z"}
+{"level":"info","message":"User connected","socketId":"hSfNVwAouEpWSrguAAG9","timestamp":"2024-07-28T20:02:04.229Z"}
+{"chatId":"66a4f1e4148a85daea75e9fe","level":"info","message":"User joined conversation","socketId":"hSfNVwAouEpWSrguAAG9","timestamp":"2024-07-28T20:02:35.841Z"}
+{"level":"info","message":"User disconnected","socketId":"hSfNVwAouEpWSrguAAG9","timestamp":"2024-07-28T20:03:19.968Z"}
+{"level":"info","message":"User connected","socketId":"_OBdeX_KZzg67zjHAAG_","timestamp":"2024-07-28T20:03:19.982Z"}
+{"chatId":"669f8243e4122c72b1309542","level":"info","message":"User joined conversation","socketId":"_OBdeX_KZzg67zjHAAG_","timestamp":"2024-07-28T20:03:20.105Z"}
+{"level":"info","message":"User disconnected","socketId":"U8_Za7J51HVTAYbWAAG7","timestamp":"2024-07-28T20:03:33.043Z"}
+{"level":"info","message":"User disconnected","socketId":"_OBdeX_KZzg67zjHAAG_","timestamp":"2024-07-28T20:03:58.383Z"}
