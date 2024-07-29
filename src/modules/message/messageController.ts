@@ -140,7 +140,7 @@ export const messageController = {
             console.log("bbbae2324",video,chatId,senderId,receiverId);
             
             if(!senderId || !chatId || !video || !receiverId){
-                return res.status(400).json({ error: "UserId , receiverId, or imgUrl is missing" });
+                return res.status(400).json({ error: "UserId , receiverId, or video is missing" });
             }
             const operation = 'save-video';
             const response = await messageRabbitMqClient.produce({video, senderId, chatId, receiverId}, operation)
@@ -148,6 +148,25 @@ export const messageController = {
         } catch (error) {
             logger.error("Error occurred while saving video for message ", { error });
             res.status(500).json({ error: "Error occurred while saving video for messages" });
+        }
+    },
+
+    saveAudio: async(req:Request, res:Response)=>{
+        try {
+            const audio = req.file
+            const chatId = req.query.chatId;
+            const senderId = req.query.senderId;
+            const receiverId = req.query.receiverId;
+            
+            if(!senderId || !chatId || !audio || !receiverId){
+                return res.status(400).json({ error: "UserId , receiverId, or audio is missing" });
+            }
+            const operation = 'save-audio';
+            const response = await messageRabbitMqClient.produce({audio, senderId, chatId, receiverId}, operation);
+            return res.json(response);
+        } catch (error) {
+            logger.error("Error occurred while saving audio for message ", { error });
+            res.status(500).json({ error: "Error occurred while saving audio for messages" });
         }
     }
 };
