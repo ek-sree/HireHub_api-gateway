@@ -13,7 +13,7 @@ export const initializeSocket = (server: HttpServer) => {
       credentials: true,
     },
   });
-
+  const onlineUsers = new Map<string, string>();
   io.on('connection', (socket) => {
     logger.info('User connected', { socketId: socket.id });
 
@@ -38,11 +38,75 @@ export const initializeSocket = (server: HttpServer) => {
       }
     });
 
+
+    //videocall
+
+    socket.on('userOnline', (userId: string) => {
+  console.log('User came online:', userId, 'Socket ID:', socket.id);
+  onlineUsers.set(userId, socket.id);
+});
+
+
+socket.on('disconnect', () => {
+  logger.info('User disconnected', { socketId: socket.id });
+  // Remove the disconnected user from the onlineUsers map
+  for (const [userId, socketId] of onlineUsers.entries()) {
+    if (socketId === socket.id) {
+      onlineUsers.delete(userId);
+      break;
+    }
+  }
+});
+
+    socket.on('callUser', ({userToCall, from, offer, fromId}) => {
+      console.log(`Received callUser event. userToCall: ${userToCall}, from: ${from}, fromId: ${fromId}`);
+      console.log('Current online users:', Array.from(onlineUsers.entries()));
+      const userSocketId = onlineUsers.get(userToCall);
+      if(userSocketId){
+        console.log(`Emitting incomingCall event to socket ${userSocketId},${from}, ${offer}`);
+        io.to(userSocketId).emit('incomingCall', {from, offer, fromId});
+      } else {
+        console.log(`User ${userToCall} not found in onlineUsers map`);
+      }
+    });
+
+    socket.on('callAccepted', (data) => {
+      console.log('Call accepted', data);
+      const { userId, answer, context } = data;
+      if (context === 'webRTC') {
+        const userSocketId = onlineUsers.get(userId);
+        if (userSocketId) {
+          console.log(`Forwarding callAccepted to user ${userId}`);
+          io.to(userSocketId).emit('signal', { type: 'answer', answer });
+        } else {
+          console.log(`User ${userId} not found for callAccepted`);
+        }
+      }
+    });
+    
+
+    socket.on('callAccepted', ({ userId, answer, context }) => {
+      if (context == 'webRTC') {
+          const userSocketId = onlineUsers.get(userId) || '';
+          io.to(userSocketId).emit('callAcceptedSignal', { answer });
+      }
+  });
+  
+    socket.on('callEnded', (guestId)=>{
+      let userSocketId = onlineUsers.get(guestId)||'';
+      io.to(userSocketId).emit('callEndedSignal')
+    })
+
+
     socket.on('disconnect', () => {
       logger.info('User disconnected', { socketId: socket.id });
     });
   });
 };
+
+
+
+
 
 export const emitUserStatus = (userId: string, isOnline: boolean) => {
   if (io) {
