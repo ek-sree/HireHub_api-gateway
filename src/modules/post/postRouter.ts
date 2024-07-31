@@ -17,5 +17,6 @@ postRouter.delete('/deletePost', authencticateToken, postController.deletePost);
 postRouter.post('/reportPost', authencticateToken, postController.reportPost);
 postRouter.put('/updatePost/:id', authencticateToken, postController.updatePost);
 postRouter.put('/editComment', authencticateToken, postController.editComment);
+postRouter.get('/getNotification', authencticateToken, postController.getNotification);
 
 export {postRouter}

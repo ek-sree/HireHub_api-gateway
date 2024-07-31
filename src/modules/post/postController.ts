@@ -36,7 +36,6 @@ export const postController = {
       const userId = req.query.userId;
       const { text } = req.body;
       const images = req.files;
-      console.log("images",images);
       
       if (!userId) {
         return res.status(400).json({ error: "UserId is missing" });
@@ -331,6 +330,23 @@ editComment: async(req:Request, res:Response)=>{
       return res.json(response);
   } catch (error) {
     console.log("Error editing comment", error);
+      res.status(500).json({success: false, message: "Internal server error"})
+  }
+},
+
+getNotification: async(req:Request, res:Response)=>{
+  try {
+    const likedBy = req.query.userId;
+        
+    if(!likedBy){
+      return res.status(400).json({ error: "userId missing" });
+    }
+    const operation = 'fetch-notifications'
+    const result = await postRabbitMqClient.produce({likedBy}, operation);
+    console.log("result of notification",result);
+    
+  } catch (error) {
+    console.log("Error fetching notification", error);
       res.status(500).json({success: false, message: "Internal server error"})
   }
 }

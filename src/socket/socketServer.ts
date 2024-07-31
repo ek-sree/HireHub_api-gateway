@@ -2,6 +2,38 @@ import { Server } from 'socket.io';
 import { Server as HttpServer } from 'http';
 import messageRabbitMqClient from '../modules/message/rabbitMQ/client';
 import logger from '../utils/logger';
+import postRabbitMqClient from '../modules/post/rabbitMQ/client'
+import userRabbitMqClient from '../modules/user/rabbitMQ/client'
+
+
+interface User {
+  id: any;
+  _id: string;
+}
+
+
+interface RabbitMQResponse<T> {
+  success: boolean;
+  message: string;
+  data?: T;
+}
+
+
+interface LikeNotificationResult {
+  success: boolean;
+  data?: {
+    userId: string;
+    postId: string;
+    likedBy: string;
+    notification: string;
+    _id: string;
+    createdAt: string;
+    updatedAt: string;
+    __v: number;
+  };
+  message?: string;
+}
+
 
 let io: Server;
 
@@ -13,7 +45,9 @@ export const initializeSocket = (server: HttpServer) => {
       credentials: true,
     },
   });
+
   const onlineUsers = new Map<string, string>();
+
   io.on('connection', (socket) => {
     logger.info('User connected', { socketId: socket.id });
 
@@ -23,10 +57,10 @@ export const initializeSocket = (server: HttpServer) => {
     });
 
     socket.on('sendMessage', async (message) => {
-      const { chatId, content, images,video,record,recordDuration, senderId, receiverId } = message;
+      const { chatId, content, images, video, record, recordDuration, senderId, receiverId } = message;
       try {
         const operation = 'save-message';
-        const response = await messageRabbitMqClient.produce({ chatId, content, images,video,record,recordDuration, senderId, receiverId }, operation);
+        const response = await messageRabbitMqClient.produce({ chatId, content, images, video, record, recordDuration, senderId, receiverId }, operation);
         if (response && typeof response === 'object') {
           io.to(chatId).emit('newMessage', { ...message, ...response });
         } else {
@@ -39,32 +73,55 @@ export const initializeSocket = (server: HttpServer) => {
     });
 
 
-    //videocall
+    //notification
 
+    socket.on('likeNotification', async(data)=>{
+      console.log("like notification any??",data);
+      
+      const {userId, postId, likedBy}=data;
+      try {
+        const operation = 'like-notification'
+        const result = await postRabbitMqClient.produce({userId, postId, likedBy},operation) as LikeNotificationResult;
+        console.log("result", result);
+        if (result && typeof result === 'object' && 'success' in result) {
+          const userOperation = "get-user-details-for-post";
+          const userResponse = await userRabbitMqClient.produce({ userIds: [likedBy] }, userOperation) as RabbitMQResponse<User[]>;
+    
+          let likedByUser = null;
+          if (userResponse.success && Array.isArray(userResponse.data) && userResponse.data.length > 0) {
+            likedByUser = userResponse.data[0];
+          }
+    
+          const newNotification = {
+            ...result.data,
+            likedByUser: likedByUser
+          };
+
+          io.to(userId).emit('newNotification', newNotification);
+        } else {
+          console.error('Failed to process like notification:', result);
+          socket.emit('notificationError', { error: 'Failed to process notification' });
+        }
+      } catch (error) {
+        logger.error('Error sending like notifiaction to RabbitMQ', { error });
+        socket.emit('messageSendError', { error: 'Failed to save message' });
+      }
+    })
+
+
+    // Video call
     socket.on('userOnline', (userId: string) => {
-  console.log('User came online:', userId, 'Socket ID:', socket.id);
-  onlineUsers.set(userId, socket.id);
-});
+      console.log('User came online:', userId, 'Socket ID:', socket.id);
+      onlineUsers.set(userId, socket.id);
+    });
 
-
-socket.on('disconnect', () => {
-  logger.info('User disconnected', { socketId: socket.id });
-  // Remove the disconnected user from the onlineUsers map
-  for (const [userId, socketId] of onlineUsers.entries()) {
-    if (socketId === socket.id) {
-      onlineUsers.delete(userId);
-      break;
-    }
-  }
-});
-
-    socket.on('callUser', ({userToCall, from, offer, fromId}) => {
+    socket.on('callUser', ({ userToCall, from, offer, fromId }) => {
       console.log(`Received callUser event. userToCall: ${userToCall}, from: ${from}, fromId: ${fromId}`);
       console.log('Current online users:', Array.from(onlineUsers.entries()));
       const userSocketId = onlineUsers.get(userToCall);
-      if(userSocketId){
-        console.log(`Emitting incomingCall event to socket ${userSocketId},${from}, ${offer}`);
-        io.to(userSocketId).emit('incomingCall', {from, offer, fromId});
+      if (userSocketId) {
+        console.log(`Emitting incomingCall event to socket ${userSocketId}`);
+        io.to(userSocketId).emit('incomingCall', { from, offer, fromId });
       } else {
         console.log(`User ${userToCall} not found in onlineUsers map`);
       }
@@ -83,30 +140,24 @@ socket.on('disconnect', () => {
         }
       }
     });
-    
 
-    socket.on('callAccepted', ({ userId, answer, context }) => {
-      if (context == 'webRTC') {
-          const userSocketId = onlineUsers.get(userId) || '';
-          io.to(userSocketId).emit('callAcceptedSignal', { answer });
-      }
-  });
-  
-    socket.on('callEnded', (guestId)=>{
-      let userSocketId = onlineUsers.get(guestId)||'';
-      io.to(userSocketId).emit('callEndedSignal')
-    })
-
+    socket.on('callEnded', (guestId) => {
+      let userSocketId = onlineUsers.get(guestId) || '';
+      io.to(userSocketId).emit('callEndedSignal');
+    });
 
     socket.on('disconnect', () => {
       logger.info('User disconnected', { socketId: socket.id });
+      // Remove the disconnected user from the onlineUsers map
+      for (const [userId, socketId] of onlineUsers.entries()) {
+        if (socketId === socket.id) {
+          onlineUsers.delete(userId);
+          break;
+        }
+      }
     });
   });
 };
-
-
-
-
 
 export const emitUserStatus = (userId: string, isOnline: boolean) => {
   if (io) {

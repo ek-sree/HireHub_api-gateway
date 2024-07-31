@@ -6,6 +6,7 @@ import recruiterRabbitMqClient from '../recruiter/rabbitMQ/client';
 import postRabbitMqClient from "../post/rabbitMQ/client";
 
 
+
 export const adminController = {
     
     loging:(req: Request, res: Response) => {
@@ -153,6 +154,80 @@ getUser: async (req: Request, res: Response) => {
             return res.json(response);
         } catch (error) {
             console.log("Error fetching report post list", error);
+            res.status(500).json({success: false, message: "Internal server error"})
+        }
+    },
+
+    getUserReports: async(req:Request, res:Response)=>{
+        try {
+            const operation = 'user-reports'
+            const response = await userRabbitMqClient.produce({},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error fetching users for reposts", error);
+            res.status(500).json({success: false, message: "Internal server error"})
+        }
+    },
+
+    getAllPostsReport: async(req:Request, res:Response)=>{
+        try {
+            const operation = 'post-for-reports';
+            const response = await postRabbitMqClient.produce({},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error fetching posts for reposts", error);
+            res.status(500).json({success: false, message: "Internal server error"})
+        }
+    },
+
+    getAllJobPost: async(req:Request, res:Response)=>{
+        try {
+            const operation = 'jobpost-for-reports';
+            const response = await postRabbitMqClient.produce({},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error fetching job posts for reposts", error);
+            res.status(500).json({success: false, message: "Internal server error"})
+        }
+    },
+
+    getBlockedUsers: async(req:Request, res:Response)=>{
+        try {
+            const operation = 'blocked-user-reports';
+            const response = await userRabbitMqClient.produce({},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error fetching blocked user for reposts", error);
+            res.status(500).json({success: false, message: "Internal server error"})
+        }
+    },
+
+    getBlockedRecruiter: async (req:Request, res:Response)=>{
+        try {
+            const operation = 'blocked-recruiter-report';
+            const response = await recruiterRabbitMqClient.produce({},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error fetching blocked recruiter for reposts", error);
+            res.status(500).json({success: false, message: "Internal server error"})
+        }
+    },
+
+    clearReports: async(req:Request, res:Response)=>{
+        try {
+            console.log("dad");
+            
+            const postId = req.query.postId;
+            console.log("postid clear report", postId);
+            
+            if(!postId){
+                return res.status(400).json({ error: "PostId is missing" });
+              }
+              const operation = 'clear-reports';
+              const response = await postRabbitMqClient.produce({postId}, operation);
+              return res.json(response);
+        } catch (error) {
+            console.log("Error clearing reports from post", error);
             res.status(500).json({success: false, message: "Internal server error"})
         }
     }

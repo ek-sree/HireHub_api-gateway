@@ -14,5 +14,11 @@ adminRouter.put('/blockRecruiter/:recruiterId', authencticateToken, adminControl
 adminRouter.get('/searchUser', authencticateToken, adminController.getSearchedUser);
 adminRouter.get('/searchRecruiter', authencticateToken, adminController.getSearchRecruiter);
 adminRouter.get('/fetchRepostPost', authencticateToken, adminController.getReportPost);
+adminRouter.get('/fetchUserRepost', authencticateToken, adminController.getUserReports);
+adminRouter.get('/getAllPostReport', authencticateToken, adminController.getAllPostsReport);
+adminRouter.get('/getAllJobPostRepost', authencticateToken, adminController.getAllJobPost);
+adminRouter.get('/getBlockedUser', authencticateToken, adminController.getBlockedUsers);
+adminRouter.get('/getBlockedRecruiter', authencticateToken, adminController.getBlockedRecruiter)
+adminRouter.put('/clearReportPost', authencticateToken, adminController.clearReports);
 
 export { adminRouter };

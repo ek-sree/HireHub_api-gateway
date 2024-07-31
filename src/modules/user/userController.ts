@@ -115,7 +115,6 @@ export const userController = {
                 res.cookie('isRecruiter', isRecruiter);
                 result.isRecruiter = false;
                 result.token = token;
-                console.log("what is inside dataaaa11212321", result);
                 emitUserStatus(result.user_data._id, result.user_data.isOnline);
                 return res.json(result); 
             });
