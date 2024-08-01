@@ -12,6 +12,23 @@ interface User {
   _id: string;
 }
 
+
+
+interface LikeNotificationResult {
+  success: boolean;
+  data?: {
+    userId: string;
+    postId: string;
+    likedBy: string;
+    notification: string;
+    _id: string;
+    createdAt: string;
+    updatedAt: string;
+    __v: number;
+  };
+  message?: string;
+}
+
 interface CommentData {
   UserId: string;
   content: string;
@@ -117,12 +134,13 @@ export const postController = {
     try {
       const postId = req.query.postId;
       const UserId = req.query.UserId;
+      const postUser = req.query.postUser;
       
-      if(!postId || !UserId){
-        return res.status(400).json({ error: "UserId or PostId missing" });
+      if(!postId || !UserId || !postUser){
+        return res.status(400).json({ error: "UserId , postUser or PostId  missing" });
       }
       const operation = 'like-post';
-      const response = await postRabbitMqClient.produce({postId,UserId},operation);
+      const response = await postRabbitMqClient.produce({postId,UserId, postUser},operation);
       return res.json(response);
     } catch (error) {
       console.error("Error occurred while liking posts", error);
@@ -334,20 +352,63 @@ editComment: async(req:Request, res:Response)=>{
   }
 },
 
-getNotification: async(req:Request, res:Response)=>{
+getNotification: async (req: Request, res: Response) => {
   try {
-    const likedBy = req.query.userId;
-        
-    if(!likedBy){
+    console.log("notification calllll",req.query);
+    
+    const userId = req.query.userId as string;
+    console.log("likedBy notfi", userId);
+
+    if (!userId) {
       return res.status(400).json({ error: "userId missing" });
     }
-    const operation = 'fetch-notifications'
-    const result = await postRabbitMqClient.produce({likedBy}, operation);
-    console.log("result of notification",result);
-    
+
+    const operation = 'fetch-notifications';
+    const result = await postRabbitMqClient.produce({ userId }, operation) as LikeNotificationResult;
+    console.log("result of notification", result);
+
+    if (result.success && Array.isArray(result.data)) {
+      const userIds = [...new Set(result.data.map((notification) => notification.likedBy))];
+
+      if (userIds.length > 0) {
+        const userOperation = "get-user-details-for-post";
+        const userResponse = await userRabbitMqClient.produce({ userIds }, userOperation) as RabbitMQResponse<User[]>;
+
+        if (userResponse.success && Array.isArray(userResponse.data)) {
+          const userMap = new Map(
+            userResponse.data.map((user) => [user.id, user])
+          );
+
+          const combinedData = result.data.map((notification) => {
+            const user = userMap.get(notification.likedBy);
+            return { ...notification, user: user || null };
+          });
+
+          res.status(200).json({ success: true, data: combinedData });
+        } else {
+          const combinedData = result.data.map((notification) => ({
+            ...notification,
+            user: null
+          }));
+          res.status(200).json({
+            success: true,
+            data: combinedData,
+            message: "Notifications fetched, but user data not available",
+          });
+        }
+      } else {
+        res.status(200).json({
+          success: true,
+          data: result.data,
+          message: "Notifications fetched, no user data needed",
+        });
+      }
+    } else {
+      res.status(404).json({ success: false, message: "No notifications found" });
+    }
   } catch (error) {
-    console.log("Error fetching notification", error);
-      res.status(500).json({success: false, message: "Internal server error"})
+    console.error("Error fetching notification", error);
+    res.status(500).json({ success: false, message: "Internal server error" });
   }
 }
 

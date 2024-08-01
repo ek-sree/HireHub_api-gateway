@@ -75,6 +75,12 @@ export const initializeSocket = (server: HttpServer) => {
 
     //notification
 
+    socket.on('joinRoom', (userId) => {
+      console.log(`User ${userId} joining room`);
+      socket.join(userId);
+      console.log(`User ${userId} joined room successfully`);
+    });
+
     socket.on('likeNotification', async(data)=>{
       console.log("like notification any??",data);
       
@@ -85,7 +91,7 @@ export const initializeSocket = (server: HttpServer) => {
         console.log("result", result);
         if (result && typeof result === 'object' && 'success' in result) {
           const userOperation = "get-user-details-for-post";
-          const userResponse = await userRabbitMqClient.produce({ userIds: [likedBy] }, userOperation) as RabbitMQResponse<User[]>;
+          const userResponse = await userRabbitMqClient.produce({ userIds: [userId] }, userOperation) as RabbitMQResponse<User[]>;
     
           let likedByUser = null;
           if (userResponse.success && Array.isArray(userResponse.data) && userResponse.data.length > 0) {
@@ -94,8 +100,9 @@ export const initializeSocket = (server: HttpServer) => {
     
           const newNotification = {
             ...result.data,
-            likedByUser: likedByUser
+            user: likedByUser
           };
+console.log("New notification", newNotification);
 
           io.to(userId).emit('newNotification', newNotification);
         } else {

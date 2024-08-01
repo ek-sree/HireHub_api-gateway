@@ -463,6 +463,8 @@ export const userController = {
 
     unfollow: async(req:Request, res:Response)=>{
         try {
+            console.log("call getting unfollow",req.query);
+            
             const userId = req.query.userId;
             const followerId = req.query.id;
             if(!userId || !followerId){
@@ -486,8 +488,23 @@ export const userController = {
             const response = await userRabbitMqClient.produce({searchQuery},operation)
             return res.json(response);
         } catch (error) {
-            console.log("Error occured searchQuery");
+            console.log("Error occured searchQuery",error);
             return res.status(500).json("Error occured in gateway while search users");
+        }
+    },
+
+    friendSuggestion: async(req:Request, res:Response)=>{
+        try {
+            const userId = req.query.userId;
+            if(!userId ){
+                return res.status(400).json({ success: false, message: 'No Id found' });
+            }
+            const operation = 'friend-suggesion';
+            const response = await userRabbitMqClient.produce({userId},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured getting friendSuggestion",error);
+            return res.status(500).json("Error occured in gateway while getting friend suggestion");
         }
     }
 }
