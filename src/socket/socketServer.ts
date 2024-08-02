@@ -2,22 +2,19 @@ import { Server } from 'socket.io';
 import { Server as HttpServer } from 'http';
 import messageRabbitMqClient from '../modules/message/rabbitMQ/client';
 import logger from '../utils/logger';
-import postRabbitMqClient from '../modules/post/rabbitMQ/client'
-import userRabbitMqClient from '../modules/user/rabbitMQ/client'
-
+import postRabbitMqClient from '../modules/post/rabbitMQ/client';
+import userRabbitMqClient from '../modules/user/rabbitMQ/client';
 
 interface User {
   id: any;
   _id: string;
 }
 
-
 interface RabbitMQResponse<T> {
   success: boolean;
   message: string;
   data?: T;
 }
-
 
 interface LikeNotificationResult {
   success: boolean;
@@ -34,22 +31,27 @@ interface LikeNotificationResult {
   message?: string;
 }
 
-
 let io: Server;
 
 export const initializeSocket = (server: HttpServer) => {
   io = new Server(server, {
     cors: {
-      origin: "http://localhost:5173", 
+      origin: "http://localhost:5173",
       methods: ["GET", "POST"],
       credentials: true,
     },
   });
 
-  const onlineUsers = new Map<string, string>();
+  const onlineUsers = new Map<string, string>(); // userId -> socketId
 
   io.on('connection', (socket) => {
-    logger.info('User connected', { socketId: socket.id });
+    console.log('User connected:', socket.id);
+
+    socket.on('userConnected', (userId) => {
+      onlineUsers.set(userId, socket.id);
+      console.log(`User ${userId} connected with socket ${socket.id}`);
+      console.log('Current online users:', Array.from(onlineUsers.entries()));
+    });
 
     socket.on('joinConversation', (chatId) => {
       socket.join(chatId);
@@ -72,90 +74,66 @@ export const initializeSocket = (server: HttpServer) => {
       }
     });
 
+    socket.on('likeNotification', async (data) => {
+      console.log("like notification any??", data);
 
-    //notification
-
-    socket.on('joinRoom', (userId) => {
-      console.log(`User ${userId} joining room`);
-      socket.join(userId);
-      console.log(`User ${userId} joined room successfully`);
-    });
-
-    socket.on('likeNotification', async(data)=>{
-      console.log("like notification any??",data);
-      
-      const {userId, postId, likedBy}=data;
+      const { userId, postId, likedBy } = data;
       try {
-        const operation = 'like-notification'
-        const result = await postRabbitMqClient.produce({userId, postId, likedBy},operation) as LikeNotificationResult;
+        const operation = 'like-notification';
+        const result = await postRabbitMqClient.produce({ userId, postId, likedBy }, operation) as LikeNotificationResult;
         console.log("result", result);
         if (result && typeof result === 'object' && 'success' in result) {
           const userOperation = "get-user-details-for-post";
           const userResponse = await userRabbitMqClient.produce({ userIds: [userId] }, userOperation) as RabbitMQResponse<User[]>;
-    
+
           let likedByUser = null;
           if (userResponse.success && Array.isArray(userResponse.data) && userResponse.data.length > 0) {
             likedByUser = userResponse.data[0];
           }
-    
+
           const newNotification = {
             ...result.data,
             user: likedByUser
           };
-console.log("New notification", newNotification);
+          console.log("New notification", newNotification);
 
-          io.to(userId).emit('newNotification', newNotification);
+          io.emit('newNotification', newNotification); // Changed to broadcast to all clients
         } else {
           console.error('Failed to process like notification:', result);
           socket.emit('notificationError', { error: 'Failed to process notification' });
         }
       } catch (error) {
-        logger.error('Error sending like notifiaction to RabbitMQ', { error });
+        logger.error('Error sending like notification to RabbitMQ', { error });
         socket.emit('messageSendError', { error: 'Failed to save message' });
       }
-    })
-
-
-    // Video call
-    socket.on('userOnline', (userId: string) => {
-      console.log('User came online:', userId, 'Socket ID:', socket.id);
-      onlineUsers.set(userId, socket.id);
     });
 
+    // Video call
     socket.on('callUser', ({ userToCall, from, offer, fromId }) => {
-      console.log(`Received callUser event. userToCall: ${userToCall}, from: ${from}, fromId: ${fromId}`);
-      console.log('Current online users:', Array.from(onlineUsers.entries()));
-      const userSocketId = onlineUsers.get(userToCall);
-      if (userSocketId) {
-        console.log(`Emitting incomingCall event to socket ${userSocketId}`);
-        io.to(userSocketId).emit('incomingCall', { from, offer, fromId });
-      } else {
-        console.log(`User ${userToCall} not found in onlineUsers map`);
+      console.log('CallUser event received:', { userToCall, from, offer, fromId });
+      io.emit('incomingCall', { from: fromId, callerName: from, offer }); // Changed to broadcast to all clients
+    });
+
+    socket.on('signal', (data) => {
+      const { userId, type, candidate, answer, context } = data;
+      if (context === 'webRTC') {
+        io.emit('signal', { type, candidate, answer, userId }); // Changed to broadcast to all clients
       }
     });
 
-    socket.on('callAccepted', (data) => {
-      console.log('Call accepted', data);
-      const { userId, answer, context } = data;
+    socket.on('callAccepted', ({ userId, answer, context, acceptedBy }) => {
       if (context === 'webRTC') {
-        const userSocketId = onlineUsers.get(userId);
-        if (userSocketId) {
-          console.log(`Forwarding callAccepted to user ${userId}`);
-          io.to(userSocketId).emit('signal', { type: 'answer', answer });
-        } else {
-          console.log(`User ${userId} not found for callAccepted`);
-        }
+        io.emit('callAcceptedSignal', { answer, context, userId, acceptedBy }); // Changed to broadcast to all clients
       }
     });
 
     socket.on('callEnded', (guestId) => {
-      let userSocketId = onlineUsers.get(guestId) || '';
-      io.to(userSocketId).emit('callEndedSignal');
+      io.emit('callEndedSignal'); // Changed to broadcast to all clients
     });
 
     socket.on('disconnect', () => {
-      logger.info('User disconnected', { socketId: socket.id });
-      // Remove the disconnected user from the onlineUsers map
+      console.log('User disconnected:', socket.id);
+      // Clean up online users map
       for (const [userId, socketId] of onlineUsers.entries()) {
         if (socketId === socket.id) {
           onlineUsers.delete(userId);
