@@ -47,16 +47,33 @@ interface RabbitMQResponse<T> {
   data?: T;
 }
 
+const validImageMimeTypes = ['image/jpeg', 'image/png', 'image/gif'];
+
 export const postController = {
   addPost: async (req: Request, res: Response) => {
     try {
       const userId = req.query.userId;
       const { text } = req.body;
-      const images = req.files;
-      
+      const images = req.files as { [fieldname: string]: Express.Multer.File[] } | Express.Multer.File[];
+
       if (!userId) {
         return res.status(400).json({ error: "UserId is missing" });
       }
+      if (images) {
+        let filesArray: Express.Multer.File[] = [];
+        if (Array.isArray(images)) {
+          filesArray = images;
+        } else {
+          filesArray = Object.values(images).flat();
+        }
+
+        for (let file of filesArray) {
+          if (!validImageMimeTypes.includes(file.mimetype)) {
+            return res.status(400).json({ error: "Only image files are allowed" });
+          }
+        }
+      }
+
       const operation = "create-post";
       const response = await postRabbitMqClient.produce(
         { userId, text, images },
@@ -64,8 +81,8 @@ export const postController = {
       );
       res.status(200).json(response);
     } catch (error) {
-      console.log("Error occured while creating new post", error);
-      res.status(500).json({ error: "error occure creating new post" });
+      console.log("Error occurred while creating new post", error);
+      res.status(500).json({ error: "Error occurred creating new post" });
     }
   },
 

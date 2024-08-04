@@ -137,7 +137,6 @@ export const messageController = {
             const chatId = req.query.chatId;
             const senderId = req.query.senderId;
             const receiverId = req.query.receiverId;
-            console.log("bbbae2324",video,chatId,senderId,receiverId);
             
             if(!senderId || !chatId || !video || !receiverId){
                 return res.status(400).json({ error: "UserId , receiverId, or video is missing" });

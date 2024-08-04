@@ -42,7 +42,7 @@ export const initializeSocket = (server: HttpServer) => {
     },
   });
 
-  const onlineUsers = new Map<string, string>(); // userId -> socketId
+  const onlineUsers = new Map<string, string>(); 
 
   io.on('connection', (socket) => {
     console.log('User connected:', socket.id);
@@ -111,29 +111,28 @@ export const initializeSocket = (server: HttpServer) => {
     // Video call
     socket.on('callUser', ({ userToCall, from, offer, fromId }) => {
       console.log('CallUser event received:', { userToCall, from, offer, fromId });
-      io.emit('incomingCall', { from: fromId, callerName: from, offer }); // Changed to broadcast to all clients
+      io.emit('incomingCall', { from: fromId, callerName: from, offer });
     });
 
     socket.on('signal', (data) => {
       const { userId, type, candidate, answer, context } = data;
       if (context === 'webRTC') {
-        io.emit('signal', { type, candidate, answer, userId }); // Changed to broadcast to all clients
+        io.emit('signal', { type, candidate, answer, userId }); 
       }
     });
 
     socket.on('callAccepted', ({ userId, answer, context, acceptedBy }) => {
       if (context === 'webRTC') {
-        io.emit('callAcceptedSignal', { answer, context, userId, acceptedBy }); // Changed to broadcast to all clients
+        io.emit('callAcceptedSignal', { answer, context, userId, acceptedBy }); 
       }
     });
 
     socket.on('callEnded', (guestId) => {
-      io.emit('callEndedSignal'); // Changed to broadcast to all clients
+      io.emit('callEndedSignal');
     });
 
     socket.on('disconnect', () => {
       console.log('User disconnected:', socket.id);
-      // Clean up online users map
       for (const [userId, socketId] of onlineUsers.entries()) {
         if (socketId === socket.id) {
           onlineUsers.delete(userId);

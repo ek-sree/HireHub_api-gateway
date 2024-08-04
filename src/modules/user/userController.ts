@@ -33,18 +33,14 @@ export const userController = {
         }
     },
 
-    otp:(req: Request, res: Response)=>{
-        console.log("Is otp comming");
-        
+    otp:(req: Request, res: Response)=>{        
         try {
             const cookieOtp = req.cookies.otp
            
             const enteredOtp = req.body.otp
           
             if(cookieOtp=== enteredOtp){
-                const userData = JSON.parse(req.cookies.user);
-             console.log("This is cookies iuser dataaaaaaaa",userData);
-             
+                const userData = JSON.parse(req.cookies.user);             
             Userclient.VerifyOtp({user_data: userData},(err:Error | null, result: any)=>{
                 
                 if(err){
@@ -70,16 +66,10 @@ export const userController = {
     },
 
     resendOtp:(req: Request, res: Response)=>{
-        try {
-            console.log("Resend req get here");
-            
+        try {            
             const userData = JSON.parse(req.cookies.user);
-            const email = userData.email;
-            console.log("Eml", email);
-            
+            const email = userData.email;            
             res.clearCookie('otp')
-            console.log("cleared old otp");
-            
             Userclient.ResendOtp({email:email}, (err: Error | null, result: any)=>{
                 if(err){
                     console.log("error resend otp req to gprc", err);
@@ -87,7 +77,6 @@ export const userController = {
                     return res.status(500).json({error:"Internal server error"});
                 }
                 res.cookie("otp", result.newOtp, {httpOnly:true});
-                console.log("sssssss",result);
                 return res.json({success:true, message:"Otp resent successfully"});
             })
         } catch (error) {
@@ -101,11 +90,10 @@ export const userController = {
             Userclient.Login(req.body, (err: Error | null, result: any) => {
                 if (err) {
                     console.log("error while loging user", err);
-                    return res.status(500).json({ error: "Internal server error" }); // Ensure to return here
+                    return res.status(500).json({ error: "Internal server error" }); 
                 }
-                console.log(result, "sdsd");
                 if (!result.success) {
-                    return res.json(result); // Ensure to return here
+                    return res.json(result);
                 }
                 const token = genenrateToken({ id: result.user_data._id, email: result.user_data.email });
                 let role = 'user';
@@ -126,16 +114,14 @@ export const userController = {
     
 
     loginWithGoogle: (req: Request, res: Response) => {
-        try {
-            console.log("google auth");
-    
+        try {    
             Userclient.LoginWithGoogle(req.body, (err: Error | null, result: any) => {
                 if (err) {
                     console.log("error while loging in with google", err);
-                    return res.status(500).json({ error: "Internal server error" }); // Ensure to return here
+                    return res.status(500).json({ error: "Internal server error" }); 
                 }
                 if (!result || !result.user_data) {
-                    return res.status(500).json({ error: "Invalid response from Google login service" }); // Ensure to return here
+                    return res.status(500).json({ error: "Invalid response from Google login service" }); 
                 }
                 const token = genenrateToken({ id: result.user_data._id, email: result.user_data.email });
                 let role = 'user';
@@ -160,13 +146,11 @@ export const userController = {
         try {
             const userId = req.query.userId as string;
             if (!userId) {
-                return res.status(400).json({ success: false, error: "User ID is required" }); // Ensure to return here
+                return res.status(400).json({ success: false, error: "User ID is required" });
             }
     
             const operation = 'user-log-out';
-            const response = await userRabbitMqClient.produce({ userId }, operation) as LogoutResponse;
-            console.log("logout statussss", response);
-    
+            const response = await userRabbitMqClient.produce({ userId }, operation) as LogoutResponse;    
             if (response && response.success) {
                 res.clearCookie('role');
                 res.clearCookie('isRecruiter');
@@ -188,18 +172,13 @@ export const userController = {
     
 
     addTitleProfile: async(req: Request, res: Response) =>{
-        console.log("reached here", req.body);
-        console.log("reached here query", req.query.email);
-        
         try {
             const email = req.query.email;
             const title = req.body;
             if(!email || ! title){
                 throw new Error("email or title are missing!")
             }
-            const data = {email, title}
-            console.log("daa of email and title",data);
-            
+            const data = {email, title}            
             const operation = 'profile-title-add'
             const result = await userRabbitMqClient.produce({data}, operation);
             return res.json(result);
@@ -210,14 +189,9 @@ export const userController = {
     },
 
     editDetails: async(req: Request, res: Response) => {
-        console.log("got here", req.body);
-        console.log("got here query", req.query.email);
-        
         try {
             const operation = 'edit-details';
-            const{name, title} = req.body.data;
-            console.log("body data", name, title);
-            
+            const{name, title} = req.body.data;            
             const email = req.query.email;
             if(!name || !email){
                 throw new Error("Email, name or title are missing !!");
@@ -247,9 +221,7 @@ export const userController = {
     },
 
     userInfo: async(req: Request, res: Response)=> {
-        try {
-            console.log("info apigateway",req.query.userId);
-            
+        try {            
             const userId = req.query.userId;
             const operation = 'user-info';
             const response = await userRabbitMqClient.produce({userId}, operation);
@@ -262,11 +234,7 @@ export const userController = {
 
     userEditInfo: async(req:Request, res: Response)=>{
         try {
-            console.log("sfsdfsdfsdfs......");
-            console.log("dadad", req.body);
-            
             const {email, phone, Education, Place} = req.body.data;
-            console.log("data reached", email, phone,Education, Place);
             if(!phone || !email){
                 throw new Error("Email or phone missing")
             }
@@ -284,7 +252,6 @@ export const userController = {
 
     userSkillsAdd: async(req: Request, res: Response)=>{
         try {
-            console.log("body skills",req.body);
             const email = req.query.email;
             if(!email){
                 throw new Error("Email is missing");
@@ -312,16 +279,13 @@ export const userController = {
     },
 
     userSkillsEdit: async(req:Request, res:Response) =>{
-        try {
-            console.log("iussinf.....//");
-            
+        try {            
             const email = req.query.email;
             if(!email){
                 throw new Error("Email not found");
             }
             const skills = req.body;
             const operation = 'user-skills-edit';
-            console.log("edit skills",skills);
             const response = await userRabbitMqClient.produce({email,skills}, operation)
             return res.json(response);
         } catch (error) {
@@ -338,7 +302,6 @@ export const userController = {
             if (!cvFile) {
                 return res.status(400).json({ success: false, message: 'No CV file provided' });
             }
-            console.log("cv file is heree",cvFile);
             const operation = 'cv-upload';
             const response = await userRabbitMqClient.produce({email,cvFile}, operation)
             return res.json(response);
@@ -360,15 +323,11 @@ export const userController = {
         }
     },
     
-    deleteCv: async(req: Request, res: Response)=>{
-        console.log("reached remove");
-        
+    deleteCv: async(req: Request, res: Response)=>{        
         try {
             const url = req.query.url;
             const email = req.query.email;
-            const operation = 'remove-cv';
-            console.log("remove data",url);
-            
+            const operation = 'remove-cv';            
             const response = await userRabbitMqClient.produce({url,email},operation)
             return res.json(response);
         } catch (error) {
@@ -383,9 +342,7 @@ export const userController = {
             const email = req.query.email;
             if(!email || !image){
                 return res.status(400).json({ success: false, message: 'No image or email found' });
-            }
-            console.log("data got from client to api gateway", email, image);
-            
+            }            
             const operation = 'profile-add'
             const response = await userRabbitMqClient.produce({email,image},operation)
             return res.json(response);
@@ -410,9 +367,7 @@ export const userController = {
         }
     },
 
-    addCoverImg: async(req: Request, res:Response)=>{
-        console.log("dadadadada",req.file,req.query.email);
-        
+    addCoverImg: async(req: Request, res:Response)=>{        
         try {
             const email = req.query.email;
             const image = req.file;
@@ -462,9 +417,7 @@ export const userController = {
     },
 
     unfollow: async(req:Request, res:Response)=>{
-        try {
-            console.log("call getting unfollow",req.query);
-            
+        try {            
             const userId = req.query.userId;
             const followerId = req.query.id;
             if(!userId || !followerId){
@@ -481,9 +434,7 @@ export const userController = {
 
     searchUsers: async(req:Request, res:Response)=>{
         try {
-            const searchQuery = req.query.searchQuery
-            console.log("seach res",searchQuery);
-            
+            const searchQuery = req.query.searchQuery            
             const operation = 'search-users';
             const response = await userRabbitMqClient.produce({searchQuery},operation)
             return res.json(response);

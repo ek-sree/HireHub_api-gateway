@@ -3,9 +3,7 @@ import jobpostRabbitMqClient from './rabbitMQ/client';
 
 export const jobpostController = {
 
-    addJob: async (req: Request, res: Response) => {
-        console.log("Req reached jobpost controller");
-        
+    addJob: async (req: Request, res: Response) => {        
         try {
             const operation = 'add-new-job';
             console.log("req data from frontend", req.body);
@@ -15,8 +13,6 @@ export const jobpostController = {
             if (!position || !place || !jobType.length || !employmentType.length || !skills.length || !recruiterId || !companyName || !experience) {
                 return res.status(400).json({ error: "Please fill in all fields" });
             }
-console.log("................");
-
             const jobData = {
                 position,
                 place,
@@ -27,9 +23,7 @@ console.log("................");
                 recruiterId,
                 companyName
             }; 
-            console.log("Sending data to RabbitMQ:", { jobData });
             const response = await jobpostRabbitMqClient.produce({ jobData }, operation);
-            console.log("Response from add new job post", response);
             res.status(200).json(response);
         } catch (error) {
             console.error("Error in addJob controller:", error);
@@ -56,10 +50,7 @@ console.log("................");
         try {
             const employmentType = req.query.employment as string[] | undefined;
             const jobType = req.query.job as string[] | undefined;
-            const searchPlace = req.query.search as string | undefined;
-    
-            console.log("query data get job", searchPlace);
-    
+            const searchPlace = req.query.search as string | undefined;    
             const operation = 'get-all-jobs';
             const response = await jobpostRabbitMqClient.produce({ employmentType, jobType, searchPlace }, operation);
             res.status(200).json(response);
@@ -69,13 +60,10 @@ console.log("................");
         }
     },    
 
-    editJob: async(req: Request, res: Response) => {
-        console.log("reached here fpr edit????",req.body);
-        
+    editJob: async(req: Request, res: Response) => {        
         try {
             const { position, place, jobType, employmentType,experience, skills } = req.body;
             const jobId = typeof req.query.jobId === 'string' ? req.query.jobId : '';
-            console.log("jobId", jobId);
             if(!position || !place || !jobType || !employmentType || !skills || !jobId || !experience){
                 return res.status(400).json({ error: "Please fill in all fields" });
             }
@@ -90,7 +78,6 @@ console.log("................");
             }
             const operation = 'edit-job';
             const response = await jobpostRabbitMqClient.produce({jobData}, operation);
-            console.log("response edited data", response);
             return res.status(200).json(response);
         } catch (error) {
             console.error("Error editing jobs data", error)
@@ -100,9 +87,7 @@ console.log("................");
 
     applyJob: async(req: Request, res: Response)=>{
         try {
-            const jobId = req.query.jobId;
-            console.log(".....",req.body);
-            
+            const jobId = req.query.jobId;            
             const { userId,name,email,phone,resumes } = req.body;
             if(!userId || !jobId || !name || !email || !phone || !resumes){
                 return res.status(400).json({ error: "Please fill in all fields" });
@@ -121,9 +106,7 @@ console.log("................");
         try {
             const jobId = req.query.jobId;
             const page = req.query.page;
-            const limit = req.query.limit;
-            console.log("job id for view hob application", jobId,page,limit);
-            
+            const limit = req.query.limit;            
             const operation = 'view-application';
             if(!jobId){
                 return res.status(400).json({ error: "jobid is missing" });
@@ -183,11 +166,8 @@ console.log("................");
     },
 
     shortListedApplication: async(req: Request, res:Response)=>{
-        try {
-            console.log("queryy",req.query);
-            
+        try {            
             const jobId = req.query.jobId;
-            console.log("Short listed job iddddd...",jobId);
             if(!jobId){
                 return res.status(400).json({error:"jobId is missing"})
             }
@@ -203,7 +183,6 @@ console.log("................");
     softDeleteJob: async(req: Request, res: Response)=>{
         try {
             const jobId = req.params.id;
-            console.log("paramss",jobId);
             if(!jobId){
                 return res.status(400).json({error:"Job id is not reached"})
             }

@@ -9,11 +9,8 @@ import postRabbitMqClient from "../post/rabbitMQ/client";
 
 export const adminController = {
     
-    loging:(req: Request, res: Response) => {
-        console.log("admin login is getting here?");
-        
+    loging:(req: Request, res: Response) => {        
         try {
-            console.log("Login for admin is reached here");
             Adminclient.Login(req.body, (err: Error | null, result: any) =>{
                 if(err){
                     console.log("Error while logging in admin");
@@ -51,11 +48,9 @@ getUser: async (req: Request, res: Response) => {
 ,
 
     getVerifiedRecruiter: async(req: Request, res: Response) => {
-        console.log("reach here for verify recruiter");
         try {
             const operation = 'unVerify-recruiter';
             const response = await recruiterRabbitMqClient.produce({}, operation);
-            console.log("response of verify recruiter",response);
             return res.json(response);
         } catch (error) {
             console.log("Error fetching unVerified Recruiter", error);
@@ -75,13 +70,10 @@ getUser: async (req: Request, res: Response) => {
     },
 
     getRecruiter: async(req: Request, res: Response) => {
-        console.log("recruiter data getting");
         try {
             const { page=1 , limit=2 } = req.query;
-            console.log("recruiter getting here");
             const operation = 'get-all-recruiter';
             const response = await recruiterRabbitMqClient.produce({page: Number(page), limit: Number(limit)}, operation);
-            console.log("response recruiter get rabbitMq", response);
             return res.json(response);
         } catch (error) {
             
@@ -89,12 +81,9 @@ getUser: async (req: Request, res: Response) => {
     },
 
     blockUser: async(req: Request, res: Response) => {
-        console.log("req reach for block user");
         try {
             const operation = 'block-user'
-            const { userId } = req.params;
-            console.log("user id for block",userId);
-            
+            const { userId } = req.params;            
             const response = await userRabbitMqClient.produce({userId},operation);
             console.log("response for block user", response);
             
@@ -106,13 +95,10 @@ getUser: async (req: Request, res: Response) => {
     },
 
     blockRecruiter: async(req: Request, res: Response) => {
-        console.log("recruiter block reached here for to send rabbitmq");
         try {
             const operation = 'block-recruiter'
             const { recruiterId } = req.params;
-            console.log("id for block recruiter", recruiterId);
             const response = await recruiterRabbitMqClient.produce({recruiterId},operation);
-            console.log("response blocked recruiter", response);
             return res.json(response);
         } catch (error) {
             console.error("Error blocking/unblocking recruiter", error);
@@ -214,12 +200,8 @@ getUser: async (req: Request, res: Response) => {
     },
 
     clearReports: async(req:Request, res:Response)=>{
-        try {
-            console.log("dad");
-            
-            const postId = req.query.postId;
-            console.log("postid clear report", postId);
-            
+        try {            
+            const postId = req.query.postId;            
             if(!postId){
                 return res.status(400).json({ error: "PostId is missing" });
               }

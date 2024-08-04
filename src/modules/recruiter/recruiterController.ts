@@ -4,9 +4,7 @@ import { Request, Response } from "express";
 
 export const recruiterController = {
     register: (req: Request, res: Response) => {
-        try {
-            console.log("data getting here?",req.body);
-            
+        try {            
             RecruiterClient.RegisterRecruiter(req.body, (err: Error | null, result: any) => {
                 if(err) {
                     return res.status(500).json({error: "Internal server error during recruiter registering"});
@@ -30,9 +28,7 @@ export const recruiterController = {
             const enteredOtp = req.body.otp;
 
             if(enteredOtp === cookieOtp) {
-                const RecruiterData = JSON.parse(req.cookies.recruiter)
-                console.log("ese",RecruiterData);
-                
+                const RecruiterData = JSON.parse(req.cookies.recruiter)                
                 RecruiterClient.VerifyOtp({recruiter_data: RecruiterData}, (err: Error | null, result: any) => {
                     if(err){
                         return res.status(500).json({error: "Internal server errro during recruiter verifying otp"});
@@ -43,9 +39,7 @@ export const recruiterController = {
                     res.cookie('role', role, { maxAge: 3600000 });
                     res.cookie('token', token, { httpOnly: true, maxAge: 3600000 })
                     res.clearCookie('otp');
-                    result.isRecruiter=true
-                    console.log("data recruiter after verify otp",result);
-                    
+                    result.isRecruiter=true                    
                     return res.json(result);
                 })
             }else{
@@ -58,9 +52,7 @@ export const recruiterController = {
     },
 
     resendOtp: (req: Request, res: Response) => {
-        try {
-            console.log("here reached resendotp");
-            
+        try {            
             const RecruiterData = JSON.parse(req.cookies.recruiter);
             const email = RecruiterData.companyEmail;
             res.clearCookie('otp');
@@ -80,9 +72,7 @@ export const recruiterController = {
     },
 
     login: (req: Request, res: Response) => {
-        try {
-            console.log("recasdadssd");
-            
+        try {            
             RecruiterClient.Login( req.body, (err: Error | null, result: any) => {
                 if(err){
                     console.log("error while loging user", err);
@@ -91,7 +81,6 @@ export const recruiterController = {
                 if(!result.success){
                     return res.json(result);
                 }
-                console.log("ID..........", result.recruiter_data._id);
                 const token = genenrateToken({ id: result.recruiter_data._id, email: result.recruiter_data.email });
                 let role = 'recruiter';
                 res.cookie('role', role, { maxAge: 3600000 });
