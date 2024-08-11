@@ -457,5 +457,20 @@ export const userController = {
             console.log("Error occured getting friendSuggestion",error);
             return res.status(500).json("Error occured in gateway while getting friend suggestion");
         }
+    },
+
+    followersList: async(req:Request, res:Response)=>{
+        try {
+            const id = req.query.userId;            
+            if(!id){
+                return res.status(400).json({success:false, message:"No id found"})
+            }
+            const operation = 'followers-list';
+            const response = await userRabbitMqClient.produce({id}, operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured getting followers list");
+            return res.status(500).json("Error occured in gateway while getting followerd suggestion")
+        }
     }
 }

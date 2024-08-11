@@ -25,7 +25,6 @@ export const adminController = {
                 res.cookie('token', token, { httpOnly: true, maxAge: 3600000 });
                 result.isRecruiter = null;
                 result.token = token;
-                console.log("this is result from admin login",result);
                 return res.json(result);
             })
         } catch (error) {
@@ -35,7 +34,7 @@ export const adminController = {
     },
 
 getUser: async (req: Request, res: Response) => {
-    try {
+    try {        
         const { page = 1, limit = 2 } = req.query;
         const operation = 'get-all-users';
         const response = await userRabbitMqClient.produce({ page: Number(page), limit: Number(limit) }, operation);
