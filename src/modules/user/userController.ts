@@ -472,5 +472,38 @@ export const userController = {
             console.log("Error occured getting followers list");
             return res.status(500).json("Error occured in gateway while getting followerd suggestion")
         }
+    },
+
+    removeFollower: async(req:Request, res:Response)=>{
+        try {
+            const userId = req.query.userId;
+            const id = req.query.id;
+            console.log("remove data",userId,id);
+            
+            if(!userId || !id){
+                return res.status(400).json({success:false, message:"No credientals found"})
+            }
+            const operation = 'remove-followers';
+            const response = await userRabbitMqClient.produce({userId, id}, operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured while removing followers");
+            return res.status(500).json("Error occured in gateway while removing followers")
+        }
+    },
+
+    followingList:async(req:Request, res:Response)=>{
+        try {
+            const userId = req.query.userId;
+            if(!userId){
+                return res.status(400).json({success:false, message:"No credientials found"})
+            }
+            const operation = 'following-list';
+            const response = await userRabbitMqClient.produce({userId},operation);
+            return res.json(response);
+        } catch (error) {
+            console.log("Error occured while fetching following list");
+            return res.status(500).json("Error occured in gateway while fetching following list")
+        }
     }
 }

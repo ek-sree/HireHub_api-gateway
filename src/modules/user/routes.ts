@@ -33,5 +33,7 @@ userRouter.post('/unfollow', authencticateToken, userController.unfollow);
 userRouter.get('/seachUsers', authencticateToken, userController.searchUsers);
 userRouter.get('/friendSuggestion', authencticateToken, userController.friendSuggestion);
 userRouter.get('/followersList', authencticateToken, userController.followersList);
+userRouter.put('/removeFollower', authencticateToken, userController.removeFollower)
+userRouter.get('/followingList', authencticateToken, userController.followingList);
 
 export { userRouter }
