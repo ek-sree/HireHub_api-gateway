@@ -478,7 +478,6 @@ export const userController = {
         try {
             const userId = req.query.userId;
             const id = req.query.id;
-            console.log("remove data",userId,id);
             
             if(!userId || !id){
                 return res.status(400).json({success:false, message:"No credientals found"})

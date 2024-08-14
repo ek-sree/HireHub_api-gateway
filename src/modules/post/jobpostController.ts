@@ -107,15 +107,47 @@ export const jobpostController = {
             const jobId = req.query.jobId;
             const page = req.query.page;
             const limit = req.query.limit;            
-            const operation = 'view-application';
             if(!jobId){
                 return res.status(400).json({ error: "jobid is missing" });
             }
+            const operation = 'view-application';
             const response = await jobpostRabbitMqClient.produce({jobId,page, limit},operation)
             return res.json(response);
         } catch (error) {
             console.error("Error fetching job application", error)
             res.status(500).json({error: "error occured fetching job application"});
+        }
+    },
+
+    viewAwaitApplication: async(req:Request, res:Response)=>{
+        try {
+            const jobId = req.query.jobId;
+            const page = req.query.page;
+            const limit = req.query.limit;
+            if(!jobId){
+                return res.status(400).json({ error: "jobid is missing" });
+            }
+            const operation = 'view-awaited-application';
+            const response = await jobpostRabbitMqClient.produce({jobId, page, limit}, operation);
+            return res.json(response);
+        } catch (error) {
+            console.error("Error fetching awated job application", error)
+            res.status(500).json({error: "error occured fetching awated job application"});
+        }
+    },
+
+    awaitApplication: async(req:Request, res:Response)=>{
+        try {
+            const {jobId, applicationId} = req.query;
+            if(!jobId || !applicationId){
+                return res.status(400).json({error:"Job id or application id missing"})
+            }
+            const operation = 'await-application';
+            const response = await jobpostRabbitMqClient.produce({jobId, applicationId}, operation);
+            return res.json(response);
+        } catch (error) {
+            console.error("Error awaiting application", error)
+            res.status(500).json({error: "error occured awaiting application"});
         }
     },
 

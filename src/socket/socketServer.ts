@@ -97,7 +97,7 @@ export const initializeSocket = (server: HttpServer) => {
           };
           console.log("New notification", newNotification);
 
-          io.emit('newNotification', newNotification); // Changed to broadcast to all clients
+          io.emit('newNotification', newNotification); 
         } else {
           console.error('Failed to process like notification:', result);
           socket.emit('notificationError', { error: 'Failed to process notification' });

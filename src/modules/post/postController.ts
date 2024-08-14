@@ -382,7 +382,6 @@ getNotification: async (req: Request, res: Response) => {
 
     const operation = 'fetch-notifications';
     const result = await postRabbitMqClient.produce({ userId }, operation) as LikeNotificationResult;
-    console.log("result of notification", result);
 
     if (result.success && Array.isArray(result.data)) {
       const userIds = [...new Set(result.data.map((notification) => notification.likedBy))];
